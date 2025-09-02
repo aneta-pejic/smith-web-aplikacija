@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopol - Model monopola</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="model_monopola">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container stay">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <div class="chosen"><a href="#">Model monopola</a></div>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Model monopola</strong></h1>
+                <p>Analiziranje odluka predstavlja složeniji izazov za monopolsku tvrtku nego za tvrtku u savršenoj
+                    konkurenciji. Naime, poduzeće u savršenoj konkurenciji prihvaća tržišnu cijenu kao zadanu i na
+                    temelju
+                    nje određuje količinu proizvodnje koja mu donosi najveći profit. S druge strane, monopol, budući da
+                    je
+                    jedini ponuđač na tržištu, može samostalno određivati ne samo količinu proizvodnje nego i cijenu
+                    proizvoda. Koje će odluke o cijeni i količini proizvodnje takvo poduzeće donositi?</p>
+                <p>Na to ćemo pitanje odgovoriti primjenom pravila marginalne odluke: poduzeće će proizvoditi dodatne
+                    jedinice proizvoda sve dok su granični prihodi jednaki graničnim troškovima. Kako bismo to pravilo
+                    primijenili na monopol, prvo moramo istražiti poseban odnos između potražnje i graničnih prihoda kod
+                    monopola.</p>
+
+                <h2>Monopol i tržišna potražnja</h2>
+                <p>Budući da monopol ima cijelo tržište za sebe, suočava se s tržišnom krivuljom potražnje. Na slici su
+                    uspoređene situacije potražnje s kojima se suočava monopol i poduzeće u savršenoj konkurenciji. Na
+                    dijagramu (a), ravnotežna cijena za poduzeće u savršenoj konkurenciji određena je presjekom krivulja
+                    potražnje i ponude. Tržišna krivulja ponude dobiva se jednostavnim zbrajanjem krivulja ponude
+                    pojedinačnih poduzeća. Te krivulje ponude zapravo predstavljaju dijelove njihovih krivulja graničnih
+                    troškova koji se nalaze iznad krivulje prosječnih varijabilnih troškova. Krivulja graničnih troškova
+                    (<em>MC</em>) za jedno poduzeće prikazana je na slici. Primijetite prekid na horizontalnoj osi koji
+                    ukazuje na to
+                    da je količina koju proizvodi pojedino poduzeće zanemarivo mali udio u ukupnoj proizvodnji na
+                    tržištu.
+                    U modelu savršene konkurencije, jedno poduzeće <em>ne utječe</em> na određivanje tržišne cijene.
+                    Svako poduzeće u
+                    takvoj industriji suočeno je s horizontalnom krivuljom potražnje, koja je određena tržišnom cijenom.
+                </p>
+                <img src="images/model_monopola1.jpg" width="720px" height="400px">
+                <p>Dijagram (a) prikazuje određivanje ravnotežne cijene i količine u tržištu savršene konkurencije.
+                    Tipično
+                    poduzeće s krivuljom graničnih troškova (<em>MC</em>) u tom slučaju prihvaća tržišnu cijenu, ono je
+                    cjenovni
+                    primatelj (price taker). Odabire proizvoditi količinu <em>q</em> pri ravnotežnoj cijeni <em>P</em>.
+                    Nasuprot tome, dijagram (b) prikazuje situaciju monopola koji se suočava s opadajućom tržišnom
+                    krivuljom
+                    potražnje. Kao maksimizator profita, monopol najprije određuje količinu proizvodnje koja mu donosi
+                    najveći profit. Jednom kad odluči koju će količinu proizvoditi, cijena po kojoj može prodati tu
+                    količinu
+                    određuje se s obzirom na krivulju potražnje. Drugim riječima, monopol može prodavati dodatne
+                    jedinice
+                    proizvoda samo ako snizi cijenu.</p>
+                <p>Za razliku od toga, poduzeće u savršenoj konkurenciji može prodati bilo koju količinu po tržišnoj
+                    cijeni
+                    ono se ne mora brinuti o promjeni cijene kad mijenja količinu.
+                    Usporedimo sada situaciju s dijagrama (a) s onom koju monopol ima na dijagramu (b). Budući da je
+                    jedini
+                    ponuđač u industriji, monopolist se suočava s cijelom tržišnom potražnjom, to jest, s opadajućom
+                    krivuljom potražnje. Može odabrati bilo koju količinu za proizvodnju, ali za razliku od
+                    konkurentskog
+                    poduzeća, da bi povećao količinu prodaje, mora sniziti cijenu.</p>
+                <p>Primjerice, ako monopol može prodati količinu <em>Q<sub>1</sub></em> po cijeni <em>P<sub>1</sub></em>
+                    (na dijagramu b), tada, želi li povećati
+                    prodaju na <em>Q<sub>2</sub></em>, mora sniziti cijenu na <em>P<sub>2</sub></em>. Da bi prodao
+                    količinu <em>Q<sub>3</sub></em>, mora sniziti cijenu još više, na <em>P<sub>3</sub></em>.
+                    Iako monopol može birati i cijenu i količinu, ograničen je kombinacijama koje leže na krivulji
+                    potražnje
+                    – ne može, primjerice, prodati količinu <em>Q<sub>3</sub></em> po cijeni <em>P<sub>1</sub></em>.
+                    Da bi neko poduzeće bilo cjenovni određivač (price setter), mora se suočavati s opadajućom krivuljom
+                    potražnje.</p>
+
+                <h2>Ukupni prihod i cjenovna elastičnost</h2>
+                <p>Cjenovna elastičnost potražnje s kojom se suočava poduzeće ima važan utjecaj na procjenu učinka
+                    promjene
+                    cijene na ukupni prihod. Također, cjenovna elastičnost potražnje može varirati na različitim točkama
+                    duž
+                    krivulje potražnje poduzeća. U ovom ćemo odjeljku objasniti zašto će monopol uvijek odabrati cijenu
+                    u
+                    elastičnom dijelu svoje krivulje potražnje.</p>
+                <p>Pretpostavimo da je krivulja potražnje s kojom se suočava monopol dano jednadžbom, pri čemu je
+                    <em>Q</em>
+                    količina tražena u jedinici vremena, a <em>P</em> cijena po jedinici:
+                </p>
+                <div class="equation"><img src="images/model_monopola2.jpg" width="200px" height="80px"></div>
+                <p>Ova jednadžba potražnje prikazuje raspored potražnje prikazan na sljedećoj slici. Ukupni prihod za
+                    svaku
+                    količinu jednak je umnošku te količine i cijene po kojoj se ta količina traži. Krivulja ukupnog
+                    prihoda
+                    monopolskog poduzeća prikazana je na dijagramu (b). Budući da monopolist mora sniziti cijenu svake
+                    jedinice proizvoda kako bi povećao prodaju, ukupni prihod
+                    ne raste uvijek s porastom proizvodnje. U ovom slučaju, ukupni prihod doseže maksimum od 25€ kada
+                    se proda 5 jedinica. Nakon te točke, dakle, pri količinama većim od 5 jedinica, ukupni prihod
+                    počinje
+                    padati.</p>
+                <img src="images/model_monopola3.jpg" width="700px" height="500px">
+                <p>Pretpostavimo da se monopolist suočava s opadajućom krivuljom potražnje prikazanom na dijagramu (a).
+                    Da
+                    bi povećao prodanu količinu, mora sniziti cijenu. Ukupni prihod izračunava se množenjem cijene i
+                    količine prodane pri toj cijeni. Ukupni prihod, prikazan na dijagramu (b), doseže maksimum od 25€
+                    kada se proda 5 jedinica po cijeni od 5€. U toj točki krivulje potražnje, cjenovna elastičnost
+                    potražnje iznosi -1.</p>
+                <p>Krivulja potražnje na dijagramu (a) prikazane slike prikazuje raspon vrijednosti cjenovne
+                    elastičnosti
+                    potražnje. Naučili smo da se elastičnost cijene mijenja duž linearne krivulje potražnje na
+                    specifičan
+                    način: potražnja je elastična u gornjoj polovici krivulje potražnje, a neelastična u donjoj
+                    polovici.
+                    Ako je potražnja elastična, smanjenje cijene povećava ukupni prihod. Da bi prodao dodatnu jedinicu,
+                    monopol mora sniziti cijenu, ali će prihod svejedno porasti jer je postotno povećanje količine veće
+                    od
+                    postotnog smanjenja cijene. Elastični dio krivulje potražnje odgovara dijelu krivulje ukupnog
+                    prihoda na
+                    dijagramu (b) gdje ona raste.</p>
+                <p>Ako je potražnja neelastična, tada smanjenje cijene smanjuje ukupni prihod jer postotno povećanje
+                    tražene količine nije dovoljno da nadoknadi pad cijene. Ukupni prihod opada dok poduzeće prodaje
+                    dodatne
+                    jedinice unutar neelastičnog dijela krivulje potražnje. Padajući dio krivulje ukupnog prihoda na
+                    dijagramu (b) odgovara tom neelastičnom rasponu potražnje.</p>
+                <p>Podsjetimo se i da sredina linearne krivulje potražnje označava točku u kojoj potražnja postaje
+                    jedinično elastična, točka gdje je elastičnost točno -1. Na dijagramu (b), ta točka odgovara
+                    maksimumu
+                    ukupnog prihoda.</p>
+                <p>Ovaj odnos između cjenovne elastičnosti, potražnje i ukupnog prihoda ima važnu posljedicu za izbor
+                    cijene i količine koje maksimiziraju profit:
+                    Monopol nikada neće odabrati cijenu i količinu u neelastičnom dijelu krivulje potražnje.
+                    Primjerice, ako monopol sa slike naplaćuje cijenu od 3€ i prodaje 7 jedinica, njegov
+                    ukupni
+                    prihod iznosi 21€. Budući da je ta kombinacija u neelastičnom dijelu krivulje potražnje,
+                    poduzeće
+                    bi moglo povećati ukupni prihod povećanjem cijene. Istovremeno bi smanjilo i ukupne troškove jer bi
+                    smanjilo proizvodnju. Dakle, ako monopol djeluje u neelastičnom dijelu svoje krivulje potražnje, ne
+                    maksimizira profit. Viši profit bi ostvario povećanjem cijene i smanjenjem količine.
+                    Zato će monopol nastaviti povećavati cijenu i smanjivati količinu sve dok se ne pomakne u elastični
+                    dio
+                    svoje krivulje potražnje. Profit-maksimizirajući monopol uvijek će odabrati kombinaciju cijene i
+                    količine unutar elastičnog dijela potražnje.</p>
+                <p>Naravno, poduzeće može odabrati i točku na kojoj je potražnja jedinično elastična, u toj točki je
+                    ukupni prihod najveći. No cilj monopola nije maksimizacija prihoda, nego maksimizacija profita.
+                    Rješenje
+                    koje maksimizira prihod neće nužno maksimizirati profit, osim ako su granični troškovi jednaki
+                    nuli.</p>
+
+                <h2>Potražnja i granični prihod</h2>
+                <p>U slučaju savršene konkurencije, dodatni prihod koji poduzeće ostvaruje prodajom dodatne jedinice —
+                    tzv.
+                    granični prihod — jednak je tržišnoj cijeni. Krivulja potražnje poduzeća, koja je vodoravna linija
+                    na
+                    razini tržišne cijene, ujedno je i njegova krivulja graničnog prihoda.
+                    Međutim, monopol može prodati dodatnu jedinicu samo ako snizi cijenu. Ta činjenica komplicira odnos
+                    između krivulje potražnje monopola i njegovog graničnog prihoda.</p>
+                <p>Pretpostavimo da poduzeće s prethodne slike prodaje 2 jedinice po cijeni od 8 eura po jedinici.
+                    Ukupni
+                    prihod tada iznosi 16 eura. Sada želi prodati i treću jedinicu i zanima ga koliki je granični
+                    prihod
+                    te jedinice. Da bi prodalo 3 jedinice umjesto 2, poduzeće mora sniziti cijenu na 7 eura po
+                    jedinici.
+                    Ukupni prihod tada raste na 21€. Granični prihod treće jedinice stoga iznosi 5 eura. Međutim,
+                    cijena po kojoj poduzeće prodaje 3 jedinice iznosi 7 eura. Dakle, granični prihod je manji od
+                    cijene.</p>
+                <p>Da bismo razumjeli zašto je granični prihod treće jedinice manji od njezine cijene, moramo pažljivije
+                    analizirati kako prodaja te jedinice utječe na prihode poduzeća. Poduzeće ostvari 7 eura od
+                    prodaje
+                    treće jedinice. No, kako bi je prodalo, moralo je sniziti cijenu sa 8 na 7 eura — ne samo za treću
+                    jedinicu, već i za prve dvije. Time sada ostvaruje manji prihod i za prve dvije jedinice. Na svakoj
+                    od
+                    njih izgubi po 1 euro, ukupno 2 eura. Dakle, granični prihod treće jedinice je:
+                    7 eura (od treće jedinice) - 2 eura (gubitak na prve dvije) = 5 eura.</p>
+                <p>Granični prihod je manji od cijene za monopol. Sljedeća slika prikazuje odnos između potražnje i
+                    graničnog
+                    prihoda, temeljen na krivulji potražnje s prethodne slike. Kao i obično, granične vrijednosti se
+                    prikazuju u
+                    sredinama intervala.</p>
+                <img src="images/model_monopola4.jpg" width="460px" height="600px">
+                <p>Krivulja graničnog prihoda za monopolskog proizvođača nalazi se ispod njegove krivulje potražnje. Ona
+                    prikazuje dodatni prihod ostvaren prodajom dodatne jedinice. Kao i uvijek, granične vrijednosti se
+                    prikazuju na sredinama odgovarajućih intervala.</p>
+                <p>Kada je krivulja potražnje linearna, kao na slici, krivulja graničnog prihoda može se nacrtati prema
+                    sljedećim pravilima: krivulja graničnog prihoda uvijek se nalazi ispod krivulje potražnje, i
+                    prepolovljuje bilo koju vodoravnu liniju povučenu između okomite osi (osi y) i krivulje potražnje.
+                    Drugim riječima, krivulja graničnog prihoda bit će dvostruko strmija od krivulje potražnje. Krivulja
+                    potražnje na slici dana je jednadžbom <mark><em>Q = 10 - P</em></mark>, što se može zapisati i kao P
+                    = 10 - Q. Krivulja
+                    graničnog prihoda dana je jednadžbom <mark><em>P = 10 - 2Q</em></mark>, što znači da je dvostruko
+                    strmija od krivulje
+                    potražnje.</p>
+                <p>Krivulje graničnog prihoda i potražnje prate ova pravila. Krivulja graničnog prihoda nalazi
+                    se ispod krivulje potražnje i prepolovljuje bilo koju vodoravnu liniju povučenu od vertikalne osi do
+                    krivulje potražnje. Na primjer, kod cijene od 6€ tražena količina je 4. Krivulja graničnog prihoda
+                    tada prolazi kroz količinu 2. Kod cijene od 0, tražena količina je 10; krivulja graničnog prihoda
+                    tada
+                    prolazi kroz količinu 5.</p>
+                <p>Baš kao što postoji veza između krivulje potražnje poduzeća i cjenovne elastičnosti potražnje,
+                    postoji i
+                    veza između krivulje graničnog prihoda i elastičnosti. Tamo gdje je granični prihod pozitivan,
+                    potražnja
+                    je cjenovno elastična. Tamo gdje je granični prihod negativan, potražnja je cjenovno neelastična.
+                    Tamo
+                    gdje je granični prihod jednak nuli, potražnja je jedinično elastična.</p>
+                <div class="definition">
+                    <p>Kada je granični prihod pozitivan, potražnja je cjenovno elastična.</p>
+                </div>
+                <div class="definition">
+                    <p>Kada je granični prihod negativan, potražnja je cjenovno neelastična.</p>
+                </div>
+                <div class="definition">
+                    <p>Kada je granični prihod nula, potražnja je jedinično cjenovno elastična.</p>
+                </div>
+                <p>Poduzeće ne bi proizvodilo dodatnu jedinicu outputa ako je granični prihod negativan. Također, pod
+                    pretpostavkom da proizvodnja dodatne jedinice ima određeni trošak, poduzeće ne bi proizvodilo tu
+                    dodatnu jedinicu ni ako je granični prihod jednak nuli. Budući da će monopolsko poduzeće općenito
+                    poslovati u području gdje je granični prihod pozitivan, ponovno vidimo da će djelovati u elastičnom
+                    dijelu svoje krivulje potražnje.</p>
+
+                <h2>Ravnoteža monopola: primjena pravila granične odluke</h2>
+                <p>Ponašanje usmjereno na maksimizaciju profita uvijek se temelji na pravilu granične odluke: dodatne
+                    jedinice nekog dobra treba proizvoditi sve dok je granični prihod od te dodatne jedinice veći od
+                    graničnog troška. Rješenje koje maksimizira profit nalazi se tamo gdje se granični prihod
+                    izjednačava s
+                    graničnim troškom. Kao i uvijek, poduzeća nastoje maksimizirati ekonomski profit, a troškovi se
+                    mjere u
+                    ekonomskom smislu, odnosno kao alternativni trošak.</p>
+                <p>Slika u nastavku prikazuje krivulju potražnje i pripadajuću krivulju graničnog prihoda s kojom se
+                    suočava
+                    monopolsko poduzeće. Krivulja graničnog troška izgleda kao one koje smo ranije izveli: ona opada u
+                    rasponu outputa u kojem poduzeće doživljava rastuće granične prinose, a zatim raste kako poduzeće
+                    prelazi u fazu opadajućih graničnih prinosa.</p>
+                <img src="images/model_monopola5.jpg" width="500px" height="400px">
+                <p>Monopolsko poduzeće maksimizira profit proizvodnjom količine <em>Q<sub>m</sub></em> u točki G, gdje
+                    se sijeku krivulje
+                    graničnog prihoda i graničnog troška. Tu količinu prodaje po cijeni <em>P<sub>m</sub></em>.</p>
+                <p>Kako bismo odredili količinu koja maksimizira profit, gledamo na koju se količinu sijeku krivulje
+                    graničnog prihoda i graničnog troška (<em>Q<sub>m</sub></em> na slici). Zatim od te količine idemo
+                    vertikalno prema
+                    gore do krivulje potražnje da bismo pronašli cijenu Pm po kojoj poduzeće može prodati tu količinu po
+                    razdoblju. Cijena i količina koje maksimiziraju profit dane su točkom E na krivulji potražnje.</p>
+                <p>Dakle, cijenu i količinu koje maksimiziraju profit monopolske firme određujemo u tri koraka:</p>
+                <ol>
+                    <li>Odredi krivulje potražnje, graničnog prihoda i graničnog troška.</li>
+                    <li>Odaberi razinu outputa na kojoj se sijeku krivulje graničnog prihoda i graničnog troška.</li>
+                    <li>Na temelju krivulje potražnje odredi cijenu po kojoj se ta količina može prodati.</li>
+                </ol>
+                <img src="images/model_monopola6.jpg" width="500px" height="400px">
+                <p>Profit monopolske firme po jedinici jednak je razlici između cijene i prosječnog ukupnog troška.
+                    Ukupan
+                    profit jednak je profitu po jedinici pomnoženom s proizvedenom količinom. Ukupan profit prikazan je
+                    površinom zasjenjenog pravokutnika <em>ATC<sub>m</sub>P<sub>m</sub>EF</em>.</p>
+                <p>Nakon što odredimo cijenu i količinu monopolske firme, možemo izračunati njezin ekonomski profit tako
+                    da
+                    na grafikon s krivuljama potražnje, graničnog prihoda i graničnog troška dodamo i krivulju
+                    prosječnog
+                    ukupnog troška, kao što je prikazano na slici. Prosječni ukupni trošak (<em>ATC</em>) pri
+                    proizvodnji
+                    količine <em>Q<sub>m</sub></em> je <em>ATC<sub>m</sub></em>. Profit po jedinici iznosi
+                    <em>P<sub>m</sub></em> - <em>ATC<sub>m</sub></em>. Ukupan profit dobiva se množenjem proizvodnje
+                    firme, <em>Q<sub>m</sub></em>, s profitom po jedinici, pa je ukupan profit jednak
+                    <em>Q<sub>m</sub></em>(<em>P<sub>m</sub></em> - <em>ATC<sub>m</sub></em>), površini zasjenjenog
+                    pravokutnika na slici.
+                </p>
+
+                <div class="headsup">
+                    <p><strong>Razbijanje mitova o monopolu</strong></p>
+                    <p>Tri su česta pogrešna shvaćanja o monopolu:</p>
+                    <ol>
+                        <li>Budući da nemaju rivala koji prodaju iste proizvode, monopolske firme mogu naplatiti što god
+                            žele.</li>
+                        <li>Monopolisti će naplatiti „koliko god tržište može podnijeti“.</li>
+                        <li>Budući da monopolske firme imaju cijelo tržište za sebe, zajamčena im je ogromna dobit.</li>
+                    </ol>
+                    <p>Nakon što monopolska firma odredi broj jedinica proizvodnje koji
+                        maksimizira profit, cijena po kojoj može prodati tu količinu dobiva se „čitanjem“ cijene s
+                        krivulje potražnje za tu količinu. Ako pokuša prodati količinu <em>Q<sub>m</sub></em> po cijeni
+                        višoj od <em>P<sub>m</sub></em>, dio
+                        proizvodnje ostat će neprodan. Monopolska firma može postaviti svoju cijenu, ali je ograničena
+                        na kombinacije cijene i količine koje leže na njezinoj krivulji potražnje. Ne može jednostavno
+                        „naplatiti što god želi“. A ako „naplati koliko god tržište može podnijeti“, prodat će ili
+                        ništa, ili u najboljem slučaju jednu jedinicu proizvodnje.</p>
+                    <p>Također, monopolskoj firmi nije zajamčen profit. Pogledajmo zadnju sliku. Pretpostavimo da
+                        krivulja
+                        prosječnog ukupnog troška, umjesto da leži ispod krivulje potražnje za neke razine proizvodnje,
+                        u cijelosti leži iznad krivulje potražnje. U tom slučaju, monopol će imati gubitke bez obzira na
+                        to koju cijenu odabere, jer će prosječni ukupni trošak uvijek biti veći od bilo koje cijene koju
+                        bi mogao naplatiti. Kao i u savršenoj konkurenciji, monopolska firma može nastaviti proizvodnju
+                        u kratkom roku sve dok cijena prelazi prosječni varijabilni trošak. U dugom roku, ostat će u
+                        poslovanju samo ako može pokriti sve svoje troškove.</p>
+                </div>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Ako se poduzeće suočava s krivuljom potražnje koja pada, granični prihod je manji od cijene.
+                        </li>
+                        <li>Granični prihod je pozitivan u elastičnom dijelu krivulje potražnje, negativan u
+                            neelastičnom
+                            dijelu, a jednak nuli kada je potražnja jedinično elastična.</li>
+                        <li>Ako se monopolska firma suočava s linearnom krivuljom potražnje, njezina krivulja graničnog
+                            prihoda također je linearna, leži ispod krivulje potražnje i presijeca bilo koju
+                            horizontalnu
+                            liniju povučenu od okomite osi do krivulje potražnje.</li>
+                        <li>Za maksimizaciju profita ili minimizaciju gubitaka, monopolska firma proizvodi količinu pri
+                            kojoj su granični trošak i granični prihod jednaki. Cijena se određuje kao točka na krivulji
+                            potražnje koja odgovara toj količini.</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz72.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tržišta savršene konkurencije - Savršena konkurencija u dugoročnom razdoblju</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="savrsena_konkurencija_dugorocno">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container stay">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <div class="chosen"><a href="#">Savršena konkurencija u dugoročnom razdoblju</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Savršena konkurencija u dugoročnom razdoblju</strong></h1>
+                <p>U dugom roku poduzeće može slobodno prilagoditi sve svoje ulazne faktore. Nova poduzeća mogu ući na
+                    bilo koje tržište, a postojeća ga mogu napustiti. U ovom ćemo odjeljku vidjeti da model savršene
+                    konkurencije predviđa da se u dugoročnom ravnotežnom stanju proizvodnja odvija uz najniži mogući
+                    trošak po jedinici te da svi ekonomski profiti i gubici nestaju.</p>
+
+                <h2>Ekonomski profit i ekonomski gubitak</h2>
+                <p>Ekonomski profiti i gubici imaju ključnu ulogu u modelu savršene konkurencije. Postojanje ekonomskih
+                    profita u nekoj industriji dugoročno privlači nova poduzeća. Kako poduzeća ulaze na tržište,
+                    krivulja ponude pomiče se udesno, cijena pada, a s njom i profit. Ulazak traje sve dok ekonomski
+                    profit ne padne na nulu. Ako poduzeća u industriji ostvaruju ekonomske gubitke, neka će izaći s
+                    tržišta. Krivulja ponude tada se pomiče ulijevo, cijene rastu, a gubici se smanjuju. Izlazak traje
+                    sve dok preostala poduzeća više ne trpe gubitke – dok ekonomski profit ne postane nula.</p>
+                <p>Prije nego što objasnimo kako ulazak i izlazak poduzeća uklanjaju ekonomske profite i gubitke, važno
+                    je razumjeti razliku između računovodstvenog i ekonomskog pojma profita i gubitka.</p>
+
+                <h2>Ekonomski nasuprot računovodstvenom pojmu profita i gubitka</h2>
+                <div class="definition">
+                    <p>Ekonomski profit jednak je ukupnim prihodima umanjenim za ukupne troškove, pri čemu se trošak
+                        mjeri
+                        kao oportunitetni trošak. Ekonomski gubitak (negativni ekonomski profit) nastaje kada ukupni
+                        troškovi premašuju ukupne prihode.</p>
+                </div>
+                <p>Računovođe u troškove uključuju samo eksplicitne troškove. To su izravna plaćanja za proizvodne
+                    faktore poput rada i kapitala, kao i procjene amortizacije. Profit izračunan na temelju samo
+                    eksplicitnih troškova naziva se računovodstveni profit. To je pokazatelj profita koji poduzeća
+                    najčešće prijavljuju; na temelju njega plaćaju poreze, a dionička društva prikazuju ga u svojim
+                    financijskim izvještajima. Da bi izračunao računovodstveni profit, gospodin Gortari, proizvođač
+                    rotkvica, oduzeo bi eksplicitne troškove – poput troškova rada, opreme i drugih materijala – od
+                    prihoda koji ostvaruje.</p>
+                <p>Ekonomisti, za razliku od računovođa, uzimaju u obzir i implicitne troškove. Kada gospodin Gortari ne
+                    bi uzgajao rotkvice, mogao bi s istom zemljom i trudom uzgajati nešto drugo. Recimo da bi u tom
+                    slučaju mogao proizvoditi mrkvu i ostvarivati računovodstveni profit od 250€ mjesečno. Taj
+                    iznos predstavlja oportunitetni trošak – prihod koji propušta time što ne proizvodi mrkvu. Taj
+                    trošak nije eksplicitan; ne pojavljuje se u računovodstvenim izvještajima, ali je dio ekonomskih
+                    troškova. Trošak koji se priznaje u ekonomiji kao oportunitetni, ali nije eksplicitan, naziva se
+                    implicitni trošak.</p>
+
+                <h2>Dugi rok i nulti ekonomski profiti</h2>
+                <p>S obzirom na definiciju ekonomskog profita, jasno je zašto u savršenoj konkurenciji on u dugom roku
+                    mora biti jednak nuli. Pretpostavimo da postoje dvije industrije, i da poduzeća u industriji A
+                    ostvaruju ekonomski profit. To znači da ostvaruju veći povrat od onog koji je dostupan u industriji
+                    B. Poduzeća u industriji B, prema tome, ostvaruju manji povrat – trpe ekonomske gubitke.</p>
+                <p>Uz slobodan ulazak i izlazak, neka će poduzeća iz industrije B izaći i ući u industriju A, gdje mogu
+                    ostvariti veći profit. Time će se krivulja ponude u industriji B pomaknuti ulijevo, cijene i profit
+                    će porasti. Istovremeno, povećana ponuda u industriji A snizit će cijene i smanjiti profite. Ovaj
+                    proces će se nastaviti sve dok poduzeća u obje industrije ne ostvaruju ekonomski profit jednak nuli.
+                    To vodi do važnog dugoročnog zaključka: <em>u sustavu savršene konkurencije, svi ekonomski profiti u
+                        dugom roku nestaju u svim industrijama</em>.</p>
+
+                <h2>Eliminacija ekonomskog profita: uloga ulaska na tržište</h2>
+                <p>Proces putem kojeg ulazak novih poduzeća na tržište eliminira ekonomski profit u dugom roku prikazan
+                    je na slici u nastavku. Cijena rotkvica iznosi 0,40€ po kilogramu. Gospodin Gortari ima prosječni
+                    ukupni trošak od 0,26€ po kilogramu za proizvodnju 6.700
+                    kilograma rotkvica mjesečno. Profit po jedinici iznosi 0,14€ (0,40 − 0,26). Dakle, gospodin Gortari
+                    ostvaruje mjesečni profit od 938€ (= 0,14 × 6.700).</p>
+                <img src="images/savršena1.png" width="720px" height="400px">
+                <p>Ako poduzeća u nekoj industriji ostvaruju ekonomski profit, u dugom roku će doći do ulaska
+                    novih poduzeća. Na slici na dijagramu (b), profit pojedinog poduzeća prikazan je zasjenjenim
+                    područjem. Ulazak novih poduzeća nastavlja se sve dok poduzeća u industriji ne počnu
+                    poslovati na najnižoj točki svojih krivulja prosječnog ukupnog troška, čime ekonomski
+                    profiti padaju na nulu.</p>
+                <p>Profiti u industriji rotkvica u dugom roku privlače nova poduzeća. Dijagram (a) na slici prikazuje
+                    kako se, ulaskom novih poduzeća, krivulja ponude pomiče udesno i cijena rotkvica pada. Nova poduzeća
+                    nastavljaju ulaziti sve dok postoji ekonomski profit — odnosno dok je cijena viša od prosječnog
+                    ukupnog troška (<em>ATC</em>) na dijagramu (b). Kako cijena pada, granični prihod se smanjuje na
+                    <em>MR<sub>2</sub></em>, a poduzeće
+                    smanjuje količinu koju nudi, krećući se duž krivulje graničnog troška (<em>MC</em>) do najniže točke
+                    na
+                    krivulji <em>ATC</em>, pri 0.22€ po kilogramu i proizvodnji od 5,000 kilograma mjesečno. Iako
+                    proizvodnja
+                    pojedinačnih poduzeća pada zbog nižih cijena, sada ima više poduzeća u industriji, pa ukupna
+                    industrijska proizvodnja raste na 13 milijuna kilograma mjesečno na dijagramu (a).
+                </p>
+
+                <h2>Uklanjanje gubitaka: Uloga izlaska</h2>
+                <p>Baš kao što ulazak novih poduzeća u dugom roku uklanja ekonomske profite, tako izlazak poduzeća
+                    uklanja ekonomske gubitke. Na sljedećoj slici, dijagram (a) prikazuje slučaj industrije u kojoj je
+                    tržišna
+                    cijena <em>P<sub>1</sub></em> ispod prosječnog ukupnog troška (<em>ATC</em>). Na dijgramu (b), pri
+                    cijeni <em>P<sub>1</sub></em> jedno poduzeće
+                    proizvodi količinu <em>q<sub>1</sub></em>, pod pretpostavkom da barem pokriva svoj prosječni
+                    varijabilni trošak. Gubitci
+                    poduzeća prikazani su zasjenčenim pravokutnikom omeđenim njegovim prosječnim ukupnim troškom
+                    <em>C<sub>1</sub></em>,
+                    cijenom <em>P<sub>1</sub></em> i količinom proizvodnje <em>q<sub>1</sub></em>.
+                </p>
+                <p>Budući da poduzeća u industriji ostvaruju gubitke, neka će izaći s tržišta. Krivulja ponude na
+                    dijagramu
+                    (a) pomiče se ulijevo i nastavlja se pomicati sve dok poduzeća trpe gubitke. Na kraju se krivulja
+                    ponude pomiče sve do položaja <em>S<sub>2</sub></em>, cijena raste na <em>P<sub>2</sub></em> i
+                    ekonomski profiti se vraćaju na nulu.</p>
+                <img src="images/savršena2.png" width="720px" height="400px">
+                <p>Dijagram (a) prikazuje da pri početnoj cijeni <em>P<sub>1</sub></em> poduzeća u industriji ne mogu
+                    pokriti prosječni ukupni
+                    trošak (<em>MR<sub>1</sub></em> je ispod <em>ATC</em>-a). To potiče neka poduzeća da napuste
+                    industriju, što pomiče krivulju
+                    ponude na dijagramu (a) ulijevo na <em>S<sub>2</sub></em>, smanjuje ukupnu ponudu u industriji na
+                    <em>Q<sub>2</sub></em> i povećava cijenu na
+                    <em>P<sub>2</sub></em>. Pri toj cijeni (<em>MR<sub>2</sub></em>) poduzeća ostvaruju nulti ekonomski
+                    profit i izlazak iz industrije prestaje.
+                </p>
+                <p>Dijagram (b) prikazuje da poduzeće povećava proizvodnju s <em>q<sub>1</sub></em> na
+                    <em>q<sub>2</sub></em>; ukupna ponuda na tržištu na dijagramu
+                    (a) ipak pada jer sada ima manje poduzeća. Primijetite da se na dijagramu (a) količina označava
+                    velikim
+                    slovom <em>Q</em>, dok se na dijagramu (b) označava malim slovom <em>q</em>. Ta se konvencija
+                    koristi kroz cijeli tekst
+                    kako bi se razlikovala količina koju nudi cijelo tržište (<em>Q</em>) od količine koju nudi
+                    pojedinačno
+                    poduzeće (<em>q</em>).
+                </p>
+
+                <h2>Ulazak, izlazak i troškovi proizvodnje</h2>
+                <p>U analizi ulaska i izlaska poduzeća kao reakcije na ekonomski profit ili gubitak u savršeno
+                    konkurentnoj industriji pretpostavili smo da se krivulja prosječnog ukupnog troška (<em>ATC</em>)
+                    pojedinog
+                    poduzeća ne pomiče kad nova poduzeća ulaze ili postojeća izlaze iz industrije. To vrijedi kada
+                    širenje ili smanjenje industrije ne utječe na cijene proizvodnih faktora koje koriste poduzeća. Kada
+                    širenje industrije ne utječe na cijene faktora proizvodnje, riječ je o industriji s konstantnim
+                    troškovima. U nekim slučajevima, međutim, ulazak novih poduzeća može utjecati na cijene inputa.</p>
+                <p>Kada nova poduzeća ulaze na tržište, povećavaju potražnju za proizvodnim faktorima koje industrija
+                    koristi. Ako je industrija značajan korisnik tih faktora, povećanje potražnje može povećati tržišnu
+                    cijenu proizvodnih faktora za sva poduzeća u industriji. Ako se to dogodi, tada će ulazak u
+                    industriju povećati prosječne troškove, istovremeno stvarajući pritisak na smanjenje cijene
+                    proizvoda. Dugoročna ravnoteža i dalje će se postići na razini nultog ekonomskog profita, a poduzeća
+                    će poslovati na najnižoj točki svoje <em>ATC</em> krivulje, no ta će krivulja biti viša nego prije
+                    ulaska
+                    novih poduzeća. Na primjer, pretpostavimo da porast potražnje za novim kućama povećava cijene i
+                    potiče ulazak u građevinsku industriju. To će povećati potražnju za radnicima u građevini i
+                    vjerojatno dovesti do viših plaća, čime će porasti i troškovi.</p>
+                <p>Industrija u kojoj ulazak novih poduzeća podiže cijene proizvodnih faktora i time povećava troškove
+                    proizvodnje naziva se industrijom s rastućim troškovima. Kako se takva industrija dugoročno širi,
+                    cijene će rasti.</p>
+                <p>Neke industrije mogu doživjeti smanjenje cijena inputa tijekom širenja, ulaskom novih poduzeća. To se
+                    može dogoditi jer dobavljači te industrije ostvaruju ekonomije razmjera povećanjem proizvodnje, čime
+                    snižavaju cijene inputa. Širenje industrije može također potaknuti tehnološke promjene koje
+                    snižavaju troškove inputa. To je očito slučaj u računalnoj industriji, koja je bilježila pad
+                    troškova inputa kako se širila. Industrija u kojoj troškovi proizvodnje padaju kako poduzeća ulaze u
+                    dugom roku naziva se industrijom s opadajućim troškovima.</p>
+                <p>Kao što se industrije mogu širiti ulaskom novih poduzeća, mogu se i smanjivati izlaskom postojećih. U
+                    industriji s konstantnim troškovima, izlazak neće utjecati na cijene inputa za preostala poduzeća. U
+                    industriji s rastućim troškovima, izlazak će smanjiti cijene inputa za preostala poduzeća. U
+                    industriji s opadajućim troškovima, cijene inputa mogu rasti kada poduzeća napuste tržište.</p>
+                <p>Ponašanje troškova proizvodnje kako poduzeća u industriji proširuju ili smanjuju svoju proizvodnju
+                    ima važne posljedice za dugoročnu krivulju ponude industrije — krivulju koja povezuje cijenu dobra
+                    ili usluge s količinom proizvedenom nakon što su sve dugoročne prilagodbe na promjenu cijene
+                    dovršene. Svaka točka na dugoročnoj krivulji ponude prikazuje cijenu i količinu pri kojoj poduzeća u
+                    industriji ostvaruju nulti ekonomski profit. Za razliku od kratkoročne tržišne krivulje ponude,
+                    dugoročna krivulja ponude industrije ne pretpostavlja nepromijenjene troškove faktora i broj
+                    poduzeća.</p>
+                <p>Slika u nastavku prikazuje tri dugoročne industrijske krivulje ponude. Na dijagramu (a),
+                    <em>S<sub>CC</sub></em> je dugoročna
+                    krivulja ponude za industriju s konstantnim troškovima. Ona je horizontalna. Ni širenje ni smanjenje
+                    proizvodnje sami po sebi ne utječu na tržišnu cijenu. Na dijagramu (b), <em>S<sub>IC</sub></em> je
+                    dugoročna krivulja ponude
+                    za industriju s rastućim troškovima. Ona raste kako se industrija širi. Na dijagramu (c),
+                    <em>S<sub>DC</sub></em> je
+                    dugoročna krivulja ponude za industriju s opadajućim troškovima. Njezin padajući nagib sugerira pad
+                    cijene kako se industrija širi.
+                </p>
+                <img src="images/savršena3.png" width="740px" height="300px">
+                <p>Dugoročna krivulja ponude za savršeno konkurentnu industriju s konstantnim troškovima je horizontalna
+                    linija, <em>S<sub>CC</sub></em>, prikazana na dijagramu (a). Dugoročna krivulja za industriju s
+                    rastućim troškovima je
+                    krivulja s uzlaznim nagibom, <em>S<sub>IC</sub></em>, kao na dijagramu (b). Dugoročna krivulja
+                    ponude s opadajućim nagibom,
+                    <em>S<sub>DC</sub></em>, za industriju s opadajućim troškovima prikazana je na dijagramu (c).
+                </p>
+
+                <h2>Promjene u potražnji i troškovima proizvodnje</h2>
+                <p>Primarna primjena modela savršene konkurencije je u predviđanju kako će poduzeća reagirati na
+                    promjene u potražnji i u troškovima proizvodnje. Da bismo vidjeli kako poduzeća reagiraju na
+                    određenu promjenu, određujemo kako ta promjena utječe na uvjete potražnje ili troškova, a zatim
+                    promatramo kako se mijenja rješenje koje maksimizira profit u kratkom i dugom roku. Kada utvrdimo
+                    kako bi poduzeća, prema modelu, reagirala na promjenu, tada možemo predvidjeti reakcije poduzeća na
+                    slične promjene u stvarnom svijetu.</p>
+                <p>U primjerima koji slijede, radi jednostavnosti pretpostavit ćemo da ulazak ili izlazak poduzeća ne
+                    utječe na ulazne cijene s kojima se suočavaju poduzeća u industriji. Drugim riječima,
+                    pretpostavljamo industriju s konstantnim troškovima i horizontalnom dugoročnom krivuljom ponude,
+                    sličnom <em>S<sub>CC</sub></em>-u na prethodnoj slici. Također pretpostavljamo da poduzeća pokrivaju
+                    svoje prosječne
+                    varijabilne troškove, pa možemo zanemariti mogućnost zatvaranja.</p>
+
+                <h2>Promjene u potražnji</h2>
+                <p>Promjene u potražnji mogu se dogoditi iz raznih razloga. Može doći do promjena u preferencijama,
+                    dohotku, cijeni srodnih dobara, populaciji ili očekivanjima potrošača. Promjena u potražnji uzrokuje
+                    promjenu tržišne cijene, čime se pomiču krivulje graničnog prihoda (<em>MR</em>) poduzeća u
+                    industriji.</p>
+                <p>Razmotrimo utjecaj promjene potražnje za zobi. Pretpostavimo da nova medicinska saznanja upućuju na
+                    to da konzumacija zobi ne samo da pomaže u prevenciji srčanih bolesti, već i sprječava ćelavost kod
+                    muškaraca. To će, naravno, povećati potražnju za zobi. Da bismo procijenili utjecaj ove promjene,
+                    pretpostavljamo da je industrija savršeno konkurentna i da se u početku nalazi u dugoročnoj
+                    ravnoteži pri cijeni od 1,70€ po bušelu (engl. <em>bushel</em>, angloamerička jedinica za mjerenje
+                    volumena
+                    suhih tvari, u Britaniji je bušel jednak 8 galona ili oko 36.37 litara, dok je u SAD-u malo manji,
+                    oko 35.24 litara). Ekonomska dobit iznosi nula.</p>
+                <p>Početna situacija prikazana je na slici u nastavku. Dijagram (a) prikazuje da je pri cijeni od 1,70€
+                    industrijska količina proizvodnje <em>Q<sub>1</sub></em> (točka A), dok dijagram (b) pokazuje da
+                    tržišna cijena čini
+                    granični prihod <em>MR<sub>1</sub></em> s kojim se suočava jedno poduzeće u industriji. Poduzeće
+                    reagira na tu cijenu
+                    pronalaskom razine proizvodnje na kojoj se sijeku krivulje graničnog troška (<em>MC</em>) i
+                    graničnog prihoda
+                    (<em>MR<sub>1</sub></em>). To implicira razinu proizvodnje <em>q<sub>1</sub></em> u točki A'.</p>
+                <p>Nova medicinska saznanja uzrokuju porast potražnje na <em>D<sub>2</sub></em> na dijagramu (a). To
+                    povećava tržišnu cijenu na
+                    2,30€ (točka B), pa se krivulja graničnog prihoda za pojedinačno poduzeće pomiče prema gore na
+                    <em>MR<sub>2</sub></em> na dijagramu (b). Poduzeće reagira povećanjem proizvodnje na
+                    <em>q<sub>2</sub></em> u kratkom roku (točka B').
+                    Primijetite da su prosječni ukupni troškovi (<em>ATC</em>) poduzeća nešto viši od izvorne razine od
+                    1,70€, zbog oblika U krivulje. Poduzeće ostvaruje ekonomsku dobit prikazanu zasjenjenim
+                    pravokutnikom na dijagramu (b). Ostala poduzeća u industriji također će ostvarivati ekonomsku dobit,
+                    što
+                    će dugoročno privući nova poduzeća u industriju. Novi ulazak uzrokovat će pomak krivulje ponude
+                    udesno; ulazak će se nastaviti sve dok poduzeća ostvaruju ekonomsku dobit. Krivulja ponude u Panelu
+                    (a) pomiče se na <em>S<sub>2</sub></em>, što u dugom roku snižava cijenu natrag na početnu razinu od
+                    1,70€ po
+                    bušelu i vraća ekonomsku dobit na nulu u dugoročnoj ravnoteži. Pojedinačno poduzeće vratit će se na
+                    izvornu razinu proizvodnje <em>q<sub>1</sub></em> (točka A') na dijagramu (b), ali budući da sada u
+                    industriji postoji više
+                    poduzeća, ukupna industrijska proizvodnja raste na <em>Q<sub>3</sub></em> (točka C) na dijagramu
+                    (a).
+                </p>
+                <img src="images/savršena4.png" width="720px" height="400px">
+                <p>Početna ravnotežna cijena i količina u tržištu zobi određene su presjekom krivulja potražnje i ponude
+                    u točki A na dijagramu (a). Povećanje tržišne potražnje za zobi, s <em>D<sub>1</sub></em> na
+                    <em>D<sub>2</sub></em> na dijagramu (a), pomiče
+                    ravnotežno rješenje u točku B. Cijena se u kratkom roku povećava s 1,70€ po bušelu na 2,30€.
+                    Industrijska proizvodnja raste na <em>Q<sub>2</sub></em>. Za pojedinačno poduzeće, porast cijene
+                    povećava
+                    granični prihod s <em>MR<sub>1</sub></em> na <em>MR<sub>2</sub></em>; poduzeće reagira u kratkom
+                    roku povećanjem svoje proizvodnje na <em>q<sub>2</sub></em>.
+                    Ostvaruje ekonomsku dobit prikazanu zasjenjenim pravokutnikom. Dugoročno, mogućnost ostvarivanja
+                    dobiti privlači nova poduzeća. U industriji s konstantnim troškovima, kratkoročna krivulja ponude
+                    pomiče se na <em>S<sub>2</sub></em>; tržišna ravnoteža sada prelazi u točku C na dijagramu (a).
+                    Tržišna cijena se vraća na
+                    1,70€. Krivulja potražnje pojedinog poduzeća vraća se na <em>MR<sub>1</sub></em>, a njegova
+                    proizvodnja opada na
+                    izvornu razinu, <em>q<sub>1</sub></em>. Ukupna industrijska proizvodnja porasla je na
+                    <em>Q<sub>3</sub></em> jer sada postoji više poduzeća.
+                </p>
+                <p>Smanjenje potražnje dovelo bi do pada cijene, pomičući graničnu krivulju prihoda svakog poduzeća
+                    prema dolje. Poduzeća bi doživjela ekonomske gubitke, što bi dugoročno uzrokovalo izlazak nekih
+                    poduzeća iz industrije i pomicanje krivulje ponude ulijevo. Cijena bi se na kraju ponovno popela na
+                    svoju izvornu razinu, pod pretpostavkom da promjene u industrijskoj proizvodnji ne uzrokuju promjene
+                    u cijenama ulaznih faktora. U industriji bi ostalo manje poduzeća, ali bi svako poduzeće na kraju
+                    proizvodilo istu količinu kao i prije.</p>
+
+                <h2>Promjene u troškovima proizvodnje</h2>
+                <p>Troškovi poduzeća mijenjaju se ako se promijene troškovi njegovih inputa. Također se mijenjaju ako
+                    poduzeće može iskoristiti neku tehnološku promjenu. Promjene u troškovima proizvodnje pomiču
+                    krivulju prosječnog ukupnog troška (<em>ATC</em>). Ako su zahvaćeni varijabilni troškovi poduzeća,
+                    pomaknut
+                    će se i njegove krivulje graničnih troškova (<em>MC</em>). Svaka promjena u graničnom trošku
+                    uzrokuje sličnu
+                    promjenu u industrijskoj ponudi, jer se industrijska ponuda dobiva zbrajanjem krivulja graničnih
+                    troškova pojedinih poduzeća.</p>
+                <p>Pretpostavimo da smanjenje cijene nafte smanjuje trošak pružanja usluge promjene ulja za automobile.
+                    Pretpostavit ćemo da je industrija izmjene ulja savršeno konkurentna i da se u početku nalazi u
+                    dugoročnoj ravnoteži po cijeni od 27€ po promjeni ulja, kao što je prikazano na dijagramu (a).
+                    Pretpostavimo da to smanjenje cijene nafte smanjuje trošak izmjene ulja za 3€.
+                </p>
+                <img src="images/savršena5.png" width="720px" height="400px">
+                <p>Početna ravnotežna cijena od 27€ i količina <em>Q<sub>1</sub></em> za promjenu ulja automobila
+                    određuju se
+                    presjekom tržišne potražnje, <em>D<sub>1</sub></em>, i tržišne ponude, <em>S<sub>1</sub></em>, na
+                    dijagramu (a). Industrija je u dugoročnoj
+                    ravnoteži; tipično poduzeće, prikazano na dijagramu (b), ostvaruje nulti ekonomski profit.</p>
+                <p>Smanjenje cijene nafte smanjuje granične i prosječne ukupne troškove proizvodnje izmjene ulja za 3€.
+                    Granična krivulja troškova poduzeća pomiče se na <em>MC<sub>2</sub></em>, a krivulja prosječnog
+                    ukupnog troška
+                    na <em>ATC<sub>2</sub></em>. Kratkoročna tržišna krivulja ponude pomiče se prema dolje za 3€ na
+                    <em>S<sub>2</sub></em>. Tržišna cijena
+                    pada na 26€; poduzeće povećava proizvodnju na <em>q<sub>2</sub></em> i ostvaruje ekonomski profit
+                    koji je prikazan
+                    sjenčanim pravokutnikom. U dugom roku, prilika za profit pomiče tržišnu ponudu na
+                    <em>S<sub>3</sub></em>. Cijena pada na
+                    24€, a poduzeće smanjuje proizvodnju na početnu razinu <em>q<sub>1</sub></em>. Opet ostvaruje nulti
+                    ekonomski
+                    profit. Industrijska proizvodnja na dijagramu (a) raste na <em>Q<sub>3</sub></em> zbog većeg broja
+                    poduzeća; cijena je pala
+                    za pun iznos smanjenja troškova proizvodnje.
+                </p>
+                <p>Smanjenje troškova proizvodnje pomiče prema dolje krivulje troškova poduzeća. Krivulje prosječnog
+                    ukupnog i graničnog troška pomiču se prema dolje, kao što je prikazano na dijagramu (b). Na
+                    dijagramu (a),
+                    krivulja ponude pomiče se sa <em>S<sub>1</sub></em> na <em>S<sub>2</sub></em>. Industrijska krivulja
+                    ponude sastoji se od graničnih krivulja
+                    troškova pojedinih poduzeća; budući da se svaka pomaknula prema dolje za 3€, i krivulja
+                    industrijske ponude pomiče se prema dolje za isti iznos.</p>
+
+                <p>Primijetite da cijena u kratkom roku pada na 26€, ali ne pada za cijelih 3€ koliko iznosi
+                    smanjenje troškova. To je zato što su krivulje ponude i potražnje nagnute. Dok se krivulja ponude
+                    pomiče prema dolje za €3, njezin presjek s krivuljom potražnje pada za manje od 3€.
+                    Poduzeće na dijagramu (b) reagira na nižu cijenu i niže troškove povećanjem proizvodnje na
+                    <em>q<sub>2</sub></em>, gdje se
+                    presijecaju <em>MC<sub>2</sub></em> i <em>MR<sub>2</sub></em>. To ostavlja poduzeća u industriji s
+                    ekonomskim profitom, koji je prikazan
+                    sjenčanim pravokutnikom na dijagramu (b). Profit privlači ulazak novih poduzeća na tržište u dugom
+                    roku,
+                    pomičući krivulju ponude udesno na <em>S<sub>3</sub></em> na dijagramu (a). Ulazak će se nastaviti
+                    dok poduzeća ostvaruju
+                    ekonomski profit - odnosno dok cijena ne padne za puni iznos smanjenja troškova od 3€. Cijena
+                    pada na 24€, proizvodnja industrije raste na <em>Q<sub>3</sub></em>, a proizvodnja pojedinog
+                    poduzeća vraća se na
+                    početnu razinu <em>q<sub>1</sub></em>.
+                </p>
+                <p>Povećanje varijabilnih troškova pomaknulo bi krivulje prosječnog ukupnog, prosječnog varijabilnog i
+                    graničnog troška prema gore. Isto bi se dogodilo i s industrijskom krivuljom ponude koja bi se
+                    pomaknula prema gore za isti iznos. U kratkom roku rezultat bi bio rast cijena, ali manji od
+                    povećanja troškova po jedinici. Poduzeća bi imala ekonomske gubitke, što bi u dugom roku uzrokovalo
+                    izlazak poduzeća s tržišta. Na kraju bi cijena porasla za puni iznos povećanja troškova proizvodnje.
+                </p>
+                <p>Neki porasti troškova neće utjecati na granične troškove. Pretpostavimo, na primjer, da se poduzećima
+                    u određenoj industriji naplaćuje godišnja licenca u iznosu od 5.000 eura. Ta naknada je fiksni
+                    trošak i ne utječe na granične troškove. Uvođenje takve naknade pomiče krivulju prosječnog ukupnog
+                    troška prema gore, ali ne mijenja krivulju graničnog troška. U kratkom roku nema promjene ni u
+                    cijeni ni u količini. Budući da poduzeća trpe ekonomske gubitke, doći će do izlaska poduzeća u dugom
+                    roku. Cijene će na kraju porasti dovoljno da pokriju troškove naknade, ostavljajući preostala
+                    poduzeća u industriji s nulom ekonomskog profita.</p>
+                <p>Cijena će se promijeniti da odražava svaku promjenu koju primijetimo u troškovima proizvodnje.
+                    Promjena varijabilnih troškova uzrokuje promjenu cijene u kratkom roku. U dugom roku, svaka promjena
+                    prosječnog ukupnog troška mijenja cijenu za isti iznos.</p>
+                <p>Poruka dugoročne ravnoteže u konkurentnom tržištu je duboka: <em><mark>krajnji korisnici inovacija
+                            koje
+                            poduzeća uvode su potrošači</mark></em>. Poduzeća u savršeno konkurentnom tržištu u dugom
+                    roku ostvaruju nulti
+                    ekonomski profit. Iako poduzeća mogu ostvarivati računovodstvene profite u dugom roku, ne mogu
+                    ostvarivati ekonomske profite.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Ekonomski pojam profita razlikuje se od računovodstvenog profita. Računovodstveni pojam
+                            obuhvaća samo eksplicitne troškove, dok ekonomski pojam profita uključuje i eksplicitne i
+                            implicitne troškove.</li>
+                        <li>Postojanje ekonomskih profita privlači ulazak novih tvrtki, ekonomski gubici dovode do
+                            izlaska, a u dugoročnom ravnotežnom stanju, tvrtke u savršeno konkurentnoj industriji
+                            ostvaruju nulti ekonomski profit.</li>
+                        <li>Dugoročna krivulja ponude u industriji u kojoj širenje ne mijenja cijene ulaznih faktora
+                            (industrija s konstantnim troškovima) je horizontalna linija.
+                            Dugoročna krivulja ponude za industriju u kojoj proizvodni troškovi rastu kako se povećava
+                            proizvodnja (industrija s rastućim troškovima) ima uzlazni nagib.
+                            Dugoročna krivulja ponude za industriju u kojoj proizvodni troškovi padaju kako se
+                            proizvodnja povećava (industrija s padajućim troškovima) ima silazni nagib.</li>
+                        <li> Na savršeno konkurentnom tržištu u dugoročnoj ravnoteži, povećanje potražnje stvara
+                            ekonomski profit u kratkom roku i potiče ulazak novih tvrtki u dugom roku; smanjenje
+                            potražnje stvara ekonomske gubitke (negativne ekonomske profite) u kratkom roku i prisiljava
+                            neke tvrtke da napuste industriju u dugom roku.</li>
+                        <li> Kada se proizvodni troškovi promijene, cijena će se u kratkom roku mijenjati manje od
+                            promjene proizvodnog troška.
+                            Cijena će se u dugom roku u potpunosti prilagoditi kako bi odražavala promjenu proizvodnog
+                            troška.</li>
+                        <li> Promjena fiksnih troškova neće utjecati na cijenu ili proizvodnju u kratkom roku. Ona će
+                            potaknuti ulazak ili izlazak u dugom roku tako da će se cijena promijeniti dovoljno da
+                            tvrtke ostvare nulti ekonomski profit.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz63.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

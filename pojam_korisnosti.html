@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analiza izbora potrošača - Pojam korisnosti</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="pojam_korisnosti">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container stay">
+            <div class="chosen"><a href="#">Pojam korisnosti</a></div>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Nadnice i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="top-right-menu" id="userSection">
+
+    </div>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Pojam korisnosti</strong></h1>
+                <p>Zašto kupujete baš ona dobra i usluge koje kupujete? Vjerojatno zato što vam one pružaju
+                    zadovoljstvo, osjećate se bolje jer ste ih kupili. Ekonomisti to zadovoljstvo nazivaju korisnošću.
+                </p>
+
+                <p>Pojam korisnosti teško je precizno odrediti. Osoba koja konzumira neko dobro, poput breskvi, dobiva
+                    korisnost iz njihova konzumiranja. No, tu korisnost ne možemo izmjeriti na isti način kao što možemo
+                    izmjeriti težinu ili kalorijsku vrijednost breskve. Ne postoji vaga kojom bismo mogli utvrditi
+                    količinu korisnosti koju breskva pruža.</p>
+                <p>Francis Edgeworth, jedan od najvažnijih teoretičara ponašanja potrošača, zamislio je uređaj koji je
+                    nazvao <em>hedonimetar</em> (prema hedonizmu, težnji za užitkom): „<em>Neka znanosti o užitku bude
+                        dopušteno ono što je dopušteno znanosti o energiji; zamisliti idealno savršen instrument,
+                        psihofizički stroj koji neprestano bilježi razinu užitka koji doživljava pojedinac... U trenutku
+                        do
+                        trenutka hedonimetar se mijenja; osjetljivi pokazivač sada treperi pod naletima strasti, sada se
+                        smiruje pod utjecajem intelektualne aktivnosti, sada satima ostaje blizu nule, ili pak iznenada
+                        skače prema beskonačnosti.</em>” (Edgeworth, F. Y., 1967)</p>
+                <p>Možda će jednog dana hedonimetar zaista biti izumljen. Korisnost koju bi mjerio ne bi bila svojstvo
+                    samih dobara, već reakcija svakog potrošača na ta dobra. Korisnost breskve ne postoji u samoj
+                    breskvi, nego u preferencijama osobe koja je konzumira. Jedan potrošač može biti oduševljen
+                    breskvom; drugome može biti samo „u redu”.</p>
+                <p>Kada govorimo o maksimiziranju korisnosti, govorimo dakle o maksimiziranju nečega što ne možemo
+                    izravno izmjeriti. Ipak, pretpostavljamo da se svaki potrošač ponaša kao da može mjeriti korisnost i
+                    organizira svoju potrošnju tako da korisnost koju ostvaruje bude što veća.</p>
+
+                <h2>Ukupna korisnost</h2>
+                <div class="definition">
+                    <p>Kad bismo mogli mjeriti korisnost, ukupna korisnost bi predstavljala broj jedinica korisnosti
+                        koje potrošač dobiva konzumiranjem određene količine nekog dobra, usluge ili aktivnosti tijekom
+                        određenog vremenskog razdoblja. Što je ukupna korisnost potrošača veća, to je viša razina
+                        njegova zadovoljstva.</p>
+                </div>
+                <h2>Granična korisnost</h2>
+                <div class="definition">
+                    <p>Granična korisnost je iznos za koji se ukupna korisnost povećava konzumacijom dodatne jedinice
+                        nekog dobra, usluge ili aktivnosti, uz nepromijenjene ostale uvjete.</p>
+                </div>
+                <p>Zamislite da ste jako žedni i odlučite popiti gazirani sok. Konzumacija tog soka značajno povećava
+                    vašu korisnost. Ako popijete još jedan, on će vjerojatno povećati vašu korisnost manje nego prvi.
+                    Treći će još manje. Ova tendencija pada granične korisnosti s povećanjem potrošnje u određenom
+                    razdoblju naziva se zakon opadajuće granične korisnosti. Taj zakon podrazumijeva da će sva dobra i
+                    usluge na kraju imati krivulje granične korisnosti s negativnim nagibom. To je zakon koji stoji iza
+                    negativno nagnute krivulje granične koristi kod potrošačkih izbora, o kojoj smo govorili u poglavlju
+                    o tržištima, maksimiziranju i učinkovitosti.</p>
+                <p>Jedan način da se ovaj učinak bolje razumije jest prisjetiti se posljednjeg posjeta restoranu tipa
+                    „jedi koliko možeš”. Jeste li jeli samo jednu vrstu hrane? Jeste li jeli neograničeno? Ne, zbog
+                    zakona opadajuće granične korisnosti. Kako ste konzumirali sve više jedne vrste hrane, njezina
+                    granična korisnost je padala. Došli ste do točke kada je granična korisnost nekog drugog jela
+                    postala viša, pa ste se prebacili na njega. Na kraju nije ostalo nijedno jelo čija bi granična
+                    korisnost bila dovoljno visoka da biste ga nastavili jesti – i stali ste.</p>
+                <p>Što bi bilo da zakon opadajuće granične korisnosti ne vrijedi? Kako bi izgledao svijet u kojem je
+                    granična korisnost stalna ili čak rastuća? Zamislite ponovno restoran i pretpostavite da imate
+                    neuobičajene preferencije: vaše omiljeno jelo je špinat u umaku. Počinjete s njim jer vam pruža
+                    najveću graničnu korisnost među svim opcijama. Kako jedete sve više špinata, njegova granična
+                    korisnost ne opada, ostaje viša od bilo kojeg drugog jela. Ako konzumacija špinata ne povećava
+                    graničnu korisnost druge hrane, nastavit ćete jesti isključivo špinat. I nećete stati dok ne
+                    dosegnete granice kapaciteta svoga tijela (ili strpljenja voditelja restorana). Nevrijednost zakona
+                    opadajuće granične korisnosti tako bi dovela do pretjerane konzumacije jednog jedinog dobra uz
+                    potpuno zanemarivanje svih ostalih. Budući da toga u stvarnosti nema, razumno je pretpostaviti da
+                    <mark>granična korisnost nakon određene razine potrošnje opada</mark>.
+                </p>
+
+                <h2>Maksimiziranje korisnosti</h2>
+                <p>Ekonomisti pretpostavljaju da se potrošači ponašaju na način koji je u skladu s maksimiziranjem
+                    korisnosti. Kako bismo razumjeli kako potrošači to postižu, primijenit ćemo pravilo granične odluke.
+                    No, prije toga moramo uzeti u obzir činjenicu da je mogućnost potrošača da kupuju dobra i usluge
+                    ograničena njihovim budžetom.</p>
+
+                <h2>Budžetsko ograničenje</h2>
+                <p>Pretpostavljamo da je cilj svakog potrošača maksimizirati ukupnu korisnost. Znači li to da će osoba
+                    konzumirati svako dobro na razini koja donosi maksimalnu moguću korisnost? Općenito, odgovor je –
+                    ne. Naše potrošačke odluke ograničene su raspoloživim dohotkom i cijenama koje moramo platiti.
+                    Pretpostavimo, na primjer, da možete potrošiti samo 25 eura mjesečno na zabavu, a cijena odlaska u
+                    kino iznosi 5 eura. Da bi postigli maksimalnu ukupnu korisnost od gledanja filmova, morate premašiti
+                    svoj budžet za zabavu. Budući da pretpostavljamo da to ne možete učiniti, morate organizirati svoju
+                    potrošnju tako da vaši ukupni izdaci ne prelaze budžetsko ograničenje – ograničenje prema kojem
+                    ukupna potrošnja ne smije nadmašiti raspoloživi budžet.</p>
+                <p>Pretpostavimo dalje da, osim filmova, uživate i u koncertima, a prosječna cijena ulaznice za koncert
+                    je 10 eura. Morate odabrati broj filmova koje ćete pogledati i koncerata kojima ćete prisustvovati
+                    tako da mjesečna potrošnja na ta dva dobra ne premaši njegov budžet.</p>
+                <p>Pojedinci, naravno, mogu odlučiti i štedjeti ili posuđivati. Kada to uzmemo u obzir, promatramo
+                    budžetsko ograničenje ne samo za jedan vremenski period, nego za više njih. Na primjer, ekonomisti
+                    često analiziraju budžetska ograničenja kroz čitav život potrošača. Potrošač može u nekim godinama
+                    štedjeti za buduću potrošnju, a u drugim posuđivati na temelju budućeg dohotka za sadašnju
+                    potrošnju. Bez obzira na vremenski period, potrošnja potrošača bit će ograničena njegovim ili
+                    njezinim budžetom.</p>
+                <p>Radi pojednostavljenja analize, pretpostavit ćemo da se potrošnja potrošača u bilo kojem razdoblju
+                    temelji na budžetu dostupnom u tom razdoblju. U ovoj analizi potrošači ni ne štede ni ne posuđuju.
+                    Mogli bismo proširiti analizu na više razdoblja i dobiti iste temeljne zaključke koje ćemo
+                    ustanoviti u okviru jednog razdoblja. Također ćemo provesti analizu proučavanjem izbora potrošača
+                    između samo dva dobra. I opet, analiza bi se mogla proširiti na više dobara, a osnovni zaključci bi
+                    i dalje vrijedili.</p>
+
+                <h2>Primjena pravila granične odluke</h2>
+                <p>Budući da se može očekivati da će potrošači potrošiti raspoloživi budžet, maksimizacija korisnosti
+                    svodi se na raspoređivanje te potrošnje na način koji donosi najveću moguću ukupnu korisnost. Ako se
+                    potrošač odluči potrošiti više na jedno dobro, mora potrošiti manje na neko drugo kako bi ostao
+                    unutar budžetskog ograničenja.</p>
+                <p>Pravilo granične odluke kaže da se neka aktivnost treba proširiti ako njezina granična korist
+                    premašuje granični trošak. Granična korist ove aktivnosti je korisnost dobivena trošenjem dodatnog 1
+                    dolara na neko dobro. Granični trošak je korisnost izgubljena jer se taj 1 dolar nije potrošio na
+                    neko drugo dobro.</p>
+                <p>Kolika se korisnost dobiva trošenjem dodatnog 1 dolara na neko dobro? To je granična korisnost tog
+                    dobra podijeljena s njegovom cijenom. Na primjer, korisnost dobivena trošenjem dodatnog dolara na
+                    dobro X iznosi:</p>
+                <div class="equation"><img src="images/korisnost1.jpg" width="100px" height="100px"></div>
+                <p>Ta dodatna korisnost predstavlja graničnu korist od trošenja još jednog dolara na to dobro.</p>
+                <p>Pretpostavimo da je granična korisnost dobra X jednaka 4, a njegova cijena 2 eura. Tada dodatni euro
+                    potrošen na X donosi 2 dodatne jedinice korisnosti (MU<sub>X</sub>/P<sub>X</sub> = 4/2 = 2). Ako je granična korisnost
+                    dobra X jednaka 1, a njegova cijena također 2 eura, tada dodatni euro potrošen na X donosi samo 0,5
+                    dodatnih jedinica korisnosti (MU<sub>X</sub>/P<sub>X</sub> = 1/2 = 0,5).</p>
+                <p>Gubitak korisnosti koji nastaje trošenjem 1 dolara manje na neko drugo dobro računa se na isti način:
+                    kao granična korisnost podijeljena s cijenom. Granični trošak za potrošača pri smanjenju potrošnje
+                    na neko dobro iznosi onoliko koliko korisnosti je mogao dobiti da je taj dolar ipak potrošen na to
+                    dobro.</p>
+                <p>Pretpostavimo sada da potrošač dobiva više korisnosti trošeći dodatni euro na dobro X nego na dobro
+                    Y:</p>
+                <div class="equation"><img src="images/korisnost2.jpg" width="220px" height="100px"></div>
+                <P>Granična korist preusmjeravanja 1 eura s dobra Y na potrošnju dobra X veća je od graničnog troška. U
+                    smislu korisnosti, dobitak od trošenja dodatnog dolara na dobro X veći je od gubitka korisnosti zbog
+                    trošenja 1 dolara manje na dobro Y. Potrošač može povećati ukupnu korisnost tako da dio potrošnje
+                    prebaci s dobra Y na dobro X.</p>
+                <p>Međutim, kako potrošač kupuje sve više dobra X, a sve manje dobra Y, mijenjaju se granične korisnosti
+                    ta dva dobra. <mark><strong>Zakon opadajuće granične korisnosti kaže da će granična korisnost dobra
+                            X padati kako potrošač konzumira sve više tog dobra, dok će granična korisnost dobra Y rasti
+                            kako se njegova potrošnja smanjuje.</strong></mark> Rezultat toga je da će vrijednost lijeve
+                    strane prethodne jednadžbe opadati, a vrijednost desne strane rasti kako potrošač preusmjerava
+                    potrošnju s Y na X. Kada su obje strane jednake, ukupna korisnost bit će maksimalna. U smislu
+                    pravila granične odluke, potrošač tada doseže točku u kojoj je granična korist aktivnosti (trošenja
+                    više na dobro X) jednaka graničnom trošku:</p>
+                <div class="equation"><img src="images/korisnost3.jpg" width="220px" height="100px"></div>
+                <p>Ovaj rezultat možemo proširiti na svu robu i usluge koje potrošač koristi. Maksimizacija korisnosti
+                    zahtijeva da omjer granične korisnosti i cijene bude jednak za sve njih, što je prikazano u
+                    sljedećoj jednadžbi:</p>
+                <div class="equation"><img src="images/korisnost4.jpg" width="520px" height="140px"></div>
+                <p>Jednadžba izražava uvjet za maksimizaciju korisnosti: korisnost je maksimizirana kada ukupna
+                    potrošnja odgovara raspoloživom proračunu i kada su omjeri granične korisnosti i cijena jednaki za
+                    svu robu i usluge.</p>
+                <p>Razmotrimo, na primjer, kupca predstavljenog na početku ovog poglavlja. Prilikom prelaska s keksa na
+                    sladoled, kupac je očito smatrao da je granična korisnost trošenja dodatnog dolara na sladoled veća
+                    od granične korisnosti trošenja dodatnog dolara na kekse. U terminima prve jednadžbe, ako je dobro X
+                    sladoled, a dobro Y keksi, kupac je smanjio vrijednost lijeve strane jednadžbe i time se približio
+                    uvjetu maksimizacije korisnosti, kako je izraženo u prvoj jednadžbi.</p>
+
+                <h2>Problem djeljivosti</h2>
+                <p>Kako bismo primijenili pravilo granične odluke na maksimizaciju korisnosti, dobra moraju biti
+                    djeljiva; to znači da ih mora biti moguće kupovati u bilo kojoj količini. U suprotnom, ne možemo
+                    smisleno govoriti o tome da potrošimo jedan dolar više ili manje na neko dobro. Strogo gledano,
+                    međutim, malo je dobara potpuno djeljivo.</p>
+                <p>Čak i mala kupnja, poput sladoleda na štapiću, ne zadovoljava strogi kriterij djeljivosti; trgovci
+                    obično ne gledaju blagonaklono na zahtjeve da se kupi polovica sladoleda koji košta 2 dolara, ako
+                    potrošač želi potrošiti dodatni dolar na sladoled. Može li potrošač kupiti "malo više" kino
+                    ulaznice, a kamoli "malo više" automobila?</p>
+                <p>U slučaju automobila, količina se može shvatiti kao skup karakteristika samog vozila. Automobil s CD
+                    uređajem može se smatrati "više automobila" u odnosu na onaj koji ima samo kazetofon. No iako ovakvo
+                    rastezanje pojma količine donekle pomaže, i dalje je teško zamisliti da se "više automobila" može
+                    kupiti za dodatni dolar.</p>
+                <p>Ipak, važno je zapamtiti da se ovdje bavimo modelom. U stvarnom svijetu potrošači možda neće moći
+                    točno zadovoljiti prethodnu jednadžbu. Model ipak predviđa da će se ponašati tako da joj se približe
+                    što je više moguće.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Korisnost nekog dobra ili usluge određena je time koliko zadovoljstva pojedini potrošač
+                            dobiva njegovom konzumacijom. Korisnost nije osobina koja se nalazi u samom dobru ili
+                            usluzi.
+                        </li>
+                        <li>Ukupna korisnost je pojmovna mjera broja jedinica korisnosti koje potrošač ostvaruje
+                            konzumacijom nekog dobra, usluge ili aktivnosti. Granična korisnost je porast ukupne
+                            korisnosti
+                            dobiven konzumiranjem jedne dodatne jedinice tog dobra, usluge ili aktivnosti.</li>
+                        <li>Kako potrošač konzumira sve više nekog dobra ili usluge, granična korisnost tog dobra pada.
+                        </li>
+                        <li>Maksimizacija korisnosti podrazumijeva traženje najveće moguće ukupne korisnosti unutar
+                            zadanog proračuna.</li>
+                        <li>Korisnost je maksimizirana kada ukupna potrošnja odgovara raspoloživom proračunu i kada su
+                            omjeri granične korisnosti i cijena jednaki za svu robu i usluge koje potrošač konzumira, to
+                            je uvjet za maksimizaciju korisnosti.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz41.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

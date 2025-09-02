@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezultati kvizova</title>
+    <link rel="stylesheet" href="styles/rezultati_kvizova.css" />
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="zaglavlje">
+        <div class="lijevo">
+            <a href="first_page.html" class="strelica"><strong>⇐ Povratak</strong></a>
+        </div>
+    </header>
+
+    <div class="sadrzaj-wrapper">
+        <div class="sadrzaj">
+            <h1 class="naslov">Rezultati</h1>
+            <hr>
+
+            <nav class="navigacija">
+                <a href="#" class="active">REZULTATI KVIZOVA</a>
+                <a href="rezultati_testova.html">REZULTATI TESTOVA</a>
+
+            </nav>
+            <hr>
+            <div class="flex-row">
+                <div class="card1">
+                    <div class="tabela-container">
+                        <table id="rezultatiTablica">
+                            <thead>
+                                <tr>
+                                    <th>Kviz</th>
+                                    <th>Najbolji rezultat</th>
+                                    <th>Najbolji postotak</th>
+                                    <th>Datum</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <div id="pieChartContainer"></div>
+                </div>
+            </div>
+
+            <div class="card3">
+                <div class="kviz-izbornik">
+                    <select id="kvizSelect"></select>
+                </div>
+                <canvas id="napredakCanvas" width="1000" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h2 class="footer-title">Nastavi s učenjem...</h2>
+        <div class="footer-columns">
+            <ul>
+                <li><a href="definicija_ekonomije.html">Definicija ekonomije</a></li>
+                <li><a href="područje_ekonomije.html">Područje ekonomije</a></li>
+                <li><a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a></li>
+                <li><a href="ponuda.html">Ponuda</a></li>
+                <li><a href="potražnja.html">Potražnja</a></li>
+            </ul>
+            <ul>
+                <li><a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a></li>
+                <li><a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a></li>
+                <li><a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a></li>
+                <li><a href="pojam_korisnosti.html">Pojam korisnosti</a></li>
+                <li><a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a></li>
+            </ul>
+            <ul>
+                <li><a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje</a></li>
+                <li><a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a></li>
+                <li><a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a></li>
+                <li><a href="model.html">Model savršene konkurencije</a></li>
+                <li><a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a></li>
+            </ul>
+            <ul>
+                <li><a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a></li>
+                <li><a href="priroda_monopola.html">Priroda monopola</a></li>
+                <li><a href="model_monopola.html">Model monopola</a></li>
+                <li><a href="procjena_monopola.html">Procjena monopola</a></li>
+                <li><a href="potražnja_za_radom.html">Potražnja za radom</a></li>
+            </ul>
+            <ul>
+                <li><a href="ponuda_radne_snage.html">Ponuda radne snage</a></li>
+                <li><a href="funkcioniranje.html">Funkcioniranje tržišta rada</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/rezultati_kvizova.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smith - Aplikacija za ekonomsku edukaciju</title>
+    <link rel="stylesheet" href="styles/first_page_style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="upper-part">
+        <header class="zaglavlje">
+            <div class="lijevo">
+                <img src="images/Smith logo.png" alt="Logo" class="logo" />
+                <span class="ime-aplikacije">Smith</span>
+            </div>
+            <nav class="navigacija">
+                <a href="#" class="active">UPUTE</a>
+                <a href="definicija_ekonomije.html">KRENITE S UČENJEM ➔</a>
+                <a href="kvizovi.html">KVIZOVI</a>
+                <a href="testovi.html">TESTOVI</a>
+            </nav>
+
+            <div class="desno">
+                <div class="korisnik-section" id="korisnikSection" style="display: none;">
+                    <span id="korisnickoIme" class="korisnik"></span>
+                    <div class="dropdown" id="dropdownMeni">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks" style="display: none;">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-section">
+            <div class="title">
+                <h1 class="naslov">UPUTE ZA</h1>
+                <h1 class="naslov2">KORIŠTENJE APLIKACIJE</h1>
+                <h3 class="podnaslov">Dobrodošli u Smith web aplikaciju za ekonomsku edukaciju. Na jednome mjestu možete
+                    pronaći lekcije te provjeriti svoje znanje putem kvizova i testova iz raznih ekonomskih područja.
+                    <em>Sretno s učenjem!</em>
+                </h3>
+            </div>
+
+            <div class="header-img">
+                <img src="images/first_page_pozadina.png" alt="Pozadinska slika">
+            </div>
+        </div>
+    </div>
+
+    <div class="sadrzaj">
+        <div class="sadrzaj-section">
+            <div class="slika">
+                <img src="images/firstpage_2.png" alt="Što je Smith?">
+            </div>
+            <div class="tekst">
+                <h2><strong>Što je Smith?</strong></h2>
+                <p>
+                    Smith je web aplikacija koja korisnicima omogućava učenje ekonomskih pojmova kroz interaktivne
+                    module.
+                    Provjera znanja obavlja se putem kvizova i testova, a za uspješno riješene testove korisnici
+                    dobivaju
+                    certifikate.
+                </p>
+                <p>Smith omogućava korisnicima da prate napredak kroz vizualne prikaze rezultata, primjenjuju naučeno
+                    znanje u praktičnim primjerima i stalno uspoređuju svoj napredak s prethodnim rezultatima.</p>
+            </div>
+        </div>
+        <div class="break">
+            <p>✤ ✤ ✤</p>
+        </div>
+        <div class="sadrzaj-section reverse">
+            <div class="slika">
+                <img src="images/firstpage_3.png" alt="Kome je aplikacija namijenjena?">
+            </div>
+            <div class="tekst">
+                <h2><strong>Kome je aplikacija namijenjena?</strong></h2>
+                <p>Aplikacija Smith namijenjena je širokom spektru korisnika koji žele unaprijediti svoje znanje iz
+                    ekonomije. Posebno je korisna studentima ekonomije, srednjoškolcima koji se tek upoznaju s osnovama
+                    ekonomije, kao i nastavnicima koji žele svoje lekcije učiniti interaktivnijima i pratiti napredak
+                    učenika.</p>
+                <p>Kroz strukturirane lekcije, praktične primjere i kvizove, Smith pomaže korisnicima da postanu
+                    samopouzdaniji u ekonomskim odlukama i osnažuje ih za donošenje informiranih izbora u stvarnom
+                    životu.</p>
+            </div>
+        </div>
+        <div class="break">
+            <p>✤ ✤ ✤</p>
+        </div>
+        <div class="sadrzaj-section">
+            <div class="slika">
+                <img src="images/firstpage_4.png" alt="Korisnici">
+            </div>
+            <div class="tekst">
+                <h2><strong>Korisnici</strong></h2>
+                <p>Korisnici aplikacije se mogu registrirati ili koristiti aplikaciju kao gost. Ukoliko koristi
+                    aplikaciju
+                    kao gost, korisnik ne može rješavati testove, pristupiti materijalima ni pratiti svoj napredak.</p>
+                <p>Prilikom registracije korisnik može odabrati svoju ulogu: učenik/student ili profesor. Ako je
+                    prijavljen
+                    kao profesor, osim što može pristupit materijalima, može i postavljati materijale te dodavati nove
+                    lekcije. Prijavljeni
+                    korisnici
+                    mogu rješavati testove, pratiti svoj napredak i pregledavati dodatne materijale.</p>
+            </div>
+        </div>
+        <div class="break">
+            <p>✤ ✤ ✤</p>
+        </div>
+        <div class="sadrzaj-section reverse">
+            <div class="slika">
+                <img src="images/firstpage_5.png" alt="Moduli">
+            </div>
+            <div class="tekst">
+                <h2><strong>Moduli</strong></h2>
+                <p>Moduli aplikacije temelje se na prijevodima poglavlja 1, 3, 5, 7, 8, 9, 10 i 12 knjige <em>Principi
+                        ekonomije</em>
+                    platforme LibreTexts. LibreTexts je otvorena obrazovna platforma.</p>
+                <p>Moduli su podjeljeni u 22 lekcije. Poslije svake lekcije korisnik aplikacije može riješiti kviz.</p>
+                <p>Svako poglavlje ima svoj test koji mogu rješavati samo prijavljeni korisnici. Rezultate testova, kao i kvizova, korisnik može pratiti na stranici <em>Rezultati</em>.</p>
+            </div>
+        </div>
+        <div class="break">
+            <p>✤ ✤ ✤</p>
+        </div>
+        <div class="sadrzaj-section">
+            <div class="slika">
+                <img src="images/firstpage_6.png" alt="Kvizovi, testovi i certifikati">
+            </div>
+            <div class="tekst">
+                <h2><strong>Kvizovi, testovi i certifikati</strong></h2>
+                <p>Na kraju svake lekcije može se riješiti kratki kviz od 5 pitanja kao provjera znanja. Osim kvizova,
+                    postoje i testovi nakon kojih, ukoliko je rezultat 100%, korisnik dobije certifikat koji može
+                    preuzeti
+                    na stranici <em>Certifikati</em>.</p>
+                <p>Kvizovi nemaju vremensko ograničenje i nakon rješavanja korisnik može vidjeti svoj rezultat te točne
+                    odgovore. Testovi su malo teži te osim što imaju 20 pitanja i vremensko ograničenje od 10 minuta na
+                    kraju testa korisnik ne vidi točna rješenja. Svaki put kad korisnik ima 100% iz testa dobija
+                    certifikat,
+                    ukoliko pokuša ponovno riješiti test i dobije manji rezultat certifikat mu se briše.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Kontakt:</strong> pejic.aneta2407@gmail.com | apejic@student.ferit.hr</p>
+            <p>&copy; 2025 Smith Web Aplikacija</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/first_page.js"></script>
+</body>
+
+</html>

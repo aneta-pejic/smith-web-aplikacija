@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastičnost - Cjenovna elastičnost potražnje</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="cjenovna_elasticnost_potraznje">
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container stay">
+            <div class="chosen"><a href="#">Cjenovna elastičnost potražnje</a></div>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+        </div>
+
+        <div class="subbar">
+             <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Cjenovna elastičnost potražnje</strong></h1>
+                <p>Znamo iz zakona potražnje kako će količina potražena reagirati na promjenu cijene: promijenit će se u
+                    suprotnom smjeru. No, koliko će se točno promijeniti? Čini se razumnim očekivati, na primjer, da će
+                    promjena cijene pregleda kod liječnika od 10% uzrokovati drugačiju postotnu promjenu u potražnji
+                    nego što bi to učinila promjena cijene automobila Ford Mustang od 10%. No koliko je ta razlika
+                    velika? Kako bismo prikazali koliko je količina potražena osjetljiva na promjenu cijene,
+                    primjenjujemo pojam
+                    elastičnosti. Cjenovna elastičnost potražnje za nekim dobrom ili uslugom, označena kao eD,
+                    predstavlja postotnu
+                    promjenu količine potražene određenog dobra ili usluge, podijeljenu s postotnom promjenom cijene tog
+                    dobra ili usluge, uz pretpostavku da su svi ostali uvjeti nepromijenjeni.
+                    Dakle, možemo to zapisati ovako:</p>
+                <div class="equation"><img src="images/elastičnost potražnje.jpg" width="450px" height="100px"></div>
+                <p><strong>Budući da cjenovna elastičnost potražnje pokazuje osjetljivost količine potražene na promjenu
+                        cijene,
+                        pod pretpostavkom da su ostali čimbenici koji utječu na potražnju nepromijenjeni, ona odražava
+                        kretanja duž krivulje potražnje.</strong></p>
+                <p>Kod krivulje potražnje koja se spušta prema dolje, cijena i količina potražena kreću se u suprotnim
+                    smjerovima, pa je cjenovna elastičnost potražnje uvijek negativna. Pozitivna postotna promjena
+                    cijene podrazumijeva negativnu postotnu promjenu količine potražene, i obrnuto. Ponekad ćete vidjeti
+                    da se prikazuje apsolutna vrijednost mjere elastičnosti cijene. U biti, negativni predznak se
+                    zanemaruje jer se očekuje negativan (obrnut) odnos između količine potražene i cijene. U ovom ćemo
+                    tekstu, međutim, zadržati negativni predznak prilikom prikazivanja cjenovne elastičnosti potražnje i
+                    navest ćemo "apsolutna vrijednost cjenovne elastičnosti potražnje" kada to budemo opisivali.</p>
+
+                <div style="height: 30px;"></div>
+                <hr>
+                <p>❗Budite oprezni da ne pomiješate elastičnost s nagibom. Nagib pravca je promjena vrijednosti
+                    varijable
+                    na okomitoj osi podijeljena s promjenom vrijednosti varijable na vodoravnoj osi između dvije točke.
+                    Elastičnost je omjer postotnih promjena.</p>
+                <p>Na primjer, nagib krivulje potražnje je omjer promjene cijene i promjene količine između dvije točke
+                    na krivulji. Cjenovna elastičnost potražnje je omjer postotne promjene količine i postotne promjene
+                    cijene. Kao što ćemo vidjeti, pri izračunu elastičnosti u različitim točkama linearne krivulje
+                    potražnje, nagib ostaje konstantan — ne mijenja se — ali se vrijednost elastičnosti mijenja.</p>
+                <hr>
+                <div style="height: 30px;"></div>
+
+                <h2>Izračunavanje cjenovne elastičnosti potražnje</h2>
+                <p>Za izračunavanje cjenovne elastičnosti potražnje, najprije moramo izračunati postotne promjene u
+                    cijeni i u količini potražnje. Te promjene izračunavamo između dviju točaka na krivulji potražnje.
+                </p>
+
+                <p>Slika prikazuje određenu krivulju potražnje, linearnu krivulju potražnje za vožnje javnim
+                    prijevozom. Pretpostavimo da je početna cijena 0,80 eura, a potražena količina 40.000 vožnji
+                    dnevno; nalazimo se u točki A na krivulji. Sada pretpostavimo da cijena pada na 0,70 eura i želimo
+                    prikazati koliko količina potražnje reagira. Vidimo da se pri novoj cijeni potražena količina
+                    povećava na 60.000 vožnji dnevno (točka B). Da bismo izračunali elastičnost, trebamo izračunati
+                    postotne promjene u cijeni i količini potražnje između točaka A i B.</p>
+
+                <img src="images/el krivulja potražnje.jpg" width="850px" height="500px">
+
+                <>Pomak s točke B na točku A predstavlja povećanje cijene za 0,10 eura, što smanjuje potraženu količinu
+                    za 20.000 vožnji dnevno.
+
+                    <p>Postotnu promjenu između dviju točaka mjerimo kao promjenu varijable podijeljenu s prosječnom
+                        vrijednosti te varijable između dviju točaka. Dakle, postotna promjena količine između točaka A
+                        i B
+                        na slici računa se u odnosu na prosječnu količinu u tim točkama: (60.000 + 40.000) / 2 = 50.000.
+                        Postotna promjena količine tada je 20.000 / 50.000, odnosno 40%.</p>
+
+                    <p>Slično tome, postotna promjena cijene između točaka A i B računa se na temelju prosječne cijene:
+                        (0,80€ + 0,70€) / 2 = 0,75€, pa imamo postotnu promjenu od −0,10 / 0,75, odnosno −13,33%.</p>
+
+                    <p>Cjenovna elastičnost potražnje između točaka A i B iznosi: 40% / (−13,33%) = −3,00.</p>
+
+                    <p>Ova mjera elastičnosti, koja se temelji na postotnim promjenama u odnosu na prosječnu vrijednost
+                        svake varijable između dviju točaka, naziva se <mark><strong>luk-elastičnosti</strong></mark>.
+                        Prednost ove metode je što daje isti rezultat bez obzira krećemo li se od točke A prema B ili
+                        obrnuto, s B na A. Ovo je metoda koju ćemo koristiti za izračun elastičnosti.</p>
+
+                    <p>Kod metode luk-elastičnosti, cjenovnu elastičnost potražnje izračunavamo pomoću prosječne
+                        vrijednosti
+                        cijene i prosječne vrijednosti količine potražnje. Koristit ćemo grčko slovo Δ (delta) koje
+                        znači
+                        „promjena“, tako da promjenu količine između dviju točaka označavamo kao ΔQ, a promjenu cijene
+                        kao
+                        ΔP.</p>
+
+                    <p>Sada možemo zapisati formulu za cjenovnu elastičnost potražnje kao: <strong>eᴰ = (ΔQ / prosječna
+                            Q) ÷
+                            (ΔP / prosječna P)</strong> ili skraćeno: <strong>eᴰ = (ΔQ / ΔP) × (P̄ / Q̄)</strong> gdje
+                        je P̄
+                        prosječna cijena, a Q̄ prosječna količina.</p>
+
+                    <p>Metoda luk-elastičnosti (engl. arc elasticity) daje nam procjenu elastičnosti. Ona prikazuje
+                        vrijednost elastičnosti u sredini raspona promjene, poput pomaka između točaka A i B. Za
+                        precizno
+                        izračunavanje elastičnosti trebali bismo promatrati reakciju ovisne varijable na izrazito malu
+                        promjenu neovisne varijable. Činjenica da su luk-elastičnosti samo približne dovodi do važnog
+                        praktičnog pravila pri njihovom računanju: trebali bismo uzimati u obzir samo male promjene
+                        neovisnih varijabli. Koncept luk-elastičnosti nije primjenjiv kod velikih promjena.</p>
+
+                    <p>Još jedan razlog zašto treba razmatrati samo male promjene u izračunu cjenovne elastičnosti
+                        potražnje
+                        postat će jasan u sljedećem odjeljku. Istražit ćemo što se događa s cjenovnom elastičnošću kada
+                        se
+                        krećemo od jedne točke do druge duž linearne krivulje potražnje.</p>
+
+                    <div style="height: 30px;"></div>
+                    <hr>
+                    <p>❗Primijetite da se u formuli luk-elastičnosti način izračuna postotne promjene razlikuje od
+                        standardne
+                        metode s kojom ste možda već upoznati. Standardna metoda mjeri postotnu promjenu neke varijable
+                        u
+                        odnosu na njezinu početnu vrijednost. Na primjer, koristeći standardnu metodu, kada prelazimo s
+                        točke A na točku B, postotna promjena količine izračunala bi se kao 20.000 / 40.000 = 50%.
+                        Postotna
+                        promjena cijene bila bi −0,10 / 0,80 = −12,5%. Cjenovna elastičnost potražnje tada bi iznosila
+                        50% /
+                        (−12,5%) = −4,00.</p>
+                    <p>Međutim, ako bismo išli u suprotnom smjeru — s točke B na točku A — dobili bismo drugačiju
+                        elastičnost. Postotna promjena količine bila bi −20.000 / 60.000 = −33,33%, a postotna promjena
+                        cijene 0,10 / 0,70 = 14,29%. Cjenovna elastičnost potražnje tada bi iznosila −33,33% / 14,29% =
+                        −2,33.</p>
+                    <p>Korištenjem prosječne količine i prosječne cijene za izračun postotnih promjena, metoda
+                        luk-elastičnosti izbjegava potrebu za određivanjem smjera promjene i time nam daje isti rezultat
+                        bez
+                        obzira idemo li od A do B ili od B do A.
+                    </p>
+                    <hr>
+                    <div style="height: 30px;"></div>
+
+                    <h2>Cjenovne elastičnosti duž linearne krivulje potražnje</h2>
+                    <p>Što se događa s cjenovnom elastičnošću potražnje kada se krećemo duž krivulje potražnje? Odgovor
+                        ovisi o prirodi same krivulje potražnje. Na <strong>linearnoj krivulji potražnje, elastičnost
+                            postaje manja (u apsolutnoj vrijednosti)</strong> kako se krećemo prema dolje i udesno.</p>
+                    <p>Cjenovna elastičnost potražnje razlikuje se između različitih parova točaka duž linearne krivulje
+                        potražnje. <strong>Što je cijena niža, a količina potražena veća, to je manja apsolutna
+                            vrijednost
+                            cjenovne elastičnosti potražnje.</strong></p>
+                    <p>Već smo izračunali cjenovnu elastičnost potražnje između točaka A i B; ona iznosi −3,00. Međutim,
+                        kada istu metodu primijenimo na neke druge parove točaka, dobit ćemo različite rezultate.</p>
+                    <p>Kako se spuštamo niz krivulju potražnje, jednake promjene u količini predstavljaju sve manje
+                        postotne
+                        promjene, dok jednake promjene u cijeni predstavljaju sve veće postotne promjene, i apsolutna
+                        vrijednost mjere elastičnosti opada. </p>
+                    <p>Zaključno, <mark><strong>na linearnoj krivulji potražnje, apsolutna vrijednost cjenovne
+                                elastičnosti
+                                opada kako se krećemo prema dolje i udesno</strong></mark> duž krivulje.</p>
+
+                    <h2>Cjenovna elastičnost potražnje i promjene ukupnog prihoda</h2>
+                    <p>Zamislimo da gradski prijevoznik razmatra povećanje cijena karata. Hoće li mu ukupni prihod
+                        porasti
+                        ili pasti? Ukupni prihod predstavlja cijenu po jedinici pomnoženu s brojem prodanih jedinica. U
+                        ovom
+                        slučaju to je cijena karte puta broj vožnji. Prijevoznik će svakako htjeti znati hoće li
+                        povećanje
+                        cijene dovesti do rasta ili pada prihoda. Zapravo, određivanje učinka promjene cijene na ukupni
+                        prihod ključno je u mnogim ekonomskim analizama.</p>
+                    <p>Primjerice, ako je cijena 0.80€, prodaje se 40,000 vožnji → ukupni prihod je 32,000€. Ako se
+                        cijena
+                        smanji na 0.70€, potražnja raste na 60,000 vožnji → prihod raste na 42,000€. Dakle, smanjenje
+                        cijene
+                        povećava prihod. Ali ako je početna cijena 0.30€, a snizi se na 0.20€, potražnja raste s 140,000
+                        na
+                        160,000, ali ukupni prihod pada s 42,000€ na 32,000€. Možemo zaključiti da <strong>utjecaj
+                            promjene
+                            cijene na prihod ovisi o početnoj cijeni</strong>, odnosno o <strong>elastičnosti
+                            potražnje</strong> u toj točki.
+                    </p>
+                    <p>Svaka promjena cijene uzrokuje promjenu u količini potražnje u suprotnom smjeru. Ako cijena
+                        raste,
+                        potražnja pada, i obrnuto. No koliko se mijenja potražnja određuje elastičnost. Budući da se
+                        ukupni
+                        prihod računa kao cijena × količina, nije odmah jasno hoće li porast cijene povećati ili
+                        smanjiti
+                        prihod — to ovisi o elastičnosti.</p>
+                    <p>Pogledajmo sljedeća tri primjera:</p>
+                    <div class="example">
+                        <p>Pretpostavimo da je dnevna potražnja za 1.000 galona benzina po cijeni od 4,00 eura po
+                            galonu.
+                            Ukupni prihod od prodaje benzina tada iznosi 4.000 eura dnevno (1.000 galona dnevno puta
+                            4,00
+                            eura po galonu). Ako povećanje cijene benzina na 4,25 dolara smanji potražnju na 950 galona
+                            dnevno, ukupni prihod raste na 4.037,50 eura dnevno (950 galona dnevno puta 4,25 eura po
+                            galonu). Iako ljudi troše manje benzina po cijeni od 4,25 eura nego po cijeni od 4,00 eura,
+                            ukupni prihod raste jer veća cijena nadoknađuje pad u potrošnji.</p>
+                        <p>Sada razmotrimo primjer pizze. Pretpostavimo da se tjedno traži 1.000 pizza po cijeni od 9
+                            eura
+                            po pizzi. Ukupni prihod od pizze tada iznosi 9.000 eura tjedno (1.000 pizza tjedno puta 9
+                            eura po pizzi). Ako povećanje cijene pizze na 10 eura po komadu smanji potražnju na 900
+                            pizza tjedno, ukupni prihod i dalje iznosi 9.000 eura tjedno (900 pizza tjedno puta 10 eura
+                            po pizzi). Opet, kada cijena poraste, potrošači kupuju manje, ali ovoga puta nema promjene u
+                            ukupnom prihodu.</p>
+                        <p>Sada razmotrimo dijetalnu colu. Pretpostavimo da je dnevna potražnja za 1.000 limenki
+                            dijetalne
+                            cole
+                            po cijeni od 0,50 eura po limenci. Ukupni prihod iznosi 500 dolara dnevno (1.000 limenki
+                            dnevno puta 0,50 eura po limenci). Ako povećanje cijene dijetalne cole na 0,55 eura po
+                            limenci
+                            smanji potražnju na 880 limenki mjesečno, ukupni prihod pada na 484 eura dnevno (880 limenki
+                            dnevno puta 0,55 eura po limenci). Kao i u slučaju benzina, ljudi će kupovati manje
+                            dijetalne
+                            cole kada cijena poraste s 0,50 na 0,55 eura, ali u ovom primjeru ukupni prihod pada.</p>
+                    </div>
+                    <p>U našem prvom primjeru, povećanje cijene dovelo je do povećanja ukupnog prihoda. U drugom
+                        primjeru,
+                        povećanje cijene nije promijenilo ukupni prihod. U trećem primjeru, rast cijene smanjio je
+                        ukupni
+                        prihod. Postoji li način da predvidimo kako će promjena cijene utjecati na ukupni prihod?
+                        Postoji;
+                        učinak ovisi o cjenovnoj elastičnosti potražnje.</p>
+
+                    <h2>Elastična, jedinično elastična i neelastična potražnja</h2>
+                    <p>Kako bi se utvrdilo kako će promjena cijene utjecati na ukupni prihod, ekonomisti svrstavaju
+                        cjenovnu
+                        elastičnost potražnje u tri kategorije, na temelju njezine apsolutne vrijednosti. Ako je
+                        apsolutna
+                        vrijednost cjenovne elastičnosti potražnje veća od 1, potražnja se naziva <mark>cjenovno
+                            elastičnom</mark>. Ako
+                        je jednaka 1, potražnja je <mark>jedinično cjenovno elastična</mark>. A ako je manja od 1,
+                        potražnja
+                        je <mark>cjenovno
+                            neelastična</mark>.</p>
+
+                    <h2>Odrednice cjenovne elastičnosti potražnje</h2>
+                    <p>Što je apsolutna vrijednost cjenovne elastičnosti potražnje veća, to je veća osjetljivost tražene
+                        količine na promjenu cijene. Što određuje hoće li potražnja biti više ili manje cjenovno
+                        elastična?
+                        Najvažnije odrednice cjenovne elastičnosti potražnje za nekim dobrom ili uslugom su dostupnost
+                        supstituta, važnost stavke u kućnom budžetu te vrijeme.</p>
+
+                    <h2>Dostupnost supstituta</h2>
+                    <p>Cjenovna elastičnost potražnje za nekim dobrom ili uslugom bit će veća u apsolutnom iznosu ako je
+                        dostupno mnogo bliskih zamjena. Ako za određeno dobro ili uslugu postoji mnogo zamjena, tada je
+                        potrošačima lako prijeći na te zamjene kada dođe do porasta cijene tog dobra ili usluge.
+                        Zamislimo,
+                        primjerice, da cijena Ford automobila poraste. Postoje mnoge bliske zamjene za Fordove –
+                        Chevroleti,
+                        Chrysleri, Toyote i tako dalje. Dostupnost bliskih zamjena čini potražnju za Fordovima cjenovno
+                        elastičnijom.</p>
+                    <p>Ako neko dobro nema bliskih zamjena, njegova će potražnja vjerojatno biti manje cjenovno
+                        elastična.
+                        Na primjer, benzin nema bliske zamjene. Cjenovna elastičnost potražnje za benzin u srednjem
+                        roku,
+                        recimo od tri do devet mjeseci, općenito se procjenjuje na oko −0.5. Budući da je apsolutna
+                        vrijednost cjenovne elastičnosti manja od 1, riječ je o cjenovno neelastičnoj potražnji. Ipak,
+                        možemo očekivati da će potražnja za određenim brendom benzina biti znatno elastičnija od opće
+                        potražnje za benzinom.</p>
+
+                    <h2>Važnost u kućnom budžetu</h2>
+                    <p>Jedan od razloga zašto promjene cijena utječu na traženu količinu je taj što mijenjaju koliko
+                        potrošač može kupiti; promjena cijene dobra ili usluge utječe na kupovnu moć potrošačeva dohotka
+                        i
+                        time na količinu dobra koju će kupac nabaviti. Taj je učinak jači kada je neko dobro ili usluga
+                        važna stavka u tipičnom kućnom budžetu.</p>
+                    <p>Promjena cijene traperica, primjerice, vjerojatno ima veći utjecaj na vaš budžet nego promjena
+                        cijene
+                        olovaka. Pretpostavimo da se cijene oboje udvostruče. Planirali ste kupiti četiri para traperica
+                        ove
+                        godine, ali sada ćete možda odlučiti da vam je dovoljno samo dva nova para. Promjena cijene
+                        olovaka,
+                        nasuprot tome, vjerojatno će dovesti do vrlo malog smanjenja tražene količine jednostavno zato
+                        što
+                        olovke ne predstavljaju veliki izdatak u kućnim budžetima. Što je stavka važnija u kućnim
+                        budžetima,
+                        to je vjerojatnije da će apsolutna vrijednost cjenovne elastičnosti potražnje biti veća.</p>
+
+                    <h2>Vrijeme</h2>
+                    <p>Zamislimo da sutra ujutro poraste cijena električne energije. Što će se dogoditi s traženom
+                        količinom?</p>
+                    <p>Odgovor u velikoj mjeri ovisi o tome koliko vremena imamo za reakciju. Ako nas zanima smanjenje
+                        tražene količine do sutra popodne, možemo očekivati vrlo mali odgovor. Ali ako potrošačima damo
+                        godinu dana da se prilagode promjeni cijene, možemo očekivati znatno veći odgovor. Očekujemo da
+                        će
+                        apsolutna vrijednost cjenovne elastičnosti potražnje biti veća kada se potrošačima dopusti više
+                        vremena za prilagodbu.</p>
+
+                    <div class="summary">
+                        <h2>Sažetak</h2>
+                        <ul>
+                            <li>Cjenovna elastičnost potražnje mjeri osjetljivost tražene količine na promjene cijene;
+                                izračunava se dijeljenjem postotne promjene tražene količine s postotnom promjenom
+                                cijene.
+                            </li>
+                            <li>Potražnja je cjenovno neelastična ako je apsolutna vrijednost cjenovne elastičnosti
+                                manja od
+                                1; jedinično elastična ako je apsolutna vrijednost jednaka 1; i cjenovno elastična ako
+                                je
+                                apsolutna vrijednost veća od 1.
+                            </li>
+                            <li>Apsolutna vrijednost cjenovne elastičnosti potražnje je veća kada su dostupni
+                                supstituti, kada je dobro važno u kućnim budžetima i kada kupci imaju više vremena za
+                                prilagodbu promjenama u cijeni tog dobra.
+                            </li>
+                        </ul>
+                    </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz31.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

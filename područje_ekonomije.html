@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekonomija - Područje ekonomije</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="podrucje_ekonomije">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container stay">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <div class="chosen"><a href="#">Područje ekonomije</a></div>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="top-right-menu" id="userSection">
+
+    </div>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Područje ekonomije</strong></h1>
+                <p>Istražili smo osnovne pojmove oskudnosti, izbora i oportunitetnog troška u ekonomiji. U ovom dijelu
+                    ćemo razmotriti ekonomiju kao područje studija. Počinjemo s karakteristikama koje razlikuju
+                    ekonomiju od drugih društvenih znanosti. </p>
+
+                <h2>Ekonomski način razmišljanja </h2>
+                <p>Ekonomisti proučavaju izbore koje oskudnost zahtijeva od nas. Ova činjenica nije ono što razlikuje
+                    ekonomiju od drugih društvenih znanosti; svi društveni znanstvenici su zainteresirani za izbore.
+                    Antropolog može proučavati izbore drevnih naroda; politički znanstvenik može proučavati izbore
+                    zakonodavnih tijela; psiholog može proučavati kako ljudi biraju partnera; sociolog može proučavati
+                    čimbenike koji su doveli do porasta kućanstava s jednim roditeljem. Ekonomisti također proučavaju
+                    takva pitanja. Što je to u proučavanju izbora od strane ekonomista što ekonomiju čini različitom od
+                    drugih društvenih znanosti? </p>
+                <p>Tri značajke razlikuju ekonomski pristup izboru od pristupa koji koriste druge društvene znanosti:
+                </p>
+                <ol>
+                    <li>Ekonomisti daju poseban naglasak ulozi oportunitetnih troškova u analizi izbora.</li>
+                    <li>Ekonomisti pretpostavljaju da pojedinci donose odluke koje nastoje maksimizirati vrijednost
+                        određenog cilja, te da ti ciljevi definiraju prema vlastitom samointeresu.</li>
+                    <li>Pojedinci maksimiziraju donošenjem odluka hoće li nešto raditi malo više ili malo manje.
+                        Ekonomisti tvrde da pojedinci obraćaju pažnju na posljedice malih promjena u razinama aktivnosti
+                        koje poduzimaju.</li>
+                </ol>
+                <p>Naglasak koji ekonomisti stavljaju na oportunitetni trošak, ideja da ljudi donose odluke koje
+                    maksimiziraju vrijednost ciljeva koji služe njihovom samointeresu, te fokus na učinke malih
+                    promjena, moćne su ideje. One čine jezgru ekonomskog razmišljanja. Sljedeća tri dijela detaljnije
+                    razmatraju ove ideje. </p>
+
+                <h2>Oportunitetni troškovi su važni</h2>
+                <p><strong>Ako jedna aktivnost zahtijeva odricanje od druge, tada će očekivane koristi od alternativnih
+                        izbora
+                        koje imamo utjecati na one koje ćemo odabrati.</strong> Ekonomisti tvrde da je razumijevanje
+                    oportunitetnog
+                    troška ključno za proučavanje izbora.</p>
+                <p>Kako se set dostupnih alternativa mijenja, očekujemo da će se i izbori pojedinaca mijenjati.</p>
+                <div class="example">
+                    <p>Kišan dan može promijeniti oportunitetni trošak čitanja dobre knjige; mogli bismo očekivati da će
+                        se više čitati u lošem nego u dobrom vremenu. Visok prihod može učiniti vrlo skupim uzimanje
+                        slobodnog dana; mogli bismo očekivati da će ljudi s visokim plaćama raditi više sati nego oni
+                        koji nisu tako dobro plaćeni. Ako pojedinci maksimiziraju svoj nivo zadovoljstva, a poduzeća
+                        maksimiziraju profit, tada promjena u setu alternativa može predvidivo utjecati na njihove
+                        odluke.</p>
+                </div>
+                <p>Naglasak na oportunitetnim troškovima usmjeren je na proučavanje alternativa. Jedna od prednosti
+                    ekonomskog načina razmišljanja je što nas tjera da razmišljamo o vrijednosti alternativa u svakom
+                    problemu koji uključuje izbor.</p>
+
+                <h2>Pojedinci maksimiziraju u potrazi za samointeresom</h2>
+                <p>Što motivira ljude da donose odluke? Možda više od svega, odgovor ekonomista na ovo pitanje razlikuje
+                    ekonomiju od drugih područja.</p>
+                <p>Ekonomisti pretpostavljaju da pojedinci donose odluke koje očekuju da će stvoriti maksimalnu
+                    vrijednost određenog cilja, s obzirom na ograničenja s kojima se suočavaju. Nadalje, ekonomisti
+                    pretpostavljaju da će ciljevi ljudi biti oni koji služe njihovom vlastitom samointeresu. </p>
+                <div class="example">
+                    <p>Ekonomisti pretpostavljaju, na primjer, da vlasnici poduzeća nastoje maksimizirati profit. S
+                        obzirom na pretpostavljeni cilj maksimizacije profita, ekonomisti mogu predvidjeti kako će
+                        poduzeća u industriji reagirati na promjene na tržištima na kojima djeluju. Na primjer, kako
+                        troškovi rada u Sjedinjenim Državama rastu, ekonomisti nisu iznenađeni što poduzeća premještaju
+                        dio svojih proizvodnih operacija u inozemstvo. </p>
+                </div>
+                <p>Slično tome, ekonomisti pretpostavljaju da maksimizirajuće ponašanje postoji i kada proučavaju
+                    ponašanje potrošača. U proučavanju potrošača, ekonomisti pretpostavljaju da pojedini potrošači
+                    donose odluke koje imaju za cilj maksimizirati svoj nivo zadovoljstva. U sljedećem poglavlju
+                    pogledat ćemo rezultate prijelaza s skijanja na snowboardanje; to je prijelaz koji odražava potragu
+                    za samointeresom od strane potrošača i proizvođača. </p>
+                <p>Pretpostavljajući da ljudi teže svom samointeresu, ekonomisti ne pretpostavljaju da su ljudi sebični.
+                    Ljudi očito dobivaju zadovoljstvo pomažući drugima, što pokazuje velikodušne donacije koje ljudi
+                    često daju. Potraga za vlastitim interesom znači traženje stvari koje nam donose zadovoljstvo. To ne
+                    mora nužno značiti pohlepu ili sebičnost. </p>
+
+                <h2>Izbori se donose na marginama </h2>
+                <p>Ekonomisti tvrde da se većina odluka donosi "na marginama". <mark><strong>Margina je trenutna razina
+                            aktivnosti.</strong></mark>
+                    Zamislite je kao rub s kojeg se donosi odluka. Odluka na margini znači odlučiti hoćemo li raditi
+                    nešto malo više ili malo manje. </p>
+                <p>Procjena odluka na marginama može dovesti do izuzetno korisnih uvida. Razmotrimo, na primjer, problem
+                    smanjenja potrošnje vode kada količina vode koja je na raspolaganju ne zadovoljava količinu koju
+                    ljudi sada koriste. Ekonomisti tvrde da jedan od načina da se potaknu ljudi na štednju vode je
+                    povećanje cijene. Čest odgovor na ovu preporuku je da viša cijena neće utjecati na potrošnju vode,
+                    jer je voda nužnost. Mnogi ljudi tvrde da cijene ne utječu na potrošnju vode jer ljudi "trebaju"
+                    vodu. </p>
+                <p>No, izbori u potrošnji vode, kao i gotovo svi izbori, donose se na marginama. Pojedinci ne donose
+                    odluke o tome hoće li ili neće konzumirati vodu. Umjesto toga, odlučuju hoće li konzumirati malo
+                    više ili malo manje vode. Potrošnja vode u kućanstvima u Sjedinjenim Državama iznosi oko 105 galona
+                    (1 galon = 3,78541178 litara) po osobi dnevno. Zamislite tu početnu točku kao rub s kojeg se donosi
+                    odluka na margini u potrošnji vode. Može li viša cijena uzrokovati da koristite manje vode pri
+                    pranju zubi, kraće tuširanje ili manje zalijevanje travnjaka? Može li viša cijena uzrokovati da
+                    ljudi smanje potrošnju, recimo, na 104 galona po osobi dnevno? Na 103? Kada proučimo odluku o
+                    konzumaciji vode na marginama, čini se puno vjerojatnijim da bi viša cijena smanjila potrošnju.
+                    Cijene utječu na našu potrošnju vode jer se izbori u potrošnji vode, kao i drugi izbori, donose na
+                    marginama. </p>
+                <p>Elementi oportunitetnog troška, maksimizacije i odluka na marginama mogu se pronaći u svakoj od dva
+                    široka područja ekonomske analize: mikroekonomiji i makroekonomiji. Vaš ekonomski smjer, na primjer,
+                    može biti označen kao "mikro" ili kao "makro" smjer. U sljedećem dijelu ćemo pogledati ove dvija
+                    područja ekonomskog razmišljanja. </p>
+
+                <h2>Mikroekonomija i makroekonomija</h2>
+                <p>Područje ekonomije obično je podijeljeno na dva široka područja:
+                    <strong><mark>mikroekonomiju</mark></strong> i <strong><mark>makroekonomiju</strong>.
+                    Važno je razumjeti razlike između ovih širokih područja studija.
+                </p>
+                <div class="definition">
+                    <p>Mikroekonomija je grana ekonomije koja se fokusira na izbore koje donose pojedinačni odlučujući
+                        subjekti u ekonomiji, obično potrošači i poduzeća, i utjecaje tih izbora na pojedinačna tržišta.
+                    </p>
+                </div>
+                <div class="definition">
+                    <p>Makroekonomija je grana ekonomije koja se fokusira na utjecaj odluka na ukupnu, ili agregiranu,
+                        razinu ekonomske aktivnosti.</p>
+                </div>
+                <p>Zašto ulaznice za najbolje koncerte toliko koštaju? Kako prijetnja globalnog zagrijavanja utječe na
+                    cijene nekretnina u obalnim područjima? Zašto žene uglavnom obavljaju većinu kućanskih poslova?
+                    Zašto stariji građani imaju popuste na javnom prijevozu? Ova pitanja obično se smatraju
+                    mikroekonomskim jer se fokusiraju na pojedinačne jedinice ili tržišta u ekonomiji.</p>
+                <p>Raste li ukupna razina ekonomske aktivnosti ili opada? Povećava li se ili smanjuje stopa inflacije?
+                    Što se događa sa stopom nezaposlenosti? To su pitanja koja se odnose na agregate, ili ukupne, u
+                    ekonomiji; to su problemi makroekonomije. Pitanje o razini ekonomske aktivnosti, na primjer, odnosi
+                    se na ukupnu vrijednost svih dobara i usluga proizvedenih u ekonomiji. Inflacija je mjera stope
+                    promjene prosječne razine cijena za cijelu ekonomiju; to je makroekonomski problem. Ukupni nivoi
+                    zaposlenosti i nezaposlenosti u ekonomiji predstavljaju agregat svih tržišta rada; nezaposlenost je
+                    također tema makroekonomije. </p>
+                <p>I mikroekonomija i makroekonomija obraćaju pažnju na pojedinačna tržišta. Ali u mikroekonomiji ta
+                    pažnja je cilj sama po sebi; u makroekonomiji cilj je objasniti kretanje glavnih ekonomskih
+                    agregata—razinu ukupne proizvodnje, razinu zaposlenosti i razinu cijena. </p>
+                <p>Sada smo razmotrili karakteristike koje definiraju ekonomski način razmišljanja i dvije grane ovog
+                    načina razmišljanja: mikroekonomiju i makroekonomiju. U sljedećem dijelu ćemo pogledati što se može
+                    postići obrazovanjem u ekonomiji. </p>
+
+                <h2>Ekonomija u praksi</h2>
+                <p>Ekonomija je jedan način gledanja na svijet. Budući da je ekonomski način razmišljanja pokazao veliku
+                    korisnost, obrazovanje iz ekonomije može se primijeniti u širokom rasponu područja. Jedno od tih
+                    područja je, naravno, rad kao ekonomist. Preddiplomski rad u ekonomiji može se primijeniti i na
+                    druge karijere. </p>
+
+                <h2>Karijere u ekonomiji</h2>
+                <p>Ekonomisti rade u tri vrste organizacija. Oko 58% ekonomista radi za vladine agencije. Ostatak radi
+                    za poslovne tvrtke ili na fakultetima i sveučilištima. </p>
+                <p>Ekonomisti koji rade za poslovne tvrtke i vladine agencije ponekad predviđaju ekonomske aktivnosti
+                    kako bi pomogli svojim poslodavcima u planiranju. Također primjenjuju ekonomsku analizu na
+                    aktivnosti poduzeća ili agencija za koje rade ili konzultiraju. Ekonomisti zaposleni na fakultetima
+                    i sveučilištima podučavaju i provode istraživanja. </p>
+                <div class="example">
+                    <p>Proučite web stranicu ekonomskog odjela nekog fakulteta ili sveučilišta. Vjerojatno će odjel
+                        raspravljati o širokoj paleti zanimanja u koja upisuju njihovi studenti ekonomije. Za razliku od
+                        studenata inženjerstva i računovodstva, studenti ekonomije i drugih društvenih znanosti obično
+                        su raspoređeni u širok raspon zanimanja. </p>
+                </div>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Ekonomisti se usredotočuju na oportunitetne troškove izbora, pretpostavljaju da pojedinci
+                            donose odluke na način koji maksimizira vrijednost cilja definiranog u skladu s vlastitim
+                            interesima, te pretpostavljaju da pojedinci te odluke donose na margini. </li>
+                        <li>
+                            Ekonomija se dijeli na dva široka područja: mikroekonomiju i makroekonomiju. </li>
+                    </ul>
+                </div>
+
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz12.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

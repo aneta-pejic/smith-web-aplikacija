@@ -1,0 +1,969 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #c9f79f;
+    color: #252525;
+    padding: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header.zaglavlje {
+    background-color: #c9f79f;
+    width: 100vw;
+    padding: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.zaglavlje .lijevo,
+.zaglavlje .desno {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zaglavlje .lijevo img.logo {
+    margin-left: 0;
+}
+
+.zaglavlje .desno {
+    position: absolute;
+    padding-right: 10px;
+}
+
+.zaglavlje .lijevo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+    position: absolute;
+    left: 20px;
+}
+
+.desno {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.ime-aplikacije {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2e5e0e;
+    letter-spacing: 2px;
+    font-family: "Dancing Script", cursive;
+}
+
+.zaglavlje .lijevo a {
+    text-decoration: none;
+}
+
+.korisnik-section {
+    position: relative;
+    cursor: pointer;
+}
+
+.korisnik {
+    font-size: 16px;
+    font-weight: 600;
+    font-weight: bold;
+    color: #2e5e0e;
+    font-family: "Montserrat", sans-serif;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 180px;
+    z-index: 100;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #2f7d2f;
+    font-weight: 500;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+.korisnik-section:hover .dropdown {
+    display: block;
+}
+
+.sadrzaj {
+    background-color: #c9f79f;
+    width: 100vw;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.sadrzaj-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.sadrzaj-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.sadrzaj-section .tekst {
+    flex: 1;
+    max-width: 700px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-left: 20px;
+
+}
+
+.sadrzaj-section .slika img {
+    width: 100%;
+    height: auto;
+}
+
+.sadrzaj-section.reverse .slika {
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+.sadrzaj-section .slika {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.sadrzaj-section .slika img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sadrzaj-section .tekst h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #2e5e0e;
+    margin-bottom: 15px;
+    border-left: 5px solid #4b7c1b;
+    padding-left: 15px;
+}
+
+.sadrzaj-section .tekst p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.sadrzaj .tekst {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.sadrzaj h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #2e5e0e;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4b7c1b;
+    padding-left: 15px;
+}
+
+
+.sadrzaj p {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #252525;
+    width: 900px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px 60px;
+    gap: 40px;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    height: 550px;
+}
+
+.header-section * {
+    border: none;
+    box-shadow: none;
+}
+
+.header-section .title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    max-width: 60%;
+}
+
+.title .naslov,
+.title .naslov2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.title .naslov {
+    margin-bottom: 5px;
+}
+
+.header-section .naslov {
+    font-family: "Montserrat", sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #2e5e0e;
+}
+
+.header-section .naslov2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #2e5e0e;
+}
+
+.header-section .podnaslov {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #252525;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.header-section .header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+
+.header-section .header-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.header-section .header-img2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    padding-top: 20px;
+}
+
+.header-section .header-img2 img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.zaglavlje .navigacija {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 35px;
+    font-size: 14px;
+    padding-left: 0px;
+}
+
+.zaglavlje .navigacija a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2e5e0e;
+    border-radius: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.zaglavlje .navigacija a:hover {
+    background-color: #ffffff;
+    color: #2e5e0e;
+    transform: scale(1.05);
+}
+
+.zaglavlje .navigacija a.active {
+    background-color: #ffffff;
+    color: #2e5e0e;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: #2e5e0e;
+    font-size: 40px;
+    margin-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sadrzaj,
+header,
+.navigacija {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    flex: 1 1 30%;
+    max-width: 500px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 16px #252525;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .card-side {
+    box-shadow: 0 12px 24px #252525;
+}
+
+.front {
+    background: #9bc771;
+    padding: 10px;
+    border: 6px solid #2e5e0e;
+    box-sizing: border-box;
+}
+
+.back {
+    background-color: #9bc771;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2e5e0e;
+    box-shadow: none;
+    backface-visibility: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    padding: 20px;
+}
+
+.cards .card-inner p {
+    font-size: 25px;
+    padding-top: 0;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-highlight {
+    max-width: 500px;
+    padding: 25px 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.quiz-title {
+    font-size: 30px;
+    color: #2e5e0e;
+    font-family: "Poetsen One", sans-serif;
+    margin-bottom: 10px;
+}
+
+.quiz-subtext {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #2e4600;
+    margin-bottom: 20px;
+}
+
+.quiz-action-button {
+    display: inline-block;
+    background-color: #4b7c1b;
+    color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-action-button:hover {
+    background-color: #6fae34;
+    transform: scale(1.04);
+}
+
+.card-title-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 2px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.card-title-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: "Poetsen One", sans-serif;
+    color: #2e4600;
+}
+
+.card-icon {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card-title-text .gornji-naslov {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-title-text .donji-naslov {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.frame {
+    width: 800px;
+    height: 300px;
+    background: #4b7c1b;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 30px 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.tests a:hover .frame {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.frame h4 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+    font-family: "Poller One", serif;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.frame h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    color: #d4f08d;
+    font-family: "Poppins", sans-serif;
+}
+
+.frame p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.95;
+    margin: 0;
+    max-width: 90%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.frame p em {
+    font-weight: 600;
+    color: #f3f9d2;
+}
+
+
+.tests a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.tests,
+#guestView {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#guestView {
+    text-align: center;
+}
+
+.tests.show,
+#guestView.show {
+    display: block;
+    opacity: 1;
+}
+
+
+.login-button {
+    background: #c9f79f;
+    border: 2px solid #c9f79f;
+    color: #2e4600;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    color: #f7c942;
+}
+
+.tests {
+    max-width: 800px;
+    margin: 0 auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.auth-links .link {
+    font-family: "Poppins", sans-serif;
+    color: #2e5e0e;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.auth-links .link:hover {
+    color: #c23509;
+}
+
+
+#logoutBtn {
+    color: rgb(212, 49, 49);
+    text-decoration: none;
+}
+
+.upper-part {
+    background: #2e5e0e;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+header,
+h1,
+h2,
+h3,
+p,
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: white;
+    color: #2e5e0e;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer a {
+    color: #2e5e0e;
+    text-decoration: none;
+}
+
+.break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.break p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .zaglavlje {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .zaglavlje .lijevo,
+    .zaglavlje .desno {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .naslov {
+        font-size: 48px;
+    }
+
+    .podnaslov {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0;
+        flex: none;
+    }
+
+    .card-inner {
+        height: auto;
+        position: relative;
+    }
+
+    .card-side {
+        height: auto;
+        padding: 20px;
+        position: relative;
+    }
+
+    .card-title-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-title-text .gornji-naslov,
+    .card-title-text .donji-naslov {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .quiz-highlight h3 {
+        font-size: 18px;
+    }
+
+    .quiz-action-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .card-inner p {
+        font-size: 18px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .header-section .title {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-section .naslov {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .header-section .naslov2 {
+        font-size: 28px;
+    }
+
+    .header-section .podnaslov {
+        font-size: 16px;
+    }
+
+    .header-section .header-img,
+    .header-section .header-img2 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-section .header-img img,
+    .header-section .header-img2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .frame {
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .frame h2 {
+        font-size: 0.95rem;
+    }
+
+    .frame h3 {
+        font-size: 1.2rem;
+    }
+
+    .frame p {
+        font-size: 1rem;
+    }
+
+    .card-title-section {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sadrzaj .tekst {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .sadrzaj .tekst h2,
+    .sadrzaj .tekst p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sadrzaj h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .sadrzaj p {
+        font-size: 16px;
+    }
+
+    .sadrzaj-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sadrzaj-section.reverse {
+        flex-direction: column;
+    }
+
+    .sadrzaj-section .slika img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p,
+    .sadrzaj .tekst p,
+    .podnaslov {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    h1,
+    .naslov {
+        font-size: clamp(2rem, 6vw, 3rem);
+        text-align: center;
+    }
+
+    h2,
+    .sadrzaj h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        text-align: center;
+    }
+
+    h3,
+    .frame h3 {
+        font-size: 1.3rem;
+    }
+
+    .frame p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .zaglavlje .navigacija {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .zaglavlje .navigacija a {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .tests {
+        padding: 10px;
+        gap: 15px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .quiz-highlight {
+        max-width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .frame h4 {
+        font-size: 1.5rem;
+    }
+
+    .sadrzaj-section .tekst h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .sadrzaj-section .tekst p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+}

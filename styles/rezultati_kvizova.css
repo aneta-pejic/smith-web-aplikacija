@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8ec659;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sadrzaj-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sadrzaj {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.naslov {
+    text-align: center;
+    font-family: "Neuton", serif;
+    font-size: 100px;
+    color: #2e5e0e;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #2e5e0e;
+    width: 700px;
+    margin: 15px auto;
+}
+
+hr:last-of-type {
+    margin-bottom: 50px;
+}
+
+.navigacija {
+    text-align: center;
+    margin: 15px 0; 
+}
+
+.navigacija a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #252525;
+    font-weight: bold;
+}
+
+.navigacija a:hover {
+    color: white;
+}
+
+.navigacija .active {
+    color: white;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Neuton", serif;
+    text-align: left;
+    font-size: 40px;
+    justify-content: left;
+    color: white;
+    margin: 60px auto 20px;
+}
+
+.zaglavlje {
+    padding: 20px;
+}
+
+.lijevo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zaglavlje .strelica {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.zaglavlje .strelica:hover {
+    opacity: 0.75;
+}
+
+.rezultati-i-pie {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tablica-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#rezultatiTablica {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto
+}
+
+#rezultatiTablica th,
+#rezultatiTablica td {
+    padding: 18px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#rezultatiTablica th {
+    background-color: #6a9e4b;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#rezultatiTablica tr:last-child td {
+    border-bottom: none;
+}
+
+.card1 .tabela-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#pieChartContainer,
+#napredakCanvas {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.pie-segment {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.pie-segment:hover {
+    transform: scale(1.05);
+}
+
+.legend {
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.card1,
+.card3 {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2 {
+    width: auto;
+    max-width: 380px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    margin: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 300px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+.card1 {
+    margin-right: 5px;
+}
+
+card2 {
+    margin-left: 5px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+    font-family: "Neuton", serif;
+    color: #2e5e0e;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#kvizSelect {
+    display: block;
+    margin: 10px 0 30px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #6a9e4b;
+    background-color: white;
+    color: #252525;
+    cursor: pointer;
+    max-width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: border-color 0.3s ease;
+}
+
+#kvizSelect:hover {
+    border-color: #4e7c36;
+}
+
+.kviz-izbornik {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.kviz-izbornik label {
+    margin-right: 10px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flex-row .card1,
+.flex-row .card2,
+.flex-row .card3 {
+    flex: 1 1 400px;
+    max-width: 500px;
+    margin: 0;
+}
+
+.footer {
+    background-image: url('../images/footer_pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 80px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sadrzaj {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-columns li {
+    margin-bottom: 15px;
+}
+
+.footer-columns a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-columns a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e0f7e0;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .sadrzaj-wrapper,
+    .sadrzaj {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .naslov,
+    h1 {
+        font-size: clamp(2rem, 8vw, 48px);
+        text-align: center;
+    }
+
+    h2, .sadrzaj h2, .sadrzaj-section .tekst h2, .card1 h2, .card2 h2, .card3 h2 {
+        font-size: clamp(1.5rem, 4vw, 28px);
+        text-align: center;
+    }
+
+    h3, .frame h3 {
+        font-size: 1.2rem;
+    }
+
+    p, .sadrzaj p, .podnaslov, .kviz-izbornik, .legend-item, .footer-columns a, .frame p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .navigacija a, .zaglavlje .navigacija a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .card1, .card2, .card3 {
+        max-width: 90%;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .card-title-text .gornji-naslov, .card-title-text .donji-naslov {
+        font-size: 18px;
+    }
+
+    .frame {
+        width: 100%;
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .frame h2 {
+        font-size: 1.5rem;
+    }
+
+    .frame p {
+        font-size: 1rem;
+    }
+
+    .zaglavlje {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .lijevo {
+        justify-content: center;
+    }
+
+    #rezultatiTablica th, #rezultatiTablica td {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .legend-item {
+        font-size: 12px;
+    }
+
+    .legend-color {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+
+    #kvizSelect {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-columns ul {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+}

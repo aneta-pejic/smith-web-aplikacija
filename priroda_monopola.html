@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopol - Priroda monopola</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="priroda_monopola">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container stay">
+            <div class="chosen"><a href="#">Priroda monopola</a></div>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Nadnice i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                <a href="registration.html" class="link"><strong>Registracija</strong></a>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Priroda monopola</strong></h1>
+                <p>Monopol se nalazi na suprotnom kraju spektra tržišnih modela u odnosu na savršenu konkurenciju.
+                    Monopolističko poduzeće nema suparnike. Ono je jedino poduzeće u svojoj industriji. Ne postoje
+                    bliski supstituti za dobro ili uslugu koju monopol proizvodi. Ne samo da monopol ima tržište za
+                    sebe, već se ne mora brinuti ni zbog ulaska drugih poduzeća. U slučaju monopola, ulazak
+                    potencijalnih konkurenata je izuzetno otežan ili nemoguć.</p>
+                <p>Monopol ne prihvaća tržišnu cijenu kao zadanu; on sam određuje svoju cijenu. Odabire s vlastite
+                    krivulje potražnje cijenu koja odgovara količini koju je odlučio proizvesti, kako bi ostvario
+                    maksimalni mogući profit. Ulazak novih poduzeća, koji u dugom roku eliminira profit u konkurentskom
+                    tržištu, nije moguć u modelu monopola.</p>
+                <p>Poduzeće koje određuje cijenu na temelju svoje odluke o količini proizvodnje naziva se određivač
+                    cijene. Poduzeće koje djeluje kao određivač cijene posjeduje monopolsku moć. Vidjet ćemo u sljedećem
+                    poglavlju da monopol nije jedini oblik poduzeća koje posjeduje tu moć; međutim, odsutnost
+                    konkurenata daje monopolu znatno veću moć određivanja cijena.</p>
+                <p>Kao i u slučaju savršene konkurencije o kojoj smo govorili u prethodnom poglavlju, pretpostavke
+                    monopolskog modela su prilično stroge. Pretpostavkom da postoji samo jedno poduzeće na tržištu,
+                    pretpostavljamo da ne postoje druga poduzeća koja proizvode dobra ili usluge koje bi se mogle
+                    smatrati dijelom istog tržišta kao i monopol. Pretpostavkom blokiranog ulaska, pretpostavljamo — iz
+                    razloga o kojima ćemo raspravljati u nastavku — da nijedno drugo poduzeće ne može ući na to tržište.
+                    Takvi su uvjeti rijetki u stvarnom svijetu. Kao i uvijek s modelima, postavljamo pretpostavke koje
+                    definiraju monopol kako bismo pojednostavili našu analizu, a ne kako bismo opisali stvarni svijet.
+                    Rezultat je model koji nam daje važne uvide u prirodu poslovnih odluka i njihov utjecaj na
+                    gospodarstvo.</p>
+
+                <p>Izvori monopolske moći</p>
+                <p>Zašto su neka tržišta pod dominacijom jednog poduzeća? Koji su izvori monopolske moći? Ekonomisti su
+                    identificirali niz uvjeta koji, pojedinačno ili u kombinaciji, mogu dovesti do dominacije tržišta od
+                    strane jednog poduzeća i stvoriti prepreke koje sprječavaju ulazak novih poduzeća.</p>
+                <p>Prepreke ulasku su karakteristike određenog tržišta koje blokiraju ulazak novih poduzeća. One
+                    uključuju ekonomiju razmjera, posebne prednosti lokacije, visoke nepovratne troškove, dominantnu
+                    poziciju u vlasništvu nekih ulaznih resursa potrebnih za proizvodnju dobara te državne restrikcije.
+                    Te prepreke mogu biti međusobno povezane, što čini ulazak još težim. Iako te prepreke mogu omogućiti
+                    jednom poduzeću da stekne i zadrži monopolsku kontrolu nad tržištem, često postoje sile koje mogu
+                    nagrizati tu kontrolu.</p>
+
+                <p>Ekonomija razmjera</p>
+                <p>Ekonomija i neekonomija razmjera određuju oblik krivulje dugoročnih prosječnih troškova
+                    (<em>LRAC</em>)
+                    poduzeća kako ono povećava svoju proizvodnju. Ako dugoročni prosječni trošak opada kako razina
+                    proizvodnje raste, kaže se da poduzeće doživljava ekonomiju razmjera.</p>
+                <p>Poduzeće koje se suočava s ekonomijom razmjera u cijelom rasponu proizvodnje koja se traži u njegovoj
+                    industriji naziva se prirodnim monopolom. Primjeri su komunalne službe koje distribuiraju električnu
+                    energiju, vodu i prirodni plin nekim tržištima. U prirodnom monopolu, <em>LRAC</em> bilo kojeg
+                    poduzeća
+                    siječe krivulju tržišne potražnje tamo gdje su dugoročni prosječni troškovi u padu ili na minimumu.
+                    Ako je to slučaj, jedno će poduzeće u industriji proširiti svoju proizvodnju kako bi iskoristilo
+                    dostupne ekonomije razmjera. Budući da će to poduzeće imati niže jedinične troškove od svojih
+                    konkurenata, može ih istisnuti s tržišta i steći monopolsku kontrolu nad industrijom.</p>
+                <p>Pretpostavimo da postoji 12 poduzeća, od kojih svako posluje na razini prikazanoj krivuljom
+                    <em>ATC<sub>1</sub></em>
+                    (prosječni ukupni trošak) na slici. Poduzeće koje proširi razmjere poslovanja i postigne
+                    krivulju prosječnog ukupnog troška poput <em>ATC<sub>2</sub></em> moglo bi proizvesti 240 jedinica
+                    proizvodnje po nižem
+                    trošku nego manja poduzeća koja proizvode po 20 jedinica. Snižavanjem cijene ispod minimalnog
+                    prosječnog ukupnog troška manjih pogona, veće bi poduzeće moglo izbaciti manja iz poslovanja. U toj
+                    situaciji, potražnja industrije nije dovoljno velika da podrži više od jednog poduzeća. Ako bi drugo
+                    poduzeće pokušalo ući u industriju, prirodni monopolist bi ga uvijek mogao nadmašiti u cijenama.
+                </p>
+                <img src="images/priroda_monopola1.png" width="720px" height="400px">
+                <p>Poduzeće s opadajućom krivuljom dugoročnih prosječnih troškova (<em>LRAC</em>) u cijelom rasponu
+                    proizvodnje
+                    relevantnom za postojeću potražnju (<em>D</em>) monopolizirat će industriju. U ovom slučaju, jedno
+                    poduzeće
+                    koje posluje s velikim postrojenjem (<em>ATC<SUB>2</SUB></em>) proizvodi 240 jedinica proizvodnje po
+                    nižem trošku od 7
+                    eura po jedinici, što je trošak 12 poduzeća koja posluju u manjem opsegu (<em>ATC<SUB>1</SUB></em>)
+                    i svako proizvodi
+                    20 jedinica proizvodnje.</p>
+
+                <h2>Lokacija</h2>
+                <p>Ponekad je monopolistička moć rezultat lokacije.</p>
+                <div class="example">
+                    <p> Na primjer, prodavači na tržištima koja su izolirana
+                        udaljenošću od svojih najbližih konkurenata imaju određeni stupanj monopolističke moći. Lokalno
+                        kino
+                        u malom gradu ima monopol u prikazivanju najnovijih filmova. Liječnici, stomatolozi i mehaničari
+                        u
+                        izoliranim mjestima također mogu biti monopolisti.</p>
+                </div>
+
+                <h2>Nepovratni troškovi</h2>
+                <p>Što su troškovi osnivanja novog poduzeća u nekoj industriji veći, to je teže ući u tu industriju. Ti
+                    će troškovi, zauzvrat, biti veći ako je malo vjerojatno da će se ulaganja potrebna za pokretanje
+                    poduzeća nadoknaditi u slučaju neuspjeha.</p>
+                <p>Zamislimo, na primjer, da ulazak u određenu industriju zahtijeva opsežno oglašavanje kako bi se
+                    potrošače upoznalo s novom markom. Ako taj pokušaj ne uspije, ne postoji način da se troškovi
+                    oglašavanja nadoknade. Trošak koji je već nastao i koji se ne može nadoknaditi naziva se utopljenim
+                    troškom.</p>
+                <p>Ako će značajan dio početnih ulaganja poduzeća biti izgubljen pri izlasku iz industrije, tada će
+                    izlazak biti skup. Težak izlazak može značiti i težak ulazak. Što više poduzeća može izgubiti
+                    neuspješnim pokušajem prodora na neko tržište, to je manja vjerojatnost da će pokušati. Potencijalno
+                    visoki utopljeni troškovi stoga mogu pridonijeti monopolističkoj moći postojećeg poduzeća tako što
+                    otežavaju ulazak drugim poduzećima.</p>
+
+                <h2>Ograničeno vlasništvo nad sirovinama i inputima</h2>
+                <p>U vrlo rijetkim slučajevima izvor monopolističke moći je vlasništvo nad strateškim sirovinama. Ako
+                    određeno poduzeće posjeduje sve zalihe nekog inputa potrebnog za proizvodnju određenog dobra ili
+                    usluge, tada bi ono moglo postati jedini proizvođač tog dobra ili usluge.</p>
+                <p>Tvrtka Aluminum Company of America (ALCOA) stekla je monopolističku moć zahvaljujući vlasništvu nad
+                    gotovo svim nalazištima boksita na svijetu (boksit je sirovina za aluminij). Tvrtka International
+                    Nickel Company iz Kanade u jednom je trenutku posjedovala gotovo sve svjetske zalihe nikla. De Beers
+                    je stekao prava na gotovo svu svjetsku proizvodnju dijamanata, što mu je dalo ogromnu moć na tržištu
+                    dijamanata. Međutim, s razvojem novih izvora dijamanata u Kanadi, Australiji i Rusiji, koji se
+                    prodaju neovisno o De Beersu, ta je moć oslabila, te danas De Beers kontrolira znatno manji postotak
+                    svjetske ponude.</p>
+
+                <h2>Vladina ograničenja</h2>
+                <p>Još jedna važna osnova monopolističke moći su posebne povlastice koje državne agencije dodjeljuju
+                    određenim poslovnim subjektima. Državne i lokalne vlasti često su dodjeljivale ekskluzivne
+                    franšize — prava za obavljanje djelatnosti na određenom tržištu—taksi i autobusnim prijevoznicima,
+                    kabelskim televizijskim tvrtkama te pružateljima telefonskih usluga, električne energije, prirodnog
+                    plina i vode, premda je u posljednjim godinama sve češći trend poticanja konkurencije u mnogim od
+                    tih usluga. Vlade također mogu regulirati ulazak u industriju ili profesiju putem licenci i uvjeta
+                    za certificiranje. Također, država pruža zaštitu patentom izumiteljima novih proizvoda ili metoda
+                    proizvodnje kako bi potaknula inovacije; ti patenti mogu nositeljima omogućiti određeni stupanj
+                    monopolističke moći tijekom 17-godišnjeg trajanja patenta.</p>
+                <p>Patenti mogu imati dodatnu važnost kada su prisutni mrežni učinci. Mrežni učinci nastaju u
+                    situacijama kada proizvod postaje korisniji što ga koristi veći broj korisnika. Na primjer, jedna od
+                    prednosti korištenja Windows operativnog sustava jest ta što ga koristi velik broj ljudi. To ima
+                    prednosti kada je riječ o dijeljenju datoteka i drugih informacija.</p>
+
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Industrija u kojoj postoji samo jedno poduzeće, a ulazak drugih je blokiran, naziva se
+                            monopol.</li>
+                        <li>Poduzeće koje određuje ili bira cijenu ovisno o svojoj odluci o količini proizvodnje naziva
+                            se određivačem cijene. Određivač cijene posjeduje monopolsku moć.</li>
+                        <li>Izvori monopolske moći uključuju ekonomiju razmjera, prednosti lokacije, visoke nepovratne
+                            troškove povezane s ulaskom na tržište, ograničeno vlasništvo nad ključnim sirovinama te
+                            državna ograničenja kao što su ekskluzivne franšize, zahtjevi za licenciranje i
+                            certificiranje te patenti.</li>
+                        <li>Poduzeće koje ostvaruje ekonomiju razmjera kroz cijeli raspon proizvodnje koju zahtijeva
+                            industrija naziva se prirodni monopol.</li>
+
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz71.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

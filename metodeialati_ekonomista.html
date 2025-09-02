@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekonomija - Metode i alati ekonomista</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="metode_i_alati_ekonomista">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container stay">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <div class="chosen"><a href="#">Metode i alati ekonomista</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+             <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Metode i alati ekonomista</strong></h1>
+                <p>Ekonomija se razlikuje od drugih društvenih znanosti po naglasku na oportunitetne troškove,
+                    pretpostavci maksimizacije vlastitog interesa te analizi odluka na margini. Ipak, osnovne metode
+                    ekonomije i brojni izazovi s kojima se suočava zajednički su svim društvenim znanostima — pa i
+                    znanosti općenito. Ovaj dio istražuje primjenu znanstvene metode u ekonomiji. </p>
+
+                <div class="definition">
+                    <p>Istraživači često proučavaju odnose među varijablama. Varijabla je veličina čija se vrijednost
+                        može
+                        mijenjati (npr. brzina automobila), dok je konstanta veličina koja ostaje nepromijenjena (npr.
+                        broj
+                        minuta u satu).</p>
+                </div>
+
+                <p> Istraživanja se najčešće provode unutar okvira znanstvene metode — sustavnog niza koraka za
+                    stvaranje znanja. U tom procesu hipoteze se postavljaju i testiraju. Hipoteza je tvrdnja o odnosu
+                    među varijablama koja se može opovrgnuti. Npr. izjava „Biljke vole sunce“ nije hipoteza jer ju nije
+                    moguće testirati. Nasuprot tome, „Povećana sunčeva svjetlost ubrzava rast biljaka“ je testabilna
+                    hipoteza. </p>
+
+                <p> Ako testiranje pokaže da je hipoteza netočna, ona se odbacuje ili mijenja. Ako testovi potvrđuju
+                    hipotezu, ona se dodatno provjerava. Hipoteza koja opstane nakon brojnih testiranja i opće je
+                    prihvaćena naziva se teorijom. Teorija koja postane univerzalno prihvaćena postaje zakon. Ipak, čak
+                    ni zakon nije dokazan – uvijek postoji mogućnost da nova saznanja dokažu suprotno. </p>
+
+                <h2>Modeli u ekonomiji</h2>
+                <p>Znanstveno razmišljanje koristi modele – pojednostavljene prikaze stvarnosti. Budući da je stvarni
+                    svijet previše složen za potpuno razumijevanje, modeli pomažu da ga pojednostavimo i bolje shvatimo.
+                    Model se temelji na pretpostavkama koje nisu u potpunosti realne, ali služe svrsi analize.</p>
+
+                <div class="example">
+                    <p>Primjer modela: pretpostavka da gospodarstvo proizvodi samo dva dobra. Iako to nije realno, takav
+                        model nam omogućuje razumijevanje osnovnih ekonomskih odnosa, kao što su ponuda i potražnja.</p>
+                </div>
+
+                <p>Ekonomisti često koriste grafove kako bi vizualno prikazali modele. Modeli također pomažu u stvaranju
+                    hipoteza koje se potom testiraju.</p>
+
+                <h2>Testiranje hipoteza u ekonomiji</h2>
+                <p>Primjer hipoteze: Povećanje cijene goriva smanjit će potrošnju goriva. Kako testirati ovu tvrdnju?
+                </p>
+                <p>Ekonomisti koriste empirijske podatke iz stvarnog svijeta. Primjer: cijena benzina u SAD-u porasla je
+                    s prosječnih 2.12€ po galonu u svibnju 2005. na 2.88€ u svibnju 2006., a potrošnja je ipak porasla
+                    za 0.3%. Ovaj podatak nije u skladu s hipotezom, ali ne znači da je hipoteza pogrešna.</p>
+
+                <p>Problem je u tome što se u ekonomiji više čimbenika mijenja istovremeno, pa je teško izolirati učinak
+                    samo jednog (u ovom slučaju cijene). Na primjer, u istom razdoblju su porasli dohodak, zaposlenost i
+                    broj stanovnika — svi ti faktori mogu povećati potrošnju goriva.</p>
+
+                <h2>Problem "ceteris paribus"</h2>
+                <div class="definition">
+                    <p>Hipoteze u ekonomiji često sadrže pretpostavku ceteris paribus — „kad su svi drugi uvjeti
+                        nepromijenjeni“. No u stvarnosti, uvjeti se rijetko kada ne mijenjaju. Zbog toga testovi
+                        hipoteza u ekonomiji rijetko donose jasne zaključke.</p>
+                </div>
+                <p>Za razliku od prirodnih znanosti (npr. kemije), gdje je moguće kontrolirati uvjete u laboratoriju,
+                    ekonomisti analiziraju stvarni svijet i ne mogu provoditi kontrolirane eksperimente, pa koriste
+                    statističke metode kako bi pokušali izolirati učinak pojedinih promjena.</p>
+
+                <h2>Zabluda lažne uzročnosti</h2>
+                <div class="definition">
+                    <p>Hipoteze često povezuju promjenu jedne varijable s promjenom druge. No, korelacija ne znači
+                        uzročnost. Primjer zablude: tvrdnja da ljudi koji nose kratke hlače uzrokuju toplo vrijeme —
+                        jasno je da je uzrok obrnut. Takva pogrešna zaključivanja nazivaju se zabludom lažne uzročnosti.
+                    </p>
+                </div>
+                <p>Ekonomisti koriste posebne statističke testove kako bi pokušali utvrditi postoji li stvarna
+                    uzročnost. Ipak, zbog složenosti stvarnog svijeta, ti testovi nisu uvijek dovoljno uvjerljivi. </p>
+                <p>U slučaju cijena goriva i potrošnje, iako stvarni podaci možda nisu odmah potvrdili hipotezu, postoji
+                    čvrst teorijski temelj i značajan broj testova koji podupiru tvrdnju da, ceteris paribus, viša
+                    cijena smanjuje potražnju.</p>
+
+                <h2>Normativne i pozitivne tvrdnje</h2>
+                <div class="definition">
+                    <p>U ekonomiji razlikujemo dvije vrste tvrdnji:</p>
+                    <ul>
+                        <li><strong>Pozitivne tvrdnje:</strong> temelje se na činjenicama i mogu se testirati (npr.
+                            „Microsoft je najveći proizvođač operativnih sustava“). </li>
+                        <li><strong>Normativne tvrdnje:</strong> izražavaju vrijednosne sudove i ne mogu se testirati
+                            (npr. „Trebali bismo više pomagati siromašnima“). </li>
+                    </ul>
+                </div>
+
+                <p>Sporovi oko pozitivnih tvrdnji mogu se razriješiti ispitivanjem dokaza. No kod normativnih tvrdnji,
+                    koje se temelje na osobnim vrijednostima, često dolazi do neslaganja koje se ne može znanstveno
+                    razriješiti. </p>
+                <p>Mnogi sukobi među ekonomistima proizlaze upravo iz razlika u vrijednosnim sustavima, a ne iz
+                    činjenica. </p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Ekonomisti nastoje koristiti znanstvenu metodu u svom istraživanju.</li>
+                        <li>Hipoteze se ne mogu dokazati kao istinite, mogu se samo opovrgnuti.</li>
+                        <li>Kao i drugi znanstvenici, ekonomisti koriste modele za analizu stvarnosti. </li>
+                        <li>Dva velika problema kod testiranja ekonomskih hipoteza su: problem
+                            svih-ostalih-stvari-nepromijenjenih i zabluda lažne uzročnosti. </li>
+                        <li>Pozitivne tvrdnje su činjenične i testabilne, dok su normativne tvrdnje vrijednosni sudovi i
+                            ne mogu se dokazati. Mnoge rasprave među ekonomistima proizlaze iz tih vrijednosnih razlika.
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz13.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

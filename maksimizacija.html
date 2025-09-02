@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analiza izbora potrošača - Maksimizacija korisnosti i potražnje</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="maksimizacija">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container stay">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <div class="chosen"><a href="#">Maksimizacija korisnosti i potražnje</a></div>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+        </div>
+
+        <div class="subbar">
+             <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Maksimizacija korisnosti i potražnje</strong></h1>
+                <p>Izbori koji maksimiziraju korisnost, odnosno, izbori koji slijede pravilo granične odluke općenito
+                    dovode do krivulja potražnje koje padaju prema dolje. Ovaj odjeljak prikazuje kako izbori pojedinca
+                    koji maksimiziraju korisnost mogu dovesti do krivulje potražnje.</p>
+
+                <h2>Izvođenje individualne krivulje potražnje</h2>
+                <p>Pretpostavimo, radi jednostavnosti, da neka Mary Andrews konzumira samo jabuke (<em>označene slovom
+                        A</em>) i naranče
+                    (<em>označene slovom O</em>). Jabuke koštaju 2 eura po kilogramu, a naranče 1 euro po kilogramu, i
+                    njezin mjesečni budžet za ta dva dobra iznosi 20 eura. Pretpostavljamo da će prilagoditi svoju
+                    potrošnju tako da vrijedi uvjet za maksimizaciju korisnosti za ta dva dobra: omjer granične
+                    korisnosti i cijene jednak je za jabuke i naranče. To jest:</p>
+                <div class="equation"><img src="images/maksimizacija1.jpg" width="220px" height="100px"></div>
+                <p>Ovdje su MU<sub>A</sub> i MU<sub>O</sub> granične korisnosti jabuka i naranči. Njezina potrošnja
+                    iznosi njezin budžet od 20
+                    eura mjesečno; pretpostavimo da kupuje 5 kilograma jabuka i 10 kilograma naranči.</p>
+                <p>Sada pretpostavimo da je zbog iznimno bogate žetve cijena jabuka pala na 1 euro po kilogramu. Niža
+                    cijena
+                    jabuka povećava graničnu korisnost za svaki 1 euro koji gđa Andrews potroši na jabuke, tako da pri
+                    njezinoj trenutnoj razini potrošnje jabuka i naranči</p>
+                <div class="equation"><img src="images/maksimizacija2.jpg" width="220px" height="100px"></div>
+                <p>Gđa Andrews će reagirati tako što će kupovati više jabuka. Kako to bude činila, granična korisnost
+                    koju dobiva od jabuka će se smanjivati. Ako jabuke i naranče smatra zamjenjivima (supstitutima),
+                    kupovat će i manje naranči. To će uzrokovati porast granične korisnosti naranči. Nastavit će
+                    prilagođavati svoju potrošnju sve dok granična korisnost po potrošenom euru ne bude jednaka za oba
+                    dobra:</p>
+                <div class="equation"><img src="images/maksimizacija3.jpg" width="220px" height="100px"></div>
+                <p>Pretpostavimo da u novom rješenju kupuje 12 kilograma jabuka i 8 kilograma naranči. Još uvijek troši
+                    cijeli
+                    svoj budžet od 20 eura na ta dva dobra [(12 x 1€) + (8 x 1€) = 20€].</p>
+                <img src="images/maksimizacija4.jpg" width="520px" height="400px">
+                <p>Krivulja potražnje za jabukama Mary Andrews, d, može se izvesti određivanjem količina jabuka koje će
+                    kupovati pri svakoj cijeni. Te se količine određuju primjenom pravila granične odluke u cilju
+                    maksimizacije korisnosti.</p>
+                <p>Pri cijeni od 2 eura po kilogramu, gđa Andrews maksimizira korisnost kupujući 5 kilograma jabuka
+                    mjesečno.
+                    Kada cijena jabuka padne na 1 euro po kilogramu, količina jabuka pri kojoj maksimizira korisnost
+                    raste na
+                    12 kilograma mjesečno.</p>
+                <p>Upravo se potrošačevom reakcijom na različite cijene gradi njegova krivulja potražnje za nekim
+                    dobrom.
+                    Kada su jabuke koštale 2 eura po kilogramu, Mary je maksimizirala korisnost kupnjom 5 kilograma
+                    jabuka. Kad je cijena jabuka pala, povećala je kupljenu količinu na 12 kilograma.</p>
+
+                <div style="height: 20px;"></div>
+                <hr>
+                <p>❗Primijetite da u ovom primjeru gđa Andrews maksimizira korisnost ne samo tamo gdje su omjeri
+                    graničnih korisnosti i cijena jednaki, već i tamo gdje su same granične korisnosti oba dobra
+                    jednake. Međutim, jednakost graničnih korisnosti vrijedi samo zato što su cijene oba dobra jednake –
+                    oba
+                    dobra ovdje koštaju 1 euro. Da su cijene jabuka i naranči različite, granične korisnosti pri
+                    rješenju koje maksimizira korisnost
+                    bile bi različite. Uvjet za maksimizaciju korisnosti – konzumirati gdje su omjeri granične
+                    korisnosti i cijene jednaki
+                    – vrijedi uvijek, bez obzira na cijene. Dakle, potrošači ne maksimiziraju korisnost izjednačavanjem
+                    graničnih korisnosti, već
+                    izjednačavanjem omjera granične korisnosti i cijene.</p>
+                <hr>
+                <div style="height: 20px;"></div>
+
+                <p>Uvjet maksimizacije korisnosti glasi:</p>
+                <div class="equation"><img src="images/maksimizacija5.jpg" width="220px" height="100px"></div>
+                <p>Uvjet maksimizacije nije:</p>
+                <div class="equation"><img src="images/maksimizacija6.jpg" width="180px" height="80px"></div>
+
+                <h2>Od individualne do tržišne potražnje</h2>
+                <p>Tržišne krivulje potražnje koje smo proučavali u prethodnim poglavljima izvedene su iz individualnih
+                    krivulja potražnje. Pretpostavimo da se, osim gđe Andrews, na tržištu jabuka nalaze još dvoje
+                    potrošača – Ellen Smith i Koy Keino. Količine koje svaki od njih konzumira pri različitim cijenama
+                    prikazane su na slici u nastavku, zajedno s količinama koje konzumira gđa Andrews. Krivulje
+                    potražnje za svakog pojedinog potrošača prikazane su u dijagramu (a). Tržišna krivulja potražnje za
+                    sve troje potrošača, prikazana u dijagramu (b), dobiva se zbrajanjem količina potražnje pri svakoj
+                    cijeni za sve troje potrošača. Na primjer, pri cijeni od 2 eura po kilogramu, gđa Andrews traži 5
+                    kilograma jabuka mjesečno, gđa Smith 3 kilograma, a g. Keino 8 kilograma. Ukupno se na toj cijeni
+                    traži 16 kilograma jabuka mjesečno. Zbrajanjem individualnih količina potražnje pri cijeni od 1 euro
+                    po kilogramu dolazimo do tržišne potražnje od 40 kilograma mjesečno. Ova metoda zbrajanja količina
+                    po vodoravnoj osi grafa naziva se vodoravno zbrajanje. <strong>Tržišna krivulja potražnje je dakle
+                        vodoravna suma svih individualnih krivulja potražnje</Strong>.</p>
+                <img src="images/maksimizacija7.jpg" width="820px" height="500px">
+                <p> <em>Tablica prikazuje rasporede potražnje za Mary Andrews, Ellen Smith i Koya Keina. Njihove
+                        individualne
+                        krivulje potražnje prikazane su u dijagramu (a). Tržišna krivulja potražnje za sve troje
+                        prikazana je u
+                        dijagramu (b).</em></p>
+                <p>Individualne krivulje potražnje odražavaju prilagodbu potrošača u cilju maksimizacije korisnosti pri
+                    različitim tržišnim cijenama. Još jednom vidimo da, <mark>kako cijena pada, potrošači teže kupovati
+                        više
+                        nekog dobra</mark>. Krivulje potražnje
+                    imaju negativan nagib, što potvrđuje zakon potražnje.</p>
+
+                <h2>Efekti supstitucije i dohotka</h2>
+                <p>Vidjeli smo da je Mary Andrews povećala količinu jabuka koje traži kada je cijena jabuka pala s 2 na
+                    1 euro po kilogramu. Iza te prilagodbe kriju se dva različita učinka:
+                    <mark><strong>supstitucije</strong></mark> i <mark><strong>efekt
+                            dohotka</strong></mark>. Važno je razlikovati ova dva učinka jer mogu imati vrlo različite
+                    implikacije na
+                    elastičnost krivulje potražnje.
+                </p>
+                <p>Prvo, smanjenje cijene jabuka učinilo ih je jeftinijima u odnosu na naranče. Prije promjene cijene,
+                    za istu svotu moglo se kupiti 2 kilograma naranči ili 1 kilogram jabuka. Nakon promjene cijene, za
+                    istu
+                    svotu mogao se kupiti 1 kilogram bilo jabuka ili naranči. Drugim riječima, prije promjene cijene 2
+                    kilograma naranči mijenjale su se za 1 kilogram jabuka, dok se nakon promjene 1 kilograma naranči
+                    mijenjala za
+                    1 kilogram jabuka.</p>
+                <p>Drugo, smanjenje cijene jabuka u suštini je potrošače jabuka učinilo "bogatijima". Prije promjene
+                    cijene, gđa Andrews je kupovala 5 kilograma jabuka i 10 kilograma naranči po ukupnoj cijeni od 20
+                    eura. Po
+                    novoj nižoj cijeni jabuka, mogla bi kupiti istu kombinaciju za 15 eura. Učinak smanjenja cijene
+                    jabuka jednak je kao da joj je netko dao 5 eura, time se povećava njezina kupovna moć. Kupovna
+                    moć odnosi se na količinu dobara i usluga koju je moguće kupiti s određenim proračunom.</p>
+                <p>Kako bi razlikovali efekt supstitucije i efekt dohotka, ekonomisti prvo promatraju utjecaj promjene
+                    cijene bez promjene mogućnosti potrošača da kupi dobra i usluge. Promjena cijene uz kompenzaciju
+                    dohotka zamišljena je vježba u kojoj pretpostavljamo da se, kada se promijeni cijena nekog dobra,
+                    potrošačev dohodak prilagođava tako da može kupiti istu kombinaciju dobara kao i prije, ali po novim
+                    cijenama. Gđa Andrews je prije promjene kupovala 5 kilograma jabuka i 10 kilograma naranči. Ta
+                    kombinacija
+                    bi nakon promjene cijene koštala 15 eura. Dakle, za kompenzaciju, uzeli bismo joj 5 eura kako bi
+                    joj ostalo točno 15 eura, koliko je potrebno za istu kombinaciju.</p>
+                <p>S tih 15 eura i jeftinijim jabukama, gđa Andrews bi mogla kupiti 5 kilograma jabuka i 10 kilograma
+                    naranči.
+                    No, bi li to i učinila? Odgovor ovisi o usporedbi granične korisnosti koju dobiva za dodatni euro
+                    potrošen na jabuke i onu za naranče. Dodatna korisnost po euru od jabuka sada
+                    premašuje onu od naranči, pa će povećati konzumaciju jabuka. Ako joj je proračun samo 15 eura,
+                    povećanje potrošnje jabuka znači smanjenje potrošnje naranči. Dakle, kao odgovor na promjenu cijene
+                    uz kompenzaciju dohotka, gđa Andrews supstituira jabuke za naranče. Ova promjena u potrošnji zbog
+                    takve promjene cijene naziva se efekt supstitucije.</p>
+                <p>Pretpostavimo da bi gđa Andrews, pri cijeni jabuka od 1 euro uz kompenzaciju dohotka, povećala
+                    potrošnju jabuka na 9 kilograma mjesečno, a smanjila potrošnju naranči na 6 kilograma mjesečno.
+                    Efekt
+                    supstitucije u tom slučaju je povećanje potrošnje jabuka za 4 kilograma mjesečno.</p>
+                <p>Efekt supstitucije uvijek dovodi do promjene potrošnje u suprotnom smjeru od promjene cijene. Kada
+                    potrošač maksimizira korisnost, omjer granične korisnosti i cijene jednak je za sva dobra. Promjena
+                    cijene uz kompenzaciju povećava dodatnu korisnost po dolaru za dobro čija je cijena pala, potrošač
+                    će ga kupovati više. Ako cijena raste, dodatna korisnost po dolaru pada – potrošač ga kupuje manje.
+                </p>
+                <p>Drugim riječima, kada cijena dobra pada, ljudi reagiraju tako da zamjenjuju druga dobra tim dobrom –
+                    kupuju više tog dobra, a manje ostalih. Kada cijena raste, događa se suprotno. Promatrajući
+                    ponašanje potrošača pod uvjetima kompenzirane promjene cijene, promatramo samo učinak promjene
+                    relativnih cijena, bez utjecaja promjene kupovne moći.</p>
+                <p>Kako bismo dovršili analizu učinka promjene cijene, moramo razmotriti i onih 5 eura koje je gđa
+                    Andrews efektivno "zaradila" tom promjenom. Nakon pada cijene, ista kombinacija dobara košta ju 15
+                    eura umjesto 20, kao da ima 5 eura više. Taj dodatni dohodak može također utjecati na količinu
+                    jabuka koju konzumira. Promjena u potrošnji zbog implicitne promjene dohotka koja nastaje kao
+                    posljedica promjene cijene naziva se efekt dohotka.</p>
+                <p>Kada cijena dobra raste, događa se implicitno smanjenje dohotka. Kada cijena dobra pada, dolazi do
+                    implicitnog povećanja. Kad je cijena jabuka pala, gđa Andrews (koja je konzumirala 5 kilograma
+                    mjesečno)
+                    efektivno je dobila 5 eura više.</p>
+                <p>Pretpostavimo da gđa Andrews koristi taj implicitni dobitak da kupi još 3 kilograma jabuka i 2
+                    kilograma
+                    naranči mjesečno. Već je povećala potrošnju jabuka na 9 kilograma mjesečno zbog efekta supstitucije,
+                    pa
+                    dodatna 3 kilograma znače ukupno 12 kilograma mjesečno. To je upravo ono što smo prethodno
+                    promatrali kad
+                    smo izvodili njezinu krivulju potražnje. Sada vidimo da se povećanje tražene količine sastoji od
+                    efekta supstitucije i efekta dohotka. Sljedeća slika prikazuje kombinirane učinke promjene cijene.
+                </p>
+                <img src="images/maksimizacija8.jpg" width="700px" height="500px">
+                <p>Na slici je prikazana krivulja potražnje za gospođu Andrews. Ona pokazuje da smanjenje cijene
+                    jabuka s 2 eura na 1 euro po kilogramu povećava količinu koju gospođa Andrews traži s 5 kilograma na
+                    12.
+                    Ovaj graf prikazuje da se ta promjena sastoji od učinka supstitucije i učinka dohotka. Učinak
+                    supstitucije povećava traženu količinu za 4 kilograma, a učinak dohotka za 3, što ukupno daje
+                    povećanje
+                    tražene količine za 7 kilograma.</p>
+                <p>Veličina učinka supstitucije ovisi o brzini kojom se granične korisnosti dobara mijenjaju kako
+                    potrošač prilagođava potrošnju uslijed promjene cijene. Kako gospođa Andrews kupuje više jabuka, a
+                    manje naranči, granična korisnost jabuka opada, dok granična korisnost naranči raste. Ako male
+                    promjene u potrošenim količinama izazivaju velike promjene u graničnim korisnostima, učinak
+                    supstitucije potreban za ponovno uspostavljanje jednakosti omjera granične korisnosti i cijene bit
+                    će mali. Ako su potrebne mnogo veće promjene u količinama da bi se postigle iste promjene u
+                    graničnim korisnostima, učinak supstitucije bit će velik.</p>
+                <p>Veličina učinka dohotka uslijed promjene cijene ovisi o tome koliko je potražnja za dobrom osjetljiva
+                    na promjenu dohotka i koliko je to dobro značajno u budžetu potrošača. Kada se cijena promijeni za
+                    dobro koje čini značajan dio potrošačkog budžeta, promjena u potrošačevoj kupovnoj moći je velika.
+                    Promjena cijene dobra koje čini neznatan dio budžeta potrošača, međutim, ima mali utjecaj na njegovu
+                    ili njezinu kupovnu moć; učinak dohotka takve promjene cijene je mali.</p>
+                <p>Budući da odgovor svakog potrošača na promjenu cijene ovisi o veličinama učinaka supstitucije i
+                    dohotka, ti učinci igraju ulogu u određivanju cjenovne elastičnosti potražnje. Sve ostale stvari
+                    nepromijenjene, što je učinak supstitucije veći, to je veća apsolutna vrijednost cjenovne
+                    elastičnosti potražnje. Kada učinak dohotka djeluje u istom smjeru kao i učinak supstitucije, veći
+                    učinak dohotka također doprinosi većoj cjenovnoj elastičnosti potražnje. Ipak, postoje slučajevi
+                    kada se učinci supstitucije i dohotka kreću u suprotnim smjerovima. O tim ćemo slučajevima govoriti
+                    u sljedećem odjeljku.</p>
+
+                <h2>Normalna i inferiorna dobra</h2>
+                <p>Priroda učinka dohotka uslijed promjene cijene ovisi o tome je li dobro normalno ili inferiorno.
+                    Učinak dohotka pojačava učinak supstitucije u slučaju normalnih dobara; djeluje u suprotnom smjeru
+                    kod inferiornih dobara.</p>
+
+                <h2>Normalna dobra</h2>
+                <p>Normalno dobro je ono čija potrošnja raste s porastom dohotka. Kada cijena normalnog dobra padne,
+                    javljaju se dva prepoznatljiva učinka:</p>
+                <ol>
+                    <li><mark><strong>Učinak supstitucije</strong></mark> pridonosi povećanju tražene količine jer
+                        potrošači
+                        zamjenjuju više tog dobra drugim dobrima.</li>
+                    <li><mark><strong>Učinak dohotka</strong></mark>: Smanjenje cijene povećava potrošačevu sposobnost
+                        kupnje dobara.
+                        Budući da je riječ o normalnom dobru, to povećanje kupovne moći dodatno povećava traženu
+                        količinu tog dobra.</li>
+                </ol>
+                <p>U slučaju normalnog dobra, dakle, učinci supstitucije i dohotka međusobno se pojačavaju. Odgovor
+                    gospođe Andrews na sniženje cijene jabuka tipičan je primjer reakcije na nižu cijenu normalnog
+                    dobra.</p>
+                <p>Povećanje cijene normalnog dobra djeluje na sličan način, ali u suprotnom smjeru. Viša cijena
+                    uzrokuje da potrošači više konzumiraju druga dobra, čije su cijene sada relativno niže. Učinak
+                    supstitucije tako smanjuje traženu količinu. Viša cijena također smanjuje kupovnu moć, pa potrošači
+                    smanjuju potrošnju tog dobra i putem učinka dohotka.</p>
+
+                <h2>Inferiorna dobra</h2>
+                <p>U poglavlju koje je uvodilo model ponude i potražnje, vidjeli smo da je inferiorno dobro ono za koje
+                    potražnja opada kada dohodak raste. To je obično dobro koje ljudi zapravo ne vole previše. Kada su
+                    im prihodi niski, ljudi konzumiraju inferiorno dobro jer si bolje ne mogu priuštiti. Kako im prihodi
+                    rastu i mogu si priuštiti nešto što više vole, konzumiraju manje inferiornog dobra.</p>
+                <p>Kada cijena inferiornog dobra padne, događaju se dvije stvari:</p>
+                <ol>
+                    <li>Potrošači će zamijeniti druga dobra s više inferiornog dobra jer je njegova cijena u odnosu na
+                        druga dobra pala. Količina potražnje se povećava kao rezultat učinka supstitucije.</li>
+                    <li>Niža cijena efektivno čini potrošače "bogatijima". No, budući da je riječ o inferiornom dobru,
+                        to smanjuje količinu potražnje.</li>
+                </ol>
+                <p>Stoga je slučaj inferiornih dobara prilično drugačiji od slučaja normalnih dobara. Učinak dohotka
+                    zbog promjene cijene djeluje u suprotnom smjeru od učinka supstitucije kod inferiornih dobara, dok
+                    kod normalnih dobara učinak dohotka pojačava učinak supstitucije.</p>
+                <img src="images/maksimizacija9.jpg" width="700px" height="500px">
+                <p>U slučaju inferiornih dobara, učinci supstitucije i dohotka djeluju jedan protiv drugoga. Potrošač
+                    započinje u točki A, konzumirajući q<sub>1</sub> jedinica dobra po cijeni P<sub>1</sub>. Kada cijena
+                    padne na P<sub>2</sub>, potrošač
+                    se pomiče u točku B, povećavajući količinu potražnje na q2. Učinak supstitucije povećava potražnju
+                    na q<sub>s</sub>, ali učinak dohotka je smanjuje s q<sub>s</sub> na q<sub>2</sub>.</p>
+                <p>Slika prikazuje učinke supstitucije i dohotka kod sniženja cijene inferiornog dobra. Kada cijena
+                    padne s P<sub>1</sub> na P<sub>2</sub>, količina koju potrošač traži povećava se s q<sub>1</sub> na
+                    q<sub>2</sub>. Učinak supstitucije povećava
+                    količinu potražnje s q<sub>1</sub> na q<sub>s</sub>. No, učinak dohotka smanjuje količinu potražnje
+                    s q<sub>s</sub> na q<sub>2</sub>; učinak
+                    supstitucije je snažniji od učinka dohotka.</p>
+                <p>Rezultat je u skladu sa zakonom potražnje: smanjenje cijene povećava količinu potražnje. Međutim,
+                    količina potražnje manja je nego što bi bila da se radi o normalnom dobru. Zbog toga inferiorna
+                    dobra obično imaju manje elastičnu potražnju u odnosu na normalna dobra.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Individualne krivulje potražnje odražavaju prilagodbu potrošača promjenama cijena s ciljem
+                            maksimizacije korisnosti.</li>
+                        <li>Tržišne krivulje potražnje dobivaju se horizontalnim zbrajanjem krivulja potražnje svih
+                            potrošača na tržištu.</li>
+                        <li>Učinak supstitucije zbog promjene cijene mijenja potrošnju u smjeru suprotnom od promjene
+                            cijene.</li>
+                        <li>Učinak dohotka zbog promjene cijene pojačava učinak supstitucije ako je dobro normalno;
+                            djeluje u suprotnom smjeru ako je dobro inferiorno.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz42.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

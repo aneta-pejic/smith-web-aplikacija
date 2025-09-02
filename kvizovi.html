@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smith - Kvizovi</title>
+    <link rel="stylesheet" href="styles/first_page_style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="upper-part">
+        <header class="zaglavlje">
+            <div class="lijevo">
+                <img src="images/Smith logo.png" alt="Logo" class="logo" />
+                <span class="ime-aplikacije">Smith</span>
+            </div>
+            <nav class="navigacija">
+                <a href="first_page.html">UPUTE</a>
+                <a href="definicija_ekonomije.html">KRENITE S UČENJEM ➔</a>
+                <a href="#" class="active">KVIZOVI</a>
+                <a href="testovi.html">TESTOVI</a>
+            </nav>
+            <div class="desno">
+                <div class="korisnik-section" id="korisnikSection" style="display: none;">
+                    <span id="korisnickoIme" class="korisnik"></span>
+                    <div class="dropdown" id="dropdownMeni">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks" style="display: none;">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-section">
+            <div class="title">
+                <h1 class="naslov">POPIS</h1>
+                <h1 class="naslov2">SVIH KVIZOVA</h1>
+                <h3 class="podnaslov">Ovdje možete pronaći popis svih kvizova po poglavljima. Kvizovi se mogu rješavati
+                    neograničeni broj puta, a također Vam je omogućeno i praćenje vlastitog napretka.</h3>
+                <h3 class="podnaslov"><em>Sretno s rješavanjem!</em>
+                </h3>
+            </div>
+            <div class="header-img2">
+                <img src="images/kvizovi_pozadina.jpg" alt="Pozadinska slika">
+            </div>
+        </div>
+    </div>
+
+    <div class="sadrzaj">
+        <h2>Ekonomija</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>DEFINICIJA</em></span>
+                                <span class="donji-naslov"><em>EKONOMIJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/definicijaekonomije_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz11.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>PODRUČJE</em></span>
+                                <span class="donji-naslov"><em>EKONOMIJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/područjeekonomije_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz12.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>METODE I ALATI</em></span>
+                                <span class="donji-naslov"><em>EKONOMISTA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/metodeialati_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz13.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Ponuda i potražnja</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov"><em>PONUDA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/ponuda_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz21.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov"><em>POTRAŽNJA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/potražnja_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz22.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Elastičnost: Mjera odgovora</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>CJENOVNA
+                                        ELASTIČNOST</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>POTRAŽNJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/cjenovnapotražnja_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz31.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>OSJETLJIVOST</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>POTRAŽNJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/osjetljivostpotražnje_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz32.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>CJENOVNA</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>ELASTIČNOST PONUDE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/cjenovnaponuda_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz33.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Analiza izbora potrošača</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov"><em>POJAM</em></span>
+                                <span class="donji-naslov"><em>KORISNOSTI</em></span>
+                            </div>
+                            <img class="card-icon" src="images/pojamkorisnosti_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz41.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>MAKSIMIZACIJA</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>KORISNOSTI I
+                                        POTRAŽNJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/maksimizacija_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz42.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>ANALIZA</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>INDIFERENTNE
+                                        KRIVULJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/analiza_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz43.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Proizvodnja i troškovi</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>KRATKOROČNO</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>RAZDOBLJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/kratkoročnorazdoblje_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz51.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>DUGOROČNO</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>RAZDOBLJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/dugoročnorazdoblje_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz52.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Tržišta savršene konkurencije</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>MODEL SAVRŠENE</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>KONKURENCIJE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/model_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz61.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 30px;"><em>ODREĐIVANJE OUTPUTA
+                                        U</em></span>
+                                <span class="donji-naslov" style="font-size: 30px;"><em>KRATKOROČNOM
+                                        RAZDOBLJU</em></span>
+                            </div>
+                            <img class="card-icon" src="images/određivanjeoutputa_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz62.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 30px;"><em>SAVRŠENA KONKURENCIJA
+                                        U</em></span>
+                                <span class="donji-naslov" style="font-size: 30px;"><em>DUGOROČNOM RAZDOBLJU</em></span>
+                            </div>
+                            <img class="card-icon" src="images/savršenakonkurencija_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz63.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Monopol</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>PRIRODA</em></span>
+                                <span class="donji-naslov"><em>MONOPOLA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/prirodamonopola_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz71.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>MODEL</em></span>
+                                <span class="donji-naslov"><em>MONOPOLA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/modelmonopola_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz72.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front">
+                        <div class="card-title-section">
+                            <div class="card-title-text">
+                                <span class="gornji-naslov"><em>PROCJENA</em></span>
+                                <span class="donji-naslov"><em>MONOPOLA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/procjenamonopola_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz73.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Plaće i zaposlenost u savršenoj konkurenciji</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 40px;"><em>POTRAŽNJA</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>ZA RADOM</em></span>
+                            </div>
+                            <img class="card-icon" src="images/potražnjazaradom_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz81.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov"><em>PONUDA</em></span>
+                                <span class="donji-naslov"><em>RADNE SNAGE</em></span>
+                            </div>
+                            <img class="card-icon" src="images/ponudarada_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz82.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-side front" style="background-color: #2e5e0e; border: 6px solid #9bc771;">
+                        <div class="card-title-section">
+                            <div class="card-title-text" style="color: #9bc771;">
+                                <span class="gornji-naslov" style="font-size: 30px;"><em>FUNKCIONIRANJE</em></span>
+                                <span class="donji-naslov" style="font-size: 40px;"><em>TRŽIŠTA RADA</em></span>
+                            </div>
+                            <img class="card-icon" src="images/funkcioniranje_ikona.png" alt="ikona">
+                        </div>
+                    </div>
+                    <div class="card-side back">
+                        <div class="quiz-highlight">
+                            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+                            <a href="quiz83.html" class="quiz-action-button">Kreni na kviz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Kontakt:</strong> pejic.aneta2407@gmail.com | apejic@student.ferit.hr</p>
+            <p>&copy; 2025 Smith Web Aplikacija</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/first_page.js"></script>
+</body>
+
+</html>

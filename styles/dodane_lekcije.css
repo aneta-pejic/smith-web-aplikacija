@@ -1,0 +1,147 @@
+body {
+    background: #c9f79f;
+    color: #252525;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #4b7c1b;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #2c5f2d;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b7c1b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #3e6819;
+}
+
+#extraLessonsForm {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#extraLessonsForm input[type="text"],
+#lessonContent {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#lessonContent {
+    min-height: 200px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+#saveLessonBtn {
+    background-color: #4b7c1b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#saveLessonBtn:hover {
+    background-color: #3e6819;
+}
+
+#lessonListWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lesson-item {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px #252525;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.lesson-item h3 {
+    color: #2c5f2d;
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.lesson-item em {
+    color: #666;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lesson-item div {
+    line-height: 1.7;
+}
+
+.break {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.break p {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #saveLessonBtn,
+    .back-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,180 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #9bc771;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b7c1b;
+}
+
+h1 {
+  text-align: center;
+  color: #4b7c1b;
+  font-family: "Poller One", serif;
+}
+
+#timer {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #4b7c1b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+#quit-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4b7c1b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.question {
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #252525;
+  font-weight: bold;
+}
+
+.opcija-container {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.opcija-container input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #7ab342;
+}
+
+.opcija-label {
+  font-weight: normal;
+  color: #222;
+}
+
+.tekst-odgovor {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #4b7c1b;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+
+.submit-button:hover {
+  background-color: #3a6318;
+}
+
+#rezultat {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="checkbox"] {
+  accent-color: #7ab342;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #timer {
+    font-size: 16px;
+    padding: 6px 12px;
+    top: 8px;
+    right: 10px;
+  }
+
+  .question-text {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #timer {
+    font-size: 14px;
+    padding: 5px 10px;
+    top: 6px;
+    right: 8px;
+  }
+
+  .option-label,
+  .tekst-odgovor {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+

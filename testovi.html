@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smith - Kvizovi</title>
+    <link rel="stylesheet" href="styles/first_page_style.css" />
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="upper-part">
+        <header class="zaglavlje">
+            <div class="lijevo">
+                <img src="images/Smith logo.png" alt="Logo" class="logo" />
+                <span class="ime-aplikacije">Smith</span>
+            </div>
+            <nav class="navigacija">
+                <a href="first_page.html">UPUTE</a>
+                <a href="definicija_ekonomije.html">KRENITE S UČENJEM ➔</a>
+                <a href="kvizovi.html">KVIZOVI</a>
+                <a href="#" class="active">TESTOVI</a>
+            </nav>
+
+            <div class="desno">
+                <div class="korisnik-section" id="korisnikSection" style="display: none;">
+                    <span id="korisnickoIme" class="korisnik"></span>
+                    <div class="dropdown" id="dropdownMeni">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks" style="display: none;">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </header>
+
+        <div class="header-section">
+            <div class="title">
+                <h1 class="naslov">POPIS</h1>
+                <h1 class="naslov2">SVIH TESTOVA</h1>
+                <h3 class="podnaslov">Ovdje možete pronaći popis svih testova. Testovi se mogu rješavati
+                    neograničeni broj puta, a također Vam je omogućeno i praćenje vlastitog napretka. Svaki test traje
+                    10 minuta, a sastoji se od pitanja s jednim ili više odgovora te nadopunjavanjem.</h3>
+                <h3 class="podnaslov"><em>Sretno s rješavanjem!</em>
+                </h3>
+            </div>
+
+            <div class="header-img">
+                <img src="images/testovi_pozadina.jpg" alt="Pozadinska slika">
+            </div>
+        </div>
+    </div>
+
+    <div class="sadrzaj">
+        <div class="tests">
+            <a href="test1.html">
+                <div class="frame">
+                    <h4>Test 1</h4>
+                    <h3>Ekonomija</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Definicija ekonomije</em>, <em>Područje ekonomije</em> i
+                        <em>Metode i alati ekonomista</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test2.html">
+                <div class="frame">
+                    <h4>Test 2</h4>
+                    <h3>Ponuda i potražnja</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Ponuda</em> i <em>Potražnja</em>.</p>
+                </div>
+            </a>
+
+            <a href="test3.html">
+                <div class="frame">
+                    <h4>Test 3</h4>
+                    <h3>Elastičnost: Mjera odgovora</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Cjenovna elastičnost potražnje</em>, <em>Osjetljivost
+                            potražnje na druge čimbenike</em> i
+                        <em>Cjenovna elastičnost ponude</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test4.html">
+                <div class="frame">
+                    <h4>Test 4</h4>
+                    <h3>Analiza izbora potrošača</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Pojam korisnosti</em>, <em>Maksimizacija korisnosti i
+                            potražnje</em> i
+                        <em>Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                            potrošača</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test5.html">
+                <div class="frame">
+                    <h4>Test 5</h4>
+                    <h3>Proizvodnja i troškovi</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Kratkoročno razdoblje</em> i <em>Dugoročno razdoblje</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test6.html">
+                <div class="frame">
+                    <h4>Test 6</h4>
+                    <h3>Tržišta savršene konkurencije</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Model savršene konkurencije</em>, <em>Određivanje outputa u
+                            kratkoročnom razdoblju</em> i <em>Savršena konkurencija u dugoročnom razdoblju</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test7.html">
+                <div class="frame">
+                    <h4>Test 7</h4>
+                    <h3>Monopol</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Priroda monopola</em>, <em>Model monopola</em> i
+                        <em>Procjena monopola</em>.
+                    </p>
+                </div>
+            </a>
+
+            <a href="test8.html">
+                <div class="frame">
+                    <h4>Test 8</h4>
+                    <h3>Plaće i zaposlenost u savršenoj konkurenciji</h3>
+                    <p>Test obuhvaća pitanja iz lekcija <em>Potražnja za radom</em>, <em>Ponuda radne snage</em> i
+                        <em>Funkcioniranje tržišta rada</em>.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div id="guestView">
+            <img src="images/testovi_upozorenje.jpg" alt="Prijavi se" style="max-width: 300px; width: 100%;">
+            <br>
+            <button class="login-button" onclick="window.location.href='login.html'"><strong>Prijavite
+                    se</strong></button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Kontakt:</strong> pejic.aneta2407@gmail.com | apejic@student.ferit.hr</p>
+            <p>&copy; 2025 Smith Web Aplikacija</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/testovi.js"></script>
+</body>
+
+</html>

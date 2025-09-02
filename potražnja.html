@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponuda i potražnja - Potražnja</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="potraznja">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i
+                potražnja</strong></button>
+        <div class="dropdown-container stay">
+            <a href="ponuda.html">Ponuda</a>
+            <div class="chosen"><a href="#">Potražnja</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Nadnice i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Potražnja</strong></h1>
+                <p>Koliko će se pizza pojesti ove godine? Koliko će puta ljudi posjetiti liječnika? Koliko će kuća
+                    kupiti?</p>
+                <p>Svako dobro ili usluga ima svoje specifične karakteristike koje određuju količinu koju su potrošači
+                    spremni i sposobni konzumirati. Jedna od tih karakteristika je cijena samog dobra ili usluge. Ostale
+                    neovisne varijable koje značajno utječu na potražnju uključuju preferencije potrošača, cijene
+                    povezanih dobara i usluga, dohodak, demografske karakteristike poput veličine populacije, te
+                    očekivanja kupaca. Na primjer, količina pizza koju će ljudi kupiti uvelike ovisi o tome koliko vole
+                    pizzu. Također ovisi o cijenama zamjenskih dobara poput hamburgera ili špageta. Broj posjeta
+                    liječniku vjerojatno će se razlikovati ovisno o dohotku — osobe s višim dohotkom vjerojatno će češće
+                    posjećivati liječnika nego one s nižim dohotkom. Potražnja za pizzom, liječničkim uslugama i
+                    stanovanjem zasigurno je pod utjecajem dobne strukture i veličine populacije. </p>
+                <p>Iako različite varijable igraju različite uloge u oblikovanju potražnje za pojedinim dobrima i
+                    uslugama, ekonomisti posebnu pažnju posvećuju jednoj — cijeni dobra ili usluge. Ako su sve druge
+                    varijable koje utječu na potražnju konstantne, tada viša cijena obično smanjuje količinu koju
+                    potrošači traže, dok niža cijena obično tu količinu povećava. Srednja pizza obično se prodaje po
+                    cijeni između 5 i 10 eura. Zamislite da cijena iznosi 30 eura. Vjerojatno biste kupovali manje pizza
+                    nego sada. S druge strane, kada bi se pizza prodavala za 2 eura, ljudi bi vrlo vjerojatno kupovali
+                    više pizza nego što to trenutno čine. </p>
+                <p>Prvo ćemo razmotriti kako cijena utječe na količinu potražnje za određenim dobrom ili uslugom, a
+                    zatim ćemo analizirati kako ostale varijable utječu na ukupnu razinu potražnje. </p>
+
+                <h2>Krivulja ponude i potražnje</h2>
+                <p>Budući da će ljudi kupovati različite količine dobara ili usluga pri različitim cijenama, ekonomisti
+                    moraju biti pažljivi kada govore o „potražnji“ za nečim. Zbog toga su razvili posebne izraze kako bi
+                    precizno izrazili opći koncept potražnje.</p>
+                <div class="definition">
+                    <p>Količina potražnje za nekim dobrom ili uslugom označava količinu koju su kupci spremni i u
+                        mogućnosti kupiti po određenoj cijeni u određenom vremenskom razdoblju, uz pretpostavku da su
+                        svi ostali uvjeti nepromijenjeni (što se u ekonomiji često označava latinskim izrazom
+                        <em>ceteris paribus</em>).
+                    </p>
+                </div>
+                <div class="example">
+                    <p>Primjerice, pretpostavimo da se u nekom gradu svakog mjeseca proda 100.000 kino ulaznica po
+                        cijeni od 8 eura po ulaznici. Ta količina, 100.000, predstavlja količinu potražnje za kino
+                        ulaznicama mjesečno, pri cijeni od 8 eura. Ako bi cijena bila 12 eura, očekujemo manju količinu
+                        potražnje, a ako bi bila 4 eura, očekujemo veću količinu. Količina potražnje pri svakoj cijeni
+                        bila bi drukčija ako bi se promijenili drugi čimbenici koji na nju utječu, poput broja
+                        stanovnika grada. Zato u definiciji količine potražnje naglašavamo da se ostali uvjeti ne
+                        mijenjaju.</p>
+                </div>
+                <p>Raspored potražnje (engl. demand schedule) je tablica koja prikazuje količine nekog dobra ili usluge
+                    koje se traže pri različitim cijenama u određenom vremenskom razdoblju, uz nepromijenjene ostale
+                    uvjete. Da bismo pojasnili ovaj koncept, promotrimo potražnju za kavom u Sjedinjenim Američkim
+                    Državama. Zanemarit ćemo razlike između vrsta zrna i načina prženja, te jednostavno govoriti o kavi.
+                    Tablica na slici prikazuje količine kave koje će se tražiti mjesečno, pri cijenama od 9 do 4 eura;
+                    to je raspored potražnje. Iz tablice se vidi da s porastom cijene opada količina potražnje.
+                </p>
+                <div class="img_description">
+                    <img src="images/krivulja potražnje.png" alt="Krivulja potražnje">
+                    <div class="img_text">
+                        <h2>Krivulja potražnje</h2>
+                        <p>Slika prikazuje raspored i krivulju potražnje. Tablica prikazuje količine kave koje se traže
+                            mjesečno u SAD-u pri različitim cijenama, uz nepromijenjene ostale uvjete. Ti podaci se
+                            zatim
+                            grafički prikazuju na krivulji potražnje. U točki A, primjerice, potražuje se 25 milijuna
+                            eura
+                            kave mjesečno pri cijeni od 6 eura. U točki B, potražuje se 30 milijuna eura
+                            mjesečno
+                            pri cijeni od 5 eura.</p>
+                    </div>
+                </div>
+                <p>Podaci iz rasporeda potražnje mogu se prikazati i pomoću krivulje potražnje, koja je grafički prikaz
+                    odnosa između cijene i količine potražnje nekog dobra ili usluge u određenom razdoblju, uz
+                    nepromijenjene druge uvjete. Krivulja potražnje na slici prikazuje cijene i količine potražnje za
+                    kavom, kao što je prikazano u tablici. Kao što je uobičajeno u ekonomiji, cijena se prikazuje na
+                    okomitoj osi, a količina na vodoravnoj osi.</p>
+                <p>Cijena sama po sebi ne određuje koliko će ljudi kupovati kave ili nekog drugog dobra. No da bismo
+                    izolirali učinak promjene cijene na količinu potražnje, prikazujemo količinu potražnje za svaku
+                    cijenu, pretpostavljajući da su ostali uvjeti nepromijenjeni. Ovo je uobičajeni postupak pri prikazu
+                    odnosa između dviju varijabli: pretpostavlja se da ostale varijable koje mogu utjecati na odnos
+                    (npr. dohodak ili broj stanovnika) ostaju konstantne u analiziranom razdoblju. </p>
+                <p>Promjena cijene, uz nepromijenjene ostale čimbenike, rezultira kretanjem duž krivulje potražnje. Na
+                    primjer, ako cijena kave padne s 6 na 5 eura, potrošnja raste s 25 na 30 milijuna eura mjesečno.
+                    To je kretanje od točke A do točke B na krivulji potražnje sa slike. Takvo kretanje duž krivulje
+                    uzrokovano promjenom cijene naziva se promjena količine potražnje. Važno je naglasiti da se time ne
+                    mijenja sama krivulja potražnje, radi se samo o pomaku duž postojeće krivulje. </p>
+                <p>Negativan nagib krivulje potražnje na slici ukazuje na jedno od temeljnih ponašanja u ekonomiji. Uz
+                    nepromijenjene ostale uvjete, zakon potražnje kaže da veća cijena dovodi do manje količine
+                    potražnje, a niža cijena do veće količine potražnje.</p>
+                <p>Taj se zakon naziva zakonom jer brojna istraživanja dosljedno potvrđuju ovu povezanost. Vjerojatno
+                    ste i sami to primijetili. Kada trgovina ima višak neke robe, primjerice tenisica ili rajčica, i
+                    želi ih brzo prodati, što obično učini? Snižava cijenu, očekujući da će niža cijena povećati
+                    količinu potražnje. Općenito, očekujemo da zakon potražnje vrijedi: uz dane vrijednosti drugih
+                    čimbenika koji utječu na potražnju, viša cijena smanjuje, a niža povećava količinu potražnje.
+                    Ukratko, krivulje potražnje imaju silazni nagib. </p>
+
+                <h2>Promjene u potražnji</h2>
+                <p>Naravno, cijena sama po sebi ne određuje količinu dobra ili usluge koju će ljudi konzumirati. Na
+                    primjer, potrošnja kave ovisit će i o drugim varijablama kao što su dohodak i broj stanovnika.
+                    Preferencije potrošača također imaju važnu ulogu. Starbucks
+                    je, primjerice, "zainteresirao ljude" za kavu.</p>
+                <p>Također očekujemo da i druge cijene utječu na potrošnju kave. Ljudi često konzumiraju kavu uz krofne
+                    ili peciva, pa bi pad cijene krofni ili peciva mogao potaknuti veće ispijanje kave. S druge strane,
+                    čaj je zamjena za kavu, pa bi pad cijene čaja mogao dovesti do toga da ljudi piju više čaja, a manje
+                    kave.</p>
+                <div class="definition">
+                    <p>Dakle, promjena bilo koje varijable koja je bila pretpostavljena kao konstantna pri izradi
+                        rasporeda potražnje, promijenit će količinu potražnje pri svakoj cijeni. Rezultat takve promjene
+                        nije kretanje duž postojeće krivulje potražnje, već pomak cijele krivulje potražnje. Taj pomak
+                        zove se promjena potražnje.
+                </div>
+                </p>
+                <p>Zamislimo, primjerice, da dođe do neke promjene koja povećava količinu potražnje za kavom pri svakoj
+                    cijeni. Nekoliko događaja može uzrokovati takvu promjenu: porast dohotka, rast broja stanovnika ili
+                    porast cijene čaja, svi ti čimbenici mogu povećati potražnju za kavom pri svakoj cijeni. Svaka od
+                    tih promjena dovodi do novog rasporeda potražnje.</p>
+                <p>Slika u nastavku prikazuje takvu promjenu u rasporedu potražnje za kavom. Možemo vidjeti da je
+                    količina potražnje za kavom mjesečno veća pri svakoj cijeni nego prije. Grafički to prikazujemo
+                    pomakom krivulje potražnje. Izvorna krivulja, označena kao D₁, pomiče se udesno na D₂. </p>
+
+
+                <div class="img_description">
+                    <table>
+                        <caption>Raspored potražnje za kavom</caption>
+                        <thead>
+                            <tr>
+                                <th>Cijena </th>
+                                <th>Stara količina potražnje </th>
+                                <th>Nova količina potražnje</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>15</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>20</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>25</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>35</td>
+                                <td>45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img src="images/promjene u potražnji.png">
+                </div>
+
+                <p> Povećanje količine dobra ili usluge koja se traži pri svakoj cijeni prikazuje se kao povećanje
+                    potražnje. Ovdje se izvorna krivulja potražnje D₁ pomiče udesno na D₂.
+                    Točka A na krivulji D₁ odgovara cijeni od 6 eura i količini potražnje od 25 milijuna kave mjesečno.
+                    Na novoj krivulji potražnje D₂, količina potražnje pri istoj cijeni raste na 35 milijuna kave
+                    mjesečno (točka A'). </p>
+
+                <h2>Preferencije</h2>
+                <p>Promjene u preferencijama potrošača mogu imati značajan utjecaj na potražnju. Već smo spomenuli kako
+                    je Starbucks navodno povećao potražnju za kavom. Drugi primjer je smanjena potražnja za cigaretama
+                    uzrokovana zabrinutošću zbog štetnog utjecaja pušenja na zdravlje.</p>
+                <p>Promjena preferencija koja neki proizvod ili uslugu čini popularnijim dovest će do pomaka krivulje
+                    potražnje udesno. Suprotno tome, ako nešto postane manje popularno, krivulja potražnje će se
+                    pomaknuti ulijevo.</p>
+
+                <h2>Cijene povezanih dobara i usluga</h2>
+                <p>Zamislimo da dođe do pada cijene krofni. Mnogi ljudi uživaju piti kavu dok umaču krofne u nju; niža
+                    cijena krofni stoga može dovesti do povećanja potražnje za kavom, što bi pomaknulo krivulju
+                    potražnje za kavom udesno.</p>
+                <p>S druge strane, niža cijena čaja vjerojatno bi smanjila potražnju za kavom, jer su ta dva proizvoda
+                    zamjene, pa bi krivulja potražnje za kavom bila pomaknuta ulijevo.</p>
+                <p>Općenito:
+                    Ako pad cijene jednog dobra povećava potražnju za drugim, ta se dobra nazivaju komplementi
+                    (dopunska dobra).
+                    Ako pad cijene jednog dobra smanjuje potražnju za drugim, ta se dobra nazivaju zamjenska dobra
+                    (supstituti). </p>
+                <p>Isto pravilo vrijedi i obrnuto:
+                    Dva dobra su komplementi ako porast cijene jednog smanjuje potražnju za drugim.
+                    Dva dobra su zamjene ako porast cijene jednog povećava potražnju za drugim.
+                </p>
+
+                <p>Primjeri:
+                    Komplementi su dobra koja se koriste zajedno: teniski reket i teniske loptice, jaja i slanina,
+                    papir i poštanske marke.
+                    Zamjene su dobra koja se koriste umjesto drugih: iPod je zamjena za CD player, žitarice za
+                    doručak su zamjena za jaja, a prilog u e-mailu može biti zamjena za faks ili poštanske marke.
+                </p>
+
+                <h2>Dohodak</h2>
+                <p>Kako dohodak raste, ljudi povećavaju potrošnju mnogih dobara i usluga, dok pad dohotka dovodi do
+                    smanjenja potrošnje tih istih dobara i usluga. Na primjer, povećanje dohotka vjerojatno će dovesti
+                    do veće potražnje za benzinom, skijaškim putovanjima, novim automobilima i nakitom.</p>
+                <p>Međutim, postoje dobra i usluge čija potrošnja opada kako dohodak raste, i raste kako dohodak opada.
+                    Na primjer, s rastom dohotka ljudi obično konzumiraju više svježeg voća, ali manje konzerviranog
+                    voća.</p>
+                <p>Normalno dobro je ono za koje potražnja raste kada dohodak raste.
+                    Inferiorno dobro je ono za koje potražnja pada kada dohodak raste.</p>
+                <p><strong>Dakle, povećanje dohotka pomiče krivulju potražnje za svježim voćem (normalno dobro) udesno,
+                        dok krivulju potražnje za konzerviranim voćem (inferiorno dobro) ulijevo.</strong></p>
+
+                <h2>Demografske karakteristike</h2>
+                <p>Broj kupaca utječe na ukupnu količinu dobra ili usluge koja će se kupovati. Što je veća populacija,
+                    općenito će biti veća potražnja.</p>
+
+                <p>Osim veličine populacije, i druge demografske karakteristike utječu na potražnju. </p>
+                <p>Na primjer:
+                    S porastom udjela stanovništva starijeg od 65 godina, raste potražnja za zdravstvenim uslugama,
+                    krstarenjima i kamp-prikolicama.
+                    Stopa nataliteta u SAD-u naglo je pala između 1955. i 1975., no otada postupno raste, što je
+                    dovelo do povećanja potražnje za: opremom za bebe, učiteljima u osnovnim školama, nogometnim
+                    trenerima, rolama, visokoškolskim obrazovanjem. </p>
+                <p>Zaključno, potražnja se može mijenjati zbog promjena u broju i obilježjima kupaca.</p>
+
+                <h2>Očekivanja kupaca</h2>
+                <p>Potrošnja dobara koja se mogu lako skladištiti ili čija se potrošnja može odgoditi snažno
+                    ovisi o očekivanjima kupaca.</p>
+                <p>Na primjer:
+                    očekivanje pojave nove televizijske tehnologije, poput televizora visoke rezolucije
+                    (HDTV), može usporiti prodaju običnih televizora.
+                    Ako ljudi očekuju da će cijene goriva porasti sutra, napunit će spremnike danas kako bi
+                    izbjegli višu cijenu.
+                </p>
+                <p>Isto vrijedi i za druga trajna potrošna dobra, kao što su automobili ili perilice rublja:
+                    očekivanje rasta cijena u budućnosti potiče potrošače da kupuju sada. Suprotno tome, ako se očekuje
+                    pad cijene nekog proizvoda, ljudi će vjerojatno smanjiti
+                    trenutnu kupnju i pričekati niže cijene u budućnosti. Na primjer, očekivanje pada cijena računala
+                    može smanjiti sadašnju potražnju za računalima.
+                </p>
+                <p>Vrlo je važno razlikovati između promjene u traženoj količini i promjene u potražnji.</p>
+
+                <div class="definition">
+                    <p>Promjena u traženoj količini predstavlja pomicanje duž krivulje potražnje, uzrokovano
+                        promjenom cijene dobra ili usluge.</p>
+                    <p>Promjena u potražnji označava pomak cijele krivulje potražnje, a uzrokovana je promjenom
+                        jednog od čimbenika koji utječu na potražnju.</p>
+
+                </div>
+
+                <p>Na primjer, povećanje potražnje prikazuje se kao pomak krivulje potražnje udesno, dok se
+                    smanjenje potražnje prikazuje kao pomak krivulje potražnje ulijevo.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Tražena količina nekog dobra ili usluge predstavlja količinu koju su kupci spremni i
+                            mogu kupiti po određenoj cijeni u određenom vremenskom razdoblju, pod uvjetom da se
+                            ostali uvjeti ne mijenjaju (ceteris paribus). </li>
+                        <li>Raspored potražnje je tablica koja prikazuje tražene količine dobra ili usluge pri
+                            različitim cijenama u određenom razdoblju, uz pretpostavku da se ostali čimbenici ne
+                            mijenjaju. </li>
+                        <li>Krivulja potražnje je grafički prikaz traženih količina dobra ili usluge pri
+                            različitim cijenama u određenom vremenskom razdoblju, uz pretpostavku
+                            nepromijenjenih ostalih uvjeta. Uz nepromijenjene ostale uvjete, zakon potražnje kaže da
+                            viša cijena uzrokuje smanjenje tražene količine, dok niža cijena uzrokuje povećanje tražene
+                            količine. Promjena cijene dobra ili usluge uzrokuje promjenu tražene količine, što se
+                            prikazuje kao pomicanje duž krivulje potražnje. </li>
+                        <li>Dva dobra su supstituti ako povećanje cijene jednog dobra povećava potražnju za
+                            drugim (npr. kava i čaj). Dva dobra su komplementi ako povećanje cijene jednog dobra
+                            smanjuje potražnju za drugim (npr. kava i krofne). </li>
+                        <li>Dobro je normalno dobro ako povećanje dohotka povećava potražnju za tim dobrom. Dobro je
+                            inferiorno dobro ako povećanje dohotka smanjuje potražnju za tim dobrom.
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz22.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

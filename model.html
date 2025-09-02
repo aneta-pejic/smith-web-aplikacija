@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tržišta savršene konkurencije - Model savršene konkurencije</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="model_savrsene_konkurencije">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container stay">
+            <div class="chosen"><a href="#">Model savršene konkurencije</a></div>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                <a href="registration.html" class="link"><strong>Registracija</strong></a>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Model savršene konkurencije</strong></h1>
+                <p>Praktički sve tvrtke u tržišnom gospodarstvu suočavaju se s konkurencijom. U ovom ćemo poglavlju
+                    raditi s modelom visoko idealizirane konkurencije koju ekonomisti nazivaju „savršena konkurencija“.
+                </p>
+                <div class="definition">
+                    <p>Savršena konkurencija je tržišni model koji pretpostavlja da veliki broj tvrtki proizvodi
+                        identične
+                        proizvode koje konzumira veliki broj kupaca. Model također pretpostavlja da je ulazak novih
+                        tvrtki
+                        na tržište, kao i izlazak postojećih, jednostavan. Konačno, pretpostavlja se da kupci i
+                        prodavatelji
+                        imaju potpune informacije o tržišnim uvjetima.</p>
+                </div>
+                <p>Detaljnijom analizom ovih pretpostavki vidjet ćemo da one pojednostavljuju rad s modelom. Nijedno
+                    stvarno tržište ne ispunjava sve ove uvjete u potpunosti. Kao i kod svih modela, svrha je razumjeti
+                    kako sustav funkcionira, a ne ga doslovno opisati. Model savršene konkurencije bit će iznimno
+                    koristan za razumijevanje tržišta.</p>
+
+                <h2>Pretpostavke modela</h2>
+                <p>Pretpostavke modela savršene konkurencije zajedno impliciraju da pojedinačni kupci i prodavatelji
+                    prihvaćaju tržišnu cijenu kao zadanu. Nitko nema utjecaja na tu cijenu. Takve se osobe nazivaju
+                    cjenovnim sljedbenicima (engl. price takers). Oni nemaju sposobnost utjecati na tržišnu cijenu.
+                    Poput investitora koji kupuje dionice po tržišnoj cijeni, tvrtke i potrošači u savršenoj
+                    konkurenciji prihvaćaju cijene formirane ponudom i potražnjom.</p>
+                <p>Kada uđete u trgovinu i odlučite kupiti ili ne kupiti proizvod po prikazanoj cijeni, vi ste cjenovni
+                    sljedbenik. Kada na kraju semestra prodajete udžbenik natrag u knjižaru, suočeni ste s tržišnom
+                    cijenom – možete odlučiti prodati ili ne, ali vaša odluka neće utjecati na cijenu.</p>
+
+                <h2>Identični proizvodi</h2>
+                <p>Na tržištu savršene konkurencije, svaki proizvod je potpuno zamjenjiv s drugim. Na primjer, vreća
+                    pšenice koju proizvede jedan poljoprivrednik identična je onoj koju proizvede drugi. Nema razlika u
+                    brendu niti lojalnosti kupaca.</p>
+                <p>Ova pretpostavka je ključna – ako bi jedan proizvođač mogao izdvojiti svoj proizvod kao bolji ili
+                    drugačiji, mogao bi utjecati na cijenu. Savršena konkurencija zahtijeva homogenu (istu) robu kako bi
+                    tvrtke bile cjenovni sljedbenici.</p>
+
+                <h2>Velik broj kupaca i prodavatelja</h2>
+                <p>U savršenoj konkurenciji pretpostavlja se da postoji toliko kupaca i prodavatelja da nijedan od njih
+                    nema utjecaja na cijenu. Tvrtke mogu reagirati na cijene, ali ih ne mogu određivati – ni kada je
+                    riječ o ulaznim troškovima ni kada je riječ o prodajnim cijenama proizvoda.</p>
+
+                <h2>Jednostavan ulazak i izlazak</h2>
+                <p>Ulazak na tržište u savršenoj konkurenciji je lak, što dodatno pojačava konkurenciju. Tvrtke se ne
+                    natječu samo s postojećima već i s potencijalnim novim ulascima.</p>
+                <p>Kasnije ćemo vidjeti kako lak ulazak utječe na održivost ekonomskih profita. Ako je ulazak lak,
+                    visoki profiti privlače nove konkurente. Ako nije, neće.</p>
+                <p>Model također pretpostavlja jednostavan izlazak. Ako je ulazak lagan, ali izlazak težak, tvrtke će
+                    biti opreznije kod ulaska. Na primjer, dugoročni ugovori s dobavljačima mogu otežati izlazak. Stoga
+                    je jednostavan izlazak važan za poticanje ulaska.</p>
+
+                <h2>Potpune informacije</h2>
+                <p>Pretpostavlja se da svi prodavatelji imaju potpune informacije o cijenama, tehnologiji i proizvodnim
+                    metodama. Ako bi jedan prodavatelj imao pristup boljim informacijama, mogao bi steći prednost i
+                    postati cjenovni određivač.</p>
+                <p>Pretpostavlja se i da kupci znaju cijene kod svih prodavatelja. Bez te informacije, tvrtke bi mogle
+                    prodavati po višim cijenama i izbjeći ulogu cjenovnog sljedbenika.</p>
+                <p>Model također pretpostavlja da su informacije dostupne uz nizak trošak – putem interneta, reklama,
+                    ili usmenim putem. To omogućuje svima da donose odluke na temelju tržišnih cijena.</p>
+                <p>Sve navedene pretpostavke zajedno osiguravaju da su svi kupci i prodavatelji cjenovni sljedbenici.
+                    Cijenu određuje tržište – nitko nema dovoljno moći da bi utjecao na nju.</p>
+
+                <h2>Savršena konkurencija i stvarni svijet</h2>
+
+                <p>Pretpostavke modela, identični proizvodi, velik broj sudionika, lakoća ulaska/izlaska i potpune
+                    informacije vrlo su snažne. U stvarnosti, mnoge tvrtke same određuju cijene. Ipak, model savršene
+                    konkurencije čini temelj za model ponude i potražnje, koji već poznajete.</p>
+                <p>U tom modelu, tržišne sile određuju cijene, a sudionici reagiraju na te cijene kao cjenovni
+                    sljedbenici. I svaki put kada koristimo model ponude i potražnje, zapravo primjenjujemo model
+                    savršene konkurencije.</p>
+                <p>Iako stvarna tržišta ne zadovoljavaju sve pretpostavke, model i dalje omogućuje razumijevanje
+                    ključnih obilježja tržišta.</p>
+                <div class="example">
+                    <p>U vašem životu konkurencija je porasla – niži troškovi transporta i razvoj komunikacija omogućili
+                        su
+                        globalnu konkurenciju. Tvrtka iz Južne Koreje može konkurirati na tržištu čelika u SAD-u,
+                        proizvođač
+                        namještaja iz Novog Meksika može prodavati u Japanu, a firma može ući na svjetsko tržište samo
+                        izradom web stranice.</p>
+                </div>
+                <p>U nastavku ćemo naučiti kako tvrtke reagiraju na tržišne cijene – kratkoročno i dugoročno – te kako
+                    se mijenjaju s obzirom na promjene u potražnji i troškovima proizvodnje.</p>
+                <p>Također ćemo vidjeti kako konkurencija štiti interese potrošača i smanjuje ekonomske profite, ponekad
+                    ih potpuno eliminirajući. Kada završimo, imat ćemo bolje razumijevanje tržišnih uvjeta za
+                    poljoprivrednike i za sve konkurentne industrije.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Središnja značajka modela savršene konkurencije je činjenica da cijenu određuje interakcija
+                            ponude i potražnje; kupci i prodavatelji su cjenovni sljedbenici.</li>
+                        <li>Model pretpostavlja: velik broj poduzeća koja proizvode identične (homogene) proizvode ili
+                            usluge, velik broj kupaca i prodavatelja, jednostavan ulazak i izlazak iz industrije te
+                            potpune informacije o cijenama na tržištu.</li>
+                        <li>Model savršene konkurencije čini temelj za model ponude i potražnje.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz61.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastičnost - Osjetljivost potražnje na druge čimbenike</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="osjetljivost_potraznje">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container stay">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <div class="chosen"><a href="#">Osjetljivost potražnje na druge čimbenike</a></div>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Osjetljivost potražnje na druge čimbenike</strong></h1>
+                <p>Iako je reakcija tražene količine na promjene cijene najčešće korištena mjera elastičnosti,
+                    ekonomisti su također zainteresirani za reakcije na promjene čimbenika koji pomiču krivulju
+                    potražnje. Dvije od najvažnijih mjera pokazuju kako potražnja reagira na promjene dohotka i na
+                    promjene cijena srodnih dobara i usluga.</p>
+
+                <h2>Dohodovna elastičnost potražnje</h2>
+                <p>Vidjeli smo u poglavlju koje je predstavilo model ponude i potražnje da na potražnju za dobrima i
+                    uslugama utječe dohodak. Dohodovnu elastičnost potražnje, označenu kao eY, mjerimo kao postotni
+                    postotak promjene tražene količine pri određenoj cijeni podijeljen s postotkom promjene dohotka koji
+                    je prouzročio tu promjenu potražnje, uz nepromijenjene ostale uvjete:</p>
+                <div class="equation"><img src="images/elastičnost potražnje.jpg" width="450px" height="100px"></div>
+                <p>Simbol <strong>Y</strong> se u ekonomiji često koristi za predstavljanje dohotka. Budući da dohodovna
+                    elastičnost potražnje prikazuje osjetljivost tražene količine na promjenu dohotka, uz nepromijenjene
+                    ostale uvjete (uključujući cijenu dobra), ona odražava pomak krivulje potražnje pri zadanoj cijeni.
+                    Podsjetimo, cjenovna elastičnost potražnje odražava kretanje duž krivulje potražnje kao odgovor na
+                    promjenu cijene.</p>
+                <p>Pozitivna dohodovna elastičnost potražnje znači da se dohodak i potražnja kreću u istom smjeru —
+                    povećanje dohotka povećava potražnju, a smanjenje dohotka smanjuje potražnju. Kao što smo naučili,
+                    dobro čija potražnja raste s rastom dohotka naziva se normalno dobro.
+                <p>
+                <p>Istraživanja pokazuju da je većina dobara i usluga normalna, pa je njihova dohodovna elastičnost
+                    pozitivna. Dobra i usluge kod kojih se potražnja vjerojatno kreće u istom smjeru kao i dohodak
+                    uključuju: stanovanje, plodove mora, rock koncerte i medicinske usluge.
+                <p>Ako je neko dobro ili usluga inferiorna, tada povećanje dohotka smanjuje potražnju za tim dobrom, što
+                    znači da je dohodovna elastičnost potražnje negativna. Dobra i usluge za koje je vjerojatno da imaju
+                    negativnu dohodovnu elastičnost uključuju: rabljenu odjeću, grah i gradski javni prijevoz.</p>
+                <div class="image"><img src="images/normalnoinferiorno dobro.jpg" width="750px" height="500px"></div>
+                <p>Kada izračunavamo dohodovnu elastičnost potražnje, promatramo promjenu u traženoj količini pri
+                    određenoj cijeni. Dakle, riječ je o promjeni koja uzrokuje pomak krivulje potražnje. Povećanje
+                    dohotka pomiče potražnju za normalnim dobrom udesno, dok potražnju za inferiornim dobrom
+                    pomiče ulijevo.</p>
+                <h2>Unakrsna elastičnost potražnje</h2>
+                <p>Potražnja za nekim dobrom ili uslugom pod utjecajem je cijena povezanih dobara ili usluga. Na
+                    primjer, smanjenje cijene salse povećalo bi potražnju za čipsom, što sugerira da su salsa i čips
+                    komplementi. S druge strane, smanjenje cijene čipsa smanjilo bi potražnju za kikirikijem, što znači
+                    da su čips i kikiriki supstituti.</p>
+                <p>Mjera kojom se u ekonomiji opisuje osjetljivost potražnje za nekim dobrom ili uslugom na promjenu
+                    cijene drugog povezanog dobra ili usluge naziva se unakrsna elastičnost potražnje</p>
+                <p>Ona se izračunava kao postotna promjena u traženoj količini jednog dobra ili usluge pri određenoj
+                    cijeni, podijeljena s postotnom promjenom u cijeni povezanog dobra ili usluge. Budući da variramo
+                    cijenu povezanog dobra, promjena potražnje prikazuje se kao pomak krivulje potražnje.</p>
+                <p>Unakrsna elastičnost potražnje za dobrima A i B računa se prema formuli:</p>
+                <div class="equation"><img src="images/unakrsna elastičnost.jpg" width="450px" height="100px"></div>
+                <p>Unakrsne elastičnosti potražnje određuju jesu li dva dobra supstituti, komplementi ili nepovezana.
+                    Ako su dva dobra supstituti, povećanje cijene jednog dovest će do povećanja potražnje za drugim -
+                    <mark>unakrsna elastičnost potražnje tada je pozitivna</mark>. Ako su dva dobra komplementi,
+                    povećanje cijene
+                    jednog dovest će do smanjenja potražnje za drugim - <mark>unakrsna elastičnost potražnje tada je
+                        negativna</mark>. Ako su dva dobra nepovezana, promjena cijene jednog neće utjecati na potražnju
+                    za drugim -
+                    <mark>unakrsna elastičnost potražnje tada je jednaka nuli</mark>.
+                </p>
+                <div class="image"><img src="images/supstitutikomplementi.jpg" width="750px" height="500px"></div>
+                <p>Ispitivanje potražnje za lokalnim televizijskim oglašavanjem u odnosu na cijenu lokalnog radijskog
+                    oglašavanja pokazalo je da su ta dva dobra očito supstituti. Povećanje cijene lokalnog radijskog
+                    oglašavanja za 10 posto dovelo je do povećanja potražnje za lokalnim televizijskim oglašavanjem za
+                    10 posto, tako da je unakrsna elastičnost potražnje za lokalnim televizijskim oglašavanjem u odnosu
+                    na promjene u cijeni radijskog oglašavanja iznosila 1,0.</p>
+
+                <div style="height: 30px;"></div>
+                <hr>
+                <p>❗Primijetite da nas kod dohodovne elastičnosti potražnje i unakrsne cjenovne elastičnosti potražnje
+                    prvenstveno zanima je li izmjerena vrijednost tih elastičnosti pozitivna ili negativna. U slučaju
+                    dohodovne elastičnosti potražnje to nam govori je li dobro ili usluga normalna ili inferiorna. U
+                    slučaju unakrsne cjenovne elastičnosti potražnje to nam govori jesu li dva dobra supstituti ili
+                    komplementi. Kod cjenovne elastičnosti potražnje zanimalo nas je je li apsolutna vrijednost te
+                    elastičnosti veća od, manja od ili jednaka 1, jer nam to daje informacije o tome što se događa s
+                    ukupnim prihodom kada se cijena mijenja. Pojmovi elastično i neelastično koriste se za opisivanje
+                    cjenovne elastičnosti potražnje. Oni se ne koriste za opisivanje dohodovne elastičnosti potražnje
+                    niti unakrsne cjenovne elastičnosti potražnje.</p>
+                <hr>
+                <div style="height: 30px;"></div>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Elastičnost potražnje prema dohotku odražava osjetljivost potražnje na promjene dohotka. To
+                            je postotna promjena tražene količine po određenoj cijeni podijeljena s postotnom promjenom
+                            dohotka, pod pretpostavkom da su svi ostali čimbenici nepromijenjeni (ceteris paribus).
+                        </li>Elastičnost dohotka je pozitivna za normalne proizvode, a negativna za inferiorne
+                        proizvode.
+                        <li>Elastičnost potražnje prema križnoj cijeni mjeri kako potražnja za jednim proizvodom ili
+                            uslugom reagira na promjene cijene drugog proizvoda ili usluge. To je postotna promjena
+                            tražene količine jednog proizvoda ili usluge po određenoj cijeni podijeljena s postotnom
+                            promjenom cijene drugog proizvoda ili usluge, pod pretpostavkom da su svi ostali čimbenici
+                            nepromijenjeni.
+                        </li>
+                        <li>Unakrsna elastičnost cijene je pozitivna za supstitute, negativna za komplementarne proizvode,
+                            a jednaka nuli za proizvode ili usluge čija potražnja nije povezana.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz32.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

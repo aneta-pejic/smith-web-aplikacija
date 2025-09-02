@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponuda i potražnja - Ponuda</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="ponuda">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container stay">
+            <div class="chosen"><a href="#">Ponuda</a></div>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Nadnice i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                <a href="registration.html" class="link"><strong>Registracija</strong></a>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="top-right-menu" id="userSection">
+
+    </div>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Ponuda</strong></h1>
+                <div class="definitio">
+                    <p>Što određuje količinu dobara ili usluga koje su prodavatelji voljni ponuditi na tržištu? Jedan od
+                        ključnih čimbenika je cijena; ceteris paribus (uz nepromijenjene ostale uvjete), viša cijena
+                        najčešće potiče prodavatelje da ponude veću količinu dobra ili usluge. Drugi važan čimbenik
+                        ponude su troškovi proizvodnje. Na troškove proizvodnje utječu cijene proizvodnih čimbenika
+                        (npr. rad, kapital, sirovine), prinosi od alternativnih aktivnosti, tehnologija, očekivanja
+                        prodavatelja te prirodni događaji poput vremenskih promjena.</p>
+                </div>
+
+                <p>Još jedan čimbenik koji utječe na količinu dobra koja će se ponuditi na tržištu jest broj
+                    prodavatelja – što je više prodavatelja određenog dobra ili usluge, to će ukupna količina ponuđena
+                    po nekoj cijeni tijekom određenog razdoblja biti veća.</p>
+
+                <h2>Cijena i krivulja ponude</h2>
+                <p>Ponuđena količina predstavlja količinu dobra ili usluge koju su prodavatelji spremni prodati po
+                    određenoj cijeni u određenom vremenskom razdoblju, uz nepromijenjene ostale uvjete. Ceteris paribus,
+                    viša cijena povećava profit i motivira prodavatelje da povećaju količinu koju nude.</p>
+                <div class=”definition”>
+                    <p>Općenito, kada na tržištu postoji puno prodavatelja, porast cijene dovodi do porasta ponuđene
+                        količine, taj odnos poznat je kao <mark><strong>zakon ponude</strong></mark>.</p>
+                </div>
+
+                <div class="img_description">
+                    <img src="images/krivulja ponude.png" alt="Krivulja ponude">
+                    <div class="img_text">
+                        <h2>Krivulja ponude</h2>
+                        <p>Tablica ponude prikazuje količinu kave koja će se nuditi u Sjedinjenim Američkim Državama
+                            svakog
+                            mjeseca pri određenim cijenama, uz nepromijenjene ostale uvjete (ceteris paribus). Ista
+                            informacija može se prikazati i grafički pomoću krivulje ponude.
+                            Podaci prikazani u tablici i na grafu upućuju na pozitivnu vezu između cijene i količine
+                            ponude,
+                            kako cijena raste, tako raste i količina koju su proizvođači spremni ponuditi na tržištu.
+                        </p>
+                    </div>
+                </div>
+
+                <p><mark><strong>Krivulja ponude je grafički prikaz tablice ponude</strong></mark>. Ona prikazuje odnos
+                    između cijene i količine ponuđene tijekom određenog vremenskog razdoblja, uz nepromijenjene ostale
+                    uvjete (ceteris paribus). Budući da je odnos između cijene i količine ponude općenito pozitivan,
+                    krivulje ponude obično imaju uzlazni nagib.</p>
+                <p>Krivulja ponude za kavu na prethodnoj slici grafički prikazuje vrijednosti navedene u tablici ponude.
+                </p>
+                <p>Promjena cijene uzrokuje gibanje duž krivulje ponude, što se naziva <mark><strong>promjenom ponuđene
+                            količine</strong></mark>. Kao i kod potražnje, takva promjena ne pomiče samu krivulju
+                    ponude, već znači kretanje s jedne točke na drugu unutar postojeće krivulje.</p>
+                <p>Na primjer, ako se cijena poveća s 6 na 7 eura, količina ponuđene kave porast će s 25 na 30 milijuna
+                    mjesečno. To predstavlja <mark><strong> pomak s točke A na točku B</strong></mark> duž krivulje
+                    ponude prikazane na slici.
+                <p>
+
+                <h2>Promjene u ponudi</h2>
+                <p>Kada crtamo krivulju ponude, pretpostavljamo da su ostale varijable koje utječu na spremnost
+                    prodavatelja da ponude dobro ili uslugu nepromijenjene. Iz toga slijedi da će promjena bilo koje od
+                    tih varijabli uzrokovati <strong>promjenu u ponudi </strong>, što znači <strong> pomak krivulje
+                        ponude </strong>.</p>
+                <p> Promjena koja povećava količinu dobra ili usluge ponuđenu pri svakoj cijeni pomiče krivulju ponude
+                    udesno. Pretpostavimo, na primjer, da cijena gnojiva padne. To će smanjiti trošak proizvodnje kave,
+                    a time i povećati količinu kave koju će proizvođači ponuditi na prodaju pri svakoj cijeni.</p>
+                <p>Raspored ponude prikazan na slici prikazuje povećanje količine kave ponuđene pri svakoj cijeni. To
+                    povećanje prikazujemo grafički kao <strong>pomak krivulje ponude s S₁ na S₂</strong>.</p>
+
+                <div class="img_description">
+                    <table>
+                        <caption>Raspored ponude za kavom</caption>
+                        <thead>
+                            <tr>
+                                <th>Cijena </th>
+                                <th>Stara količina ponude</th>
+                                <th>Nova količina ponude</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>15</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>20</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>25</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>35</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>40</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img src="images/promjene u ponudi.png">
+                </div>
+
+                <p> Ako dođe do promjene u ponudi koja povećava količinu ponuđenu pri svakoj cijeni, kao što je
+                    prikazano u ovom rasporedu ponude, krivulja ponude pomiče se udesno. Na primjer, pri cijeni od 6
+                    eura, količina ponuđena raste s prethodne razine od 25 milijuna mjesečno na krivulji ponude S₁
+                    (točka A) na 35 milijuna mjesečno na krivulji ponude S₂ (točka A').</p>
+
+                <h2>Cijene čimbenika proizvodnje</h2>
+                <p>Promjena cijene rada ili nekog drugog čimbenika proizvodnje promijenit će trošak proizvodnje bilo
+                    koje količine dobara ili usluga. Ta promjena u trošku proizvodnje promijenit će količinu koju su
+                    ponuđači voljni ponuditi po bilo kojoj cijeni. Povećanje cijena čimbenika proizvodnje trebalo bi
+                    smanjiti količinu koju će ponuđači nuditi po bilo kojoj cijeni, pomičući krivulju ponude ulijevo.
+                    Smanjenje cijena čimbenika proizvodnje povećava količinu koju će ponuđači nuditi po bilo kojoj
+                    cijeni, pomičući krivulju ponude udesno.</p>
+
+                <div class="example">
+                    <p>Zamislimo da uzgajivači kave moraju plaćati višu plaću radnicima koje zapošljavaju za berbu kave
+                        ili da moraju više plaćati za gnojivo. Takva povećanja troškova proizvodnje uzrokovat će
+                        smanjenje količine koju će proizvesti pri svakoj cijeni, čime se krivulja ponude za kavu pomiče
+                        ulijevo. Smanjenje bilo kojeg od tih troškova povećava ponudu, pomičući krivulju ponude udesno.
+                    <p>
+                </div>
+
+                <h2>Povrat od alternativnih aktivnosti</h2>
+                <p>Proizvodnja jednog dobra ili usluge znači odricanje od proizvodnje nečeg drugog. Koncept
+                    oportunitetnog troška u ekonomiji sugerira da je vrijednost aktivnosti od koje se odustaje zapravo
+                    oportunitetni trošak izabrane aktivnosti; taj trošak bi trebao utjecati na ponudu.</p>
+                <div class="example">
+                    <p>Jedan od oportunitetnih troškova proizvodnje jaja je ne prodati kokoši. Povećanje cijene koju su
+                        ljudi spremni platiti za svježe kokoši učinilo bi prodaju kokoši profitabilnijom i time povećalo
+                        oportunitetni trošak proizvodnje jaja. To bi pomaknulo krivulju ponude jaja ulijevo, što
+                        odražava smanjenje ponude.</p>
+                </div>
+
+                <h2>Tehnologija</h2>
+                <p>Promjena u tehnologiji mijenja kombinaciju ulaznih resursa ili vrste ulaza potrebne u proizvodnom
+                    procesu. Poboljšanje tehnologije obično znači da su potrebni manje i/ili jeftiniji resursi. Ako su
+                    troškovi proizvodnje niži, profiti pri određenoj cijeni rastu, i proizvođači će proizvoditi više.
+                    Kada se proizvodi više pri svakoj cijeni, krivulja ponude pomiče se udesno – to znači povećanje
+                    ponude.</p>
+
+                <p>Značajne tehnološke promjene dogodile su se u industriji računala posljednjih godina. Računala su
+                    mnogo manja i znatno snažnija nego prije nekoliko godina – i znatno su jeftinija za proizvodnju.
+                    Rezultat je ogroman porast ponude računala, a krivulja ponude pomaknula se udesno.</p>
+
+                <p>Iako obično smatramo da tehnologija poboljšava proizvodnju, moguće su i poteškoće u proizvodnji zbog
+                    tehnoloških problema. Zabrana korištenja određene opreme bez uređaja za kontrolu zagađenja povećala
+                    je troškove proizvodnje za mnoge proizvode i usluge, smanjujući time profitabilnost pri bilo kojoj
+                    cijeni i pomičući krivulje ponude ulijevo.</p>
+
+                <h2>Očekivanja prodavača</h2>
+
+                <p>Sve krivulje ponude dijelom se temelje na očekivanjima prodavača o budućim tržišnim uvjetima. Mnoge
+                    odluke o proizvodnji i prodaji donose se mnogo prije nego što je proizvod spreman za tržište. Te
+                    odluke nužno ovise o očekivanjima. Promjene u očekivanjima prodavača mogu imati značajan utjecaj na
+                    cijenu i količinu.</p>
+
+                <div class="example">
+                    <p>Na primjer, vlasnici naftnih nalazišta suočeni su s odlukom: nafta koja se ispumpa danas neće
+                        biti dostupna u budućnosti. Ako promjena u međunarodnoj političkoj situaciji navede mnoge
+                        vlasnike da očekuju rast cijena nafte u budućnosti, oni bi mogli odlučiti ostaviti naftu u tlu i
+                        prodati je kasnije, kada cijena poraste. Time dolazi do smanjenja ponude - krivulja ponude za
+                        naftu pomiče se ulijevo.</p>
+                </div>
+
+                <h2>Prirodne pojave</h2>
+
+                <p>Oluje, najezde insekata i suše utječu na poljoprivrednu proizvodnju i time na ponudu poljoprivrednih
+                    dobara. Ako nešto uništi značajan dio poljoprivredne proizvodnje, krivulja ponude pomiče se ulijevo.
+                    Strašan ciklon koji je 2008. godine ubio više od 50.000 ljudi u Mjanmaru također je uništio dio
+                    najboljeg zemljišta za uzgoj riže u zemlji. To je pomaknulo krivulju ponude riže ulijevo. Ako se
+                    dogodi iznimno dobra žetva, krivulja ponude pomiče se udesno. </p>
+
+                <h2>Broj prodavača</h2>
+
+                <p>Krivulja ponude za neku industriju, kao što je industrija kave, uključuje sve prodavače u toj
+                    industriji. Promjena u broju prodavača mijenja količinu dostupnu po svakoj cijeni i time mijenja
+                    ponudu. Povećanje broja prodavača koji nude neko dobro ili uslugu pomiče krivulju ponude udesno;
+                    smanjenje broja prodavača pomiče je ulijevo.</p>
+
+                <p>Tržište usluga mobilne telefonije pogođeno je povećanjem broja tvrtki koje nude tu uslugu. Tijekom
+                    posljednjeg desetljeća pojavile su se nove tvrtke mobilne telefonije, čime se krivulja ponude za
+                    usluge mobilne telefonije pomaknula udesno.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Količina ponuđena nekog dobra ili usluge predstavlja količinu koju su prodavači voljni
+                            prodati po određenoj cijeni tijekom određenog razdoblja, pod uvjetom da se ostale okolnosti
+                            ne mijenjaju.
+                        </li>
+                        <li>Raspored ponude prikazuje količine koje se nude po različitim cijenama tijekom određenog
+                            razdoblja, sve ostalo nepromijenjeno. Krivulja ponude prikazuje iste informacije grafički.
+                        </li>
+                        <li>Promjena u cijeni nekog dobra ili usluge uzrokuje promjenu u količini ponuđenoj je
+                            pomak duž krivulje ponude.
+                        </li>
+                        <li>Promjena u nekom od faktora koji utječu na ponudu uzrokuje promjenu ponude, što se prikazuje
+                            kao pomak krivulje ponude.
+                            Ti faktori uključuju: cijene čimbenika proizvodnje, povrat od alternativnih aktivnosti,
+                            tehnologiju, očekivanja prodavača, prirodne pojave i broj prodavača.
+                        </li>
+                        <li>Povećanje ponude prikazuje se kao pomak krivulje ponude udesno, dok se smanjenje ponude
+                            prikazuje kao pomak ulijevo.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz21.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

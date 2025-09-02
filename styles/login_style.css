@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4b7c1b;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.left-section {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #9bc771;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Poller One", serif;
+    font-size: 30px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #7ab342;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9bc771;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+    background-color: #7ab342;
+}
+
+.login-button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: #9bc771;
+}
+
+.right-section h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Poller One", serif;
+}
+
+.right-section p {
+    font-size: 24px;
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .right-section h1 {
+        font-size: 32px;
+    }
+
+    .right-section p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .login-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

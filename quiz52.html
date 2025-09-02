@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz - Proizvodnje i troškovi: Dugoročno razdoblje</title>
+    <link rel="stylesheet" type="text/css" href="styles/quiz.css">
+</head>
+
+<body>
+    <div id="quiz">
+        <button class="close-btn" onclick="closeQuiz()">×</button>
+        <h1>Kviz - Proizvodnje i troškovi: Dugoročno razdoblje</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Sljedeće pitanje</button>
+    </div>
+
+    <div id="resultSection" style="display: none;">
+        <h2>Rezultati kviza</h2>
+        <p id="resultText"></p>
+        <div id="quizOptions" class="quiz-options">
+            <button id="btnFinish" class="btn">Završi</button>
+            <a href="lekcije.html" class="btn">Nastavi s učenjem</a>
+            <a href="rezultati_kvizova.html" class="btn" id="btnMyResults" style="display: none;">Pogledaj svoje
+                rezultate</a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="scripts/quiz52.js"></script>
+</body>
+
+</html>

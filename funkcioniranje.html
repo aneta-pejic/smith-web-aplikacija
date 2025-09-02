@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaće i zaposlenost u savršenoj konkurenciji - Funkcioniranje tržišta rada</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="funkcioniranje_trzista_rada">
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container stay">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <div class="chosen"><a href="#">Funkcioniranje tržišta rada</a></div>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+        </div>
+
+        <div class="subbar">
+             <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+                    
+                <h1><strong>Funkcioniranje tržišta rada</strong></h1>
+                <p>Vidjeli smo da potražnja poduzeća za radom ovisi o graničnom proizvodu rada i cijeni proizvoda koji
+                    poduzeće proizvodi. Zbrajanjem krivulja potražnje pojedinih poduzeća dobivamo tržišnu krivulju
+                    potražnje
+                    za radom. Krivulja ponude rada ovisi o varijablama kao što su broj stanovnika i preferencije
+                    radnika.
+                    Ponuda na određenom tržištu ovisi o varijablama poput preferencija radnika, vještina i obrazovanja
+                    potrebnih za određeni posao te plaća koje su dostupne u alternativnim zanimanjima. Plaće se određuju
+                    na
+                    sjecištu potražnje i ponude.</p>
+                <p>Kada se na određenom tržištu uspostavi plaća, pojedina poduzeća u savršenoj konkurenciji tu plaću
+                    prihvaćaju kao zadanu. Budući da je svako poduzeće „primatelj cijene“, ono se suočava s
+                    horizontalnom
+                    krivuljom ponude rada na tržišnoj plaći. Za jedno poduzeće, promjena količine radne snage koju
+                    zapošljava ne mijenja plaću. U kontekstu modela savršene konkurencije, kupci i prodavatelji su
+                    primatelji cijena. To znači da odluke poduzeća o zapošljavanju radne snage ne utječu na plaću.</p>
+                <p>Funkcioniranje tržišta rada u uvjetima savršene konkurencije prikazano je na slici. Plaća
+                    <em>W</em><sub>1</sub>
+                    određena je sjecištem potražnje i ponude na dijagramu (a). Zaposlenost iznosi <em>L</em><sub>1</sub>
+                    jedinica rada po
+                    razdoblju.
+                    Pojedinačno poduzeće tu plaću prihvaća kao zadanu; to je krivulja ponude <em>s</em><sub>1</sub> s
+                    kojom se poduzeće
+                    suočava.
+                    Ta plaća također je jednaka graničnom trošku faktora za poduzeće. Poduzeće zapošljava
+                    <em>l</em><sub>1</sub> jedinica
+                    rada,
+                    količinu određenu sjecištem njegove krivulje graničnog prihoda od proizvoda rada
+                    (<em>MRP</em><sub>1</sub>) i krivulje
+                    ponude <em>s</em><sub>1</sub>. Mala slova koristimo za prikaz količine za jedno poduzeće, a velika
+                    slova za prikaz
+                    količine
+                    na tržištu.
+                </p>
+                <img src="images/funkcioniranje1.jpg" width="540px" height="300px">
+                <p>Plaće u savršenoj konkurenciji određuju se sjecištem potražnje i ponude na dijagramu (a). Pojedino
+                    poduzeće prihvaća plaću <em>W</em><sub>1</sub> kao zadanu. Suočava se s horizontalnom krivuljom
+                    ponude rada na tržišnoj
+                    plaći, kao što je prikazano na dijagramu (b). Ta krivulja ponude <em>s</em><sub>1</sub> ujedno je i
+                    krivulja graničnog
+                    troška faktora rada. Poduzeće reagira na plaću tako da zapošljava <em>l</em><sub>1</sub> jedinica
+                    rada, količinu
+                    određenu sjecištem njegove krivulje graničnog prihoda od proizvoda rada <em>MRP</em><sub>1</sub> i
+                    njegove krivulje
+                    ponude <em>s</em><sub>1</sub>.</p>
+
+                <h2>Promjene u potražnji i ponudi</h2>
+                <div class="definition">
+                    <p>Ako su plaće određene potražnjom i ponudom, tada bi promjene u potražnji i ponudi trebale
+                        utjecati na
+                        plaće. Povećanje potražnje ili smanjenje ponude povećat će plaće; povećanje ponude ili smanjenje
+                        potražnje smanjit će ih.</p>
+                </div>
+                <p>Dijagram (a) na sljedećoj slici prikazuje kako povećanje potražnje za radom utječe na plaće i
+                    zaposlenost.
+                    Pomak potražnje na <em>D</em><sub>2</sub> podiže plaću na <em>W</em><sub>2</sub> i povećava
+                    zaposlenost na <em>L</em><sub>2</sub>. Takvo povećanje podrazumijeva da
+                    se povećao granični proizvod rada, da se povećao broj poduzeća ili da je porasla cijena dobra koje
+                    rad
+                    proizvodi. Kao što smo vidjeli, granični proizvod rada može porasti zbog povećane uporabe drugih
+                    faktora
+                    proizvodnje, poboljšanja tehnologije ili povećanja ljudskog kapitala.</p>
+                <img src="images/funkcioniranje2.jpg" width="600px" height="600px">
+                <p>Dijagram (a) prikazuje povećanje potražnje za radom; plaća raste na <em>W</em><sub>2</sub>, a
+                    zaposlenost raste na <em>L</em><sub>2</sub>.
+                    Smanjenje potražnje za radom, prikazano na dijagramu (b), smanjuje zaposlenost i razinu plaće.
+                    Povećanje
+                    ponude rada, prikazano u panelu (c), smanjuje plaću na <em>W</em><sub>2</sub> i povećava zaposlenost
+                    na <em>L</em><sub>2</sub>. Dijagram (d)
+                    prikazuje učinak smanjenja ponude rada; plaće rastu, a zaposlenost opada.</p>
+                <p>Očito je da je rastuća potražnja za radom bila dominantan trend na tržištu rada SAD-a kroz većinu
+                    povijesti zemlje. Plaće i zaposlenost uglavnom su rasli kako se povećavala dostupnost kapitala i
+                    drugih
+                    proizvodnih faktora, kako je napredovala tehnologija i kako je rastao ljudski kapital. Sve to
+                    povećalo
+                    je produktivnost rada i djelovalo na povećanje plaća.</p>
+                <p>Dijagram (b) na slici prikazuje smanjenje potražnje za radom na <em>D</em><sub>2</sub>. I plaće i
+                    zaposlenost opadaju. S
+                    obzirom na to da ukupna potražnja za radom općenito raste, smanjena potražnja za radom najčešće se
+                    javlja u pojedinim tržištima rada. Na primjer, pad građevinske aktivnosti u određenoj zajednici može
+                    smanjiti potražnju za građevinskim radnicima. Tehnološke promjene mogu smanjiti, ali i povećati
+                    potražnju. Primjer u okviru teme o plaćama i tehnologiji sugerira da su tehnološke promjene od
+                    kasnih
+                    1970-ih imale tendenciju smanjivanja potražnje za radnicima sa samo srednjoškolskim obrazovanjem,
+                    dok su
+                    povećavale potražnju za onima s fakultetskom diplomom.</p>
+                <p>Dijagram (c) prikazuje učinak povećanja ponude rada. Krivulja ponude pomiče se na
+                    <em>S</em><sub>2</sub>, što
+                    povećava zaposlenost na <em>L</em><sub>2</sub> i smanjuje plaću na <em>W</em><sub>2</sub>. Za
+                    tržište rada u cjelini, takvo povećanje ponude
+                    moglo bi nastati zbog porasta broja stanovnika ili povećanja količine rada koju su ljudi spremni
+                    obavljati. Za pojedina tržišta rada, ponuda će se povećati kako se ljudi sele u određeno tržište.
+                </p>
+                <p>Baš kao što je potražnja za radom kroz većinu povijesti SAD-a rasla, tako je rasla i ponuda rada.
+                    Broj
+                    stanovnika rastao je i zbog imigracije i zbog prirodnog priraštaja. Takvi porasti, uz nepromijenjene
+                    ostale čimbenike koji određuju plaće, teže smanjenju plaća. Činjenica da su plaće imale tendenciju
+                    rasta
+                    sugerira da je potražnja općenito rasla brže od ponude. Ipak, što ponuda više raste, to će povećanje
+                    plaća biti manje, čak i ako potražnja raste.</p>
+                <p>Na kraju, dijagram (d) prikazuje učinak smanjenja ponude rada. Jedan dramatičan primjer pada
+                    ponude rada bio je uzrokovan smanjenjem populacije nakon izbijanja bubonske kuge u Europi 1348.
+                    godine —
+                    tzv. crne smrti. Kuga je u nekoliko godina ubila otprilike trećinu europskog stanovništva, snažno
+                    pomaknuvši krivulju ponude rada ulijevo. Plaće su se tijekom tog razdoblja udvostručile (Cipolla, C.
+                    M.,
+                    1980).</p>
+                <p>Činjenica da smanjenje ponude rada ima tendenciju povećanja plaća objašnjava nastojanja nekih skupina
+                    zaposlenika da smanje ponudu rada. Pripadnici određenih profesija uspješno su promovirali stroge
+                    zahtjeve za licenciranjem kako bi ograničili broj ljudi koji mogu ući u profesiju — liječnici u
+                    SAD-u
+                    bili su osobito uspješni u tom nastojanju. Sindikati često zagovaraju ograničenja imigracije kako bi
+                    smanjili ponudu rada i time povećali plaće.</p>
+
+                <h2>Konkurentna tržišta rada i minimalna plaća</h2>
+                <p>Primjer o tehnologiji i razlici u plaćama upućuje na važan društveni problem. Promjene u tehnologiji
+                    povećavaju potražnju za visokoobrazovanim radnicima. Posljedično, nastala premija na plaće za
+                    radnike s
+                    višim obrazovanjem predstavlja signal koji potiče ljude da steknu više obrazovanje. Tržište je
+                    izuzetno
+                    snažan mehanizam za usmjeravanje resursa u područja najveće potražnje. Međutim, istovremeno, čini se
+                    da
+                    promjene u tehnologiji ostavljaju slabije obrazovane radnike iza sebe. Što će se dogoditi s ljudima
+                    koji
+                    nemaju priliku razviti vještine koje tržište visoko cijeni ili koji to nisu u stanju učiniti?</p>
+                <p>Kako bi se povećale plaće radnika s relativno niskim prihodima, vlade diljem svijeta uvele su
+                    minimalne
+                    plaće. Minimalna plaća funkcionira kao i druge cjenovne podnice (najniže dozvoljene cijene). Učinak
+                    minimalne plaće prikazan je na dijagramu (a). Pretpostavimo da je trenutačna ravnotežna plaća za
+                    nekvalificirane radnike <em>W</em><sub>1</sub>, određena presjekom krivulja ponude i potražnje za
+                    tim radnicima. Vlada
+                    procijeni da je ta plaća preniska i određuje da se poveća na <em>W</em><sub>m</sub>, što je
+                    minimalna plaća. Ova mjera
+                    smanjuje zaposlenost s <em>L</em><sub>1</sub> na <em>L</em><sub>2</sub>, ali povećava prihode onih
+                    koji nastave raditi. Viša plaća također
+                    povećava količinu rada koju su radnici spremni ponuditi, na <em>L</em><sub>3</sub>. Razlika između
+                    količine rada koju
+                    radnici žele ponuditi i količine koju poslodavci žele zaposliti, <em>L</em><sub>3</sub> -
+                    <em>L</em><sub>2</sub>, predstavlja višak ponude rada
+                    — višak koji povećava nezaposlenost.
+                </p>
+                <img src="images/funkcioniranje3.jpg" width="520px" height="300px">
+                <p>Vlada može odgovoriti na nisku plaću uvođenjem minimalne plaće u iznosu Wm, kao što je prikazano na
+                    dijagramu (a). To povećava količinu ponuđene radne snage i smanjuje količinu tražene radne snage.
+                    Ipak,
+                    povećava prihode onih koji zadrže posao. Drugi način na koji vlada može povećati plaće je povećanjem
+                    potražnje za radom, što je prikazano na dijagramu (b). Time rastu i plaće i zaposlenost.</p>
+                <p>Neki ekonomisti protive se povećanju minimalne plaće jer smatraju da takva povećanja povećavaju
+                    nezaposlenost. Drugi ekonomisti tvrde da je potražnja za nekvalificiranim radom relativno
+                    neelastična,
+                    pa viša minimalna plaća povećava prihode nekvalificiranih radnika kao skupine. Taj dobitak, kažu
+                    oni,
+                    opravdava politiku, čak i ako povećava nezaposlenost.</p>
+
+                <p>Alternativa zakonskom uvođenju minimalne plaće je pokušaj povećanja potražnje za radom. Takav pristup
+                    ilustriran je na panelu (b). Povećanje potražnje na <em>D</em><sub>2</sub> podiže plaću na
+                    <em>W</em><sub>2</sub> i istovremeno povećava
+                    zaposlenost na <em>L</em><sub>2</sub>. Programi osposobljavanja u javnom sektoru koji imaju za cilj
+                    povećanje ljudskog
+                    kapitala primjeri su takve politike.
+                </p>
+
+                <p>Još jedna alternativa je subvencioniranje plaća radnika čiji prihodi padaju ispod određene razine.
+                    Davanjem državnih subvencija - bilo poslodavcima koji pristanu zaposliti nekvalificirane radnike,
+                    bilo
+                    samim radnicima u obliku transfernih isplata - omogućuje se ljudima koji nemaju potrebne vještine,
+                    niti
+                    mogućnost da ih steknu, da zarađuju više bez gubitka poslova koji bi proizašao iz povećanja
+                    minimalne
+                    plaće. Takvi programi mogu biti skupi. Također smanjuju poticaj niskokvalificiranim radnicima da
+                    razviju
+                    vještine koje su traženije na tržištu rada.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Plaće na konkurentnom tržištu određuju se ponudom i potražnjom.</li>
+                        <li>Povećanje potražnje ili smanjenje ponude povećat će ravnotežnu plaću. Smanjenje potražnje
+                            ili povećanje ponude smanjit će ravnotežnu plaću.</li>
+                        <li>Vlada može reagirati na niske plaće nekih radnika uvođenjem minimalne plaće, pokušajem
+                            povećanja
+                            potražnje za tim radnicima ili subvencioniranjem plaća radnika čiji prihodi padaju ispod
+                            određene razine.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz83.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tržišta savršene konkurencije - Određivanje outputa u kratkoročnom razdoblju</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="odredivanje_outputa">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container stay">
+            <a href="model.html">Model savršene konkurencije</a>
+            <div class="chosen"><a href="#">Određivanje outputa u kratkoročnom razdoblju</a></div>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Odre</strong>đ<strong>ivanje outputa u kratkoročnom razdoblju</strong></h1>
+                <p>
+                    Naš cilj u ovom odjeljku je razumjeti kako poduzeće u savršeno konkurentnom tržištu određuje razinu
+                    proizvodnje u kratkom roku — razdoblju planiranja u kojem je barem jedan proizvodni faktor fiksan u
+                    količini. Vidjet ćemo da poduzeće može maksimizirati ekonomski profit primjenom pravila granične
+                    odluke, povećavajući proizvodnju sve dok granična korist dodatne jedinice proizvodnje ne bude
+                    jednaka graničnom trošku.
+                </p>
+                <p>
+                    Ova činjenica ima važnu implikaciju: kroz širok raspon razina proizvodnje, krivulja graničnog troška
+                    poduzeća predstavlja njegovu krivulju ponude.
+                </p>
+
+                <h2>Cijena i prihod</h2>
+                <p>
+                    Svako poduzeće u savršeno konkurentnom tržištu prihvaća tržišnu cijenu kao zadanu; ravnotežna cijena
+                    i ukupna industrijska proizvodnja određuju se odnosom ponude i potražnje. Na slici je prikazano
+                    kako ponuda i potražnja na tržištu rotkvica — za koje pretpostavljamo da se proizvode u uvjetima
+                    savršene konkurencije — određuju ukupnu količinu proizvodnje i cijenu.
+                </p>
+                <p>
+                    Ravnotežna cijena iznosi 0,40€ po kilogramu, a ravnotežna količina je 10 milijuna kilograma
+                    mjesečno.
+                </p>
+                <img src="images/određivanje1.jpg" width="520px" height="400px">
+                <p>
+                    Cijena i količina u konkurentskom tržištu određuju se odnosom ponude i potražnje. Na tržištu
+                    rotkvica, ravnotežna cijena iznosi 0,40€ po kilogramu; pri toj cijeni proizvodi se i kupuje 10
+                    milijuna kilograma mjesečno.
+                </p>
+                <p>
+                    Budući da su poduzeća u industriji rotkvica cjenovni prihvatitelji, svako poduzeće pretpostavlja da
+                    može prodati koliko god želi rotkvica po tržišnoj cijeni od 0,40 po kilogramu. Bez obzira na to
+                    koliku količinu proizvede, poduzeće očekuje da će sve prodati po tržišnoj cijeni.
+                </p>
+                <p>
+                    Pretpostavka da poduzeće očekuje prodaju svih svojih rotkvica po tržišnoj cijeni je ključna. Ako
+                    poduzeće ne bi očekivalo prodaju cijele količine po toj cijeni — odnosno, ako bi moralo sniziti
+                    cijenu da bi prodalo dio proizvodnje — tada ne bi bilo cjenovni prihvatitelj. A ponašanje cjenovnog
+                    prihvatitelja je temelj modela savršene konkurencije.
+                </p>
+                <p>
+                    Uzgojivači rotkvica — kao i ostala poduzeća u savršeno konkurentnim tržištima — nemaju razlog
+                    naplaćivati cijenu nižu od tržišne. Budući da kupci raspolažu potpunim informacijama i jer
+                    pretpostavljamo da je proizvod svakog poduzeća identičan proizvodima konkurenata, poduzeća nisu u
+                    mogućnosti naplatiti višu cijenu od tržišne.
+                </p>
+                <p>
+                    Za poduzeća u savršenoj konkurenciji, cijena je poput vremenske prognoze: mogu se žaliti na nju, ali
+                    ne mogu ništa učiniti da je promijene.
+                </p>
+
+                <h2>Ukupni prihod</h2>
+                <p>
+                    Iako poduzeće u savršeno konkurentnom tržištu nema utjecaja na tržišnu cijenu, ono ipak odlučuje o
+                    količini proizvodnje. Pri donošenju odluke o količini, jedan od ključnih čimbenika je prihod koji će
+                    poduzeće ostvariti proizvodnjom određene količine.
+                </p>
+                <p>
+                    Ukupni prihod poduzeća izračunava se množenjem količine proizvodnje s cijenom po kojoj se ta
+                    količina prodaje. Za poduzeće u savršenoj konkurenciji, ukupni prihod (<em>TR</em>) jednak je
+                    tržišnoj cijeni
+                    (<em>P</em>) pomnoženoj s količinom koju poduzeće proizvede (<em>Q</em>), odnosno:
+                </p>
+                <div class="equation"><img src="images/određivanje2.jpg" width="200px" height="100px"></div>
+                <p>
+                    Odnos između tržišne cijene i krivulje ukupnog prihoda poduzeća izuzetno je važan.
+                </p>
+
+                <h2>Cijena, granični prihod i prosječni prihod</h2>
+                <p>
+                    Nagib krivulje ukupnog prihoda posebno je važan. On predstavlja promjenu na vertikalnoj osi (ukupni
+                    prihod) podijeljenu s promjenom na horizontalnoj osi (količina) između bilo koje dvije točke. Taj
+                    nagib mjeri brzinu rasta ukupnog prihoda kako se povećava proizvodnja. Možemo ga promatrati kao
+                    povećanje ukupnog prihoda povezano s povećanjem proizvodnje za jednu jedinicu.
+                    Povećanje ukupnog prihoda zbog povećanja proizvodnje za jednu jedinicu naziva se granični prihod.
+                    Dakle, granični prihod (<em>MR</em>) jednak je nagibu krivulje ukupnog prihoda.
+                </p>
+
+                <p>
+                    Koliko dodatnog prihoda proizvođač rotkvica ostvaruje prodajom još jednog kilograma rotkvica?
+                    Odgovor je,
+                    naravno, tržišna cijena za taj jedan kilogram. Granični prihod jednak je tržišnoj cijeni. Budući da
+                    pojedinačno poduzeće ne utječe na tržišnu cijenu, granični prihod koji ostvaruje proizvodnjom još
+                    jedne jedinice uvijek je jednak tržišnoj cijeni.
+                    Krivulja graničnog prihoda prikazuje odnos između graničnog prihoda i količine koju poduzeće
+                    proizvodi. Za poduzeće u savršenoj konkurenciji, krivulja graničnog prihoda je vodoravna linija na
+                    razini tržišne cijene. Ako je tržišna cijena jednog kilograma rotkvica 0,40€, tada je i granični
+                    prihod 0,40€. U savršenoj konkurenciji, krivulja graničnog prihoda poduzeća je vodoravna linija
+                    na razini tržišne cijene.
+                </p>
+                <p>
+                    Cijena je također jednaka prosječnom prihodu, koji se dobiva dijeljenjem ukupnog prihoda s
+                    količinom. Da bismo dobili prosječni prihod (<em>AR</em>),
+                    dijelimo ukupni prihod s količinom Q. Budući da je ukupni prihod jednak cijeni (<em>P</em>)
+                    pomnoženoj s
+                    količinom (<em>Q</em>), dijeljenjem s količinom dobijemo cijenu.
+                </p>
+                <p>
+                    Krivulja graničnog prihoda je vodoravna linija na razini tržišne cijene, a prosječni prihod jednak
+                    je tržišnoj cijeni. Krivulje prosječnog i graničnog prihoda stoga su prikazane istom vodoravnom
+                    linijom. To je u skladu s onim što smo naučili o odnosu između graničnih i prosječnih vrijednosti.
+                </p>
+                <p>
+                    Kada je granična vrijednost veća od prosječne, prosječna vrijednost raste. Kada je granična
+                    vrijednost manja od prosječne, prosječna vrijednost opada. Što se događa kada se ni prosječna ni
+                    granična vrijednost ne mijenjaju? U tom slučaju, granična vrijednost mora biti jednaka prosječnoj
+                    vrijednosti — te
+                    se dvije krivulje podudaraju.
+                </p>
+                <p>
+                    Krivulja graničnog prihoda je vodoravna linija na razini tržišne cijene, a prosječni prihod jednak
+                    je tržišnoj cijeni. Krivulje prosječnog i graničnog prihoda stoga su prikazane istom vodoravnom
+                    linijom. To je u skladu s onim što smo naučili o odnosu između graničnih i prosječnih vrijednosti.
+                </p>
+                <p>
+                    Kada je granična vrijednost veća od prosječne, prosječna vrijednost raste. Kada je granična
+                    vrijednost manja od prosječne, prosječna vrijednost opada. Što se događa kada se ni prosječna ni
+                    granična vrijednost ne mijenjaju? U tom slučaju, granična vrijednost mora biti jednaka prosječnoj
+                    vrijednosti — te
+                    se dvije krivulje podudaraju.
+                </p>
+
+                <h2>Granični prihod, cijena i potražnja za poduzeće u savršenoj konkurenciji</h2>
+                <p>
+                    Već smo vidjeli da je krivulja graničnog prihoda za poduzeće u savršenoj konkurenciji jednostavna
+                    vodoravna linija na razini tržišne cijene, te da je ta ista linija i krivulja prosječnog prihoda. Za
+                    poduzeće u savršenoj konkurenciji vrijedi: <mark><strong>MR = P = AR</strong></mark>. Krivulja
+                    graničnog prihoda
+                    ima još jedno značenje — ona predstavlja i krivulju potražnje s kojom se suočava poduzeće u
+                    savršenoj konkurenciji.
+                </p>
+                <div class="example">
+                    <p>
+                        Razmotrimo primjer proizvođača rotkvica, Tonyja Gortarija. Pretpostavljamo da tržište rotkvica
+                        funkcionira u uvjetima savršene konkurencije, a da gospodin Gortari vodi poduzeće koje posluje u
+                        takvom tržištu. Recimo da je tržišna cijena rotkvica 0,40€ po kilogramu. Koliko funti rotkvica
+                        može
+                        gospodin Gortari prodati po toj cijeni? Odgovor proizlazi iz pretpostavke da je on cjenovni
+                        prihvatitelj: može prodati bilo koju količinu koju poželi po toj cijeni.
+                    </p>
+                </div>
+                <p>
+                    Koliko će rotkvica prodati ako pokuša naplatiti cijenu višu od tržišne? Nijednu. Njegove rotkvice su
+                    identične onima koje nude druga poduzeća, a svi kupci na tržištu imaju potpune informacije. To znači
+                    da je krivulja potražnje s kojom se suočava gospodin Gortari vodoravna linija na razini tržišne
+                    cijene, kao što je prikazano na slici u nastavku. Primijetimo da je ta krivulja označena s
+                    <strong>d</strong>, kako bismo je razlikovali od krivulje tržišne potražnje <strong>D</strong> na
+                    prethodnom grafu.
+                    Vodoravna linija na slici istovremeno predstavlja Gortarijevu krivulju graničnog prihoda
+                    (<em>MR</em>),
+                    prosječnog prihoda (<em>AR</em>) i cijene (<em>P</em>).
+                </p>
+                <p>
+                    Naravno, gospodin Gortari bi mogao naplatiti i nižu cijenu od tržišne, ali zašto bi to učinio?
+                    Pretpostavljamo da može prodati sve što želi po tržišnoj cijeni, pa nema razloga nuditi rotkvice po
+                    nižoj cijeni.
+                    Gospodin Gortari suočava se s krivuljom potražnje koja je vodoravna linija na razini tržišne cijene.
+                    U daljnjoj analizi, ovu vodoravnu liniju na razini tržišne cijene nazivat ćemo jednostavno graničnim
+                    prihodom. Ipak, važno je imati na umu da ta ista linija istovremeno predstavlja i tržišnu cijenu, i
+                    prosječni prihod, i potražnju za poduzeće.
+                </p>
+                <img src="images/određivanje3.jpg" width="580px" height="400px">
+                <p>
+                    Poduzeće u savršenoj konkurenciji suočava se s vodoravnom krivuljom potražnje na razini tržišne
+                    cijene. U ovom slučaju, uzgajivač rotkvica Tony Gortari suočava se s krivuljom potražnje
+                    <strong>d</strong> na tržišnoj cijeni od 0,40€ po kilogramu. On može prodati količinu
+                    <em><strong>q1</strong></em> ili <em><strong>q2</strong></em> — ili bilo koju drugu količinu — po
+                    cijeni od 0,40€
+                    po kilogramu.
+                </p>
+                <p>
+                    Općenitije govoreći, svako poduzeće u savršenoj konkurenciji suočeno je s vodoravnom krivuljom
+                    potražnje na tržišnoj cijeni. Već smo u poglavlju o elastičnosti vidjeli primjer takve vodoravne
+                    krivulje potražnje. Takva krivulja je savršeno elastična, što znači da se bilo koja količina traži
+                    po danoj cijeni.
+                </p>
+
+                <h2>Ekonomska dobit u kratkom roku</h2>
+                <p>
+                    Ekonomska dobit poduzeća predstavlja razliku između ukupnog prihoda i ukupnih troškova. Podsjetimo
+                    se, ukupni trošak uključuje oportunitetni trošak proizvodnje određenog dobra ili usluge. Kada
+                    govorimo o ekonomskoj dobiti, mislimo na ukupni prihod umanjen za ukupne oportunitetne troškove
+                    poslovanja poduzeća.
+                </p>
+                <p>
+                    Kao što smo ranije naučili, krivulja ukupnog troška u kratkom roku presijeca vertikalnu os na nekoj
+                    pozitivnoj vrijednosti koja odgovara ukupnim fiksnim troškovima poduzeća. Ukupni trošak tada raste
+                    smanjenom stopom unutar područja rastućih graničnih prinosa varijabilnim faktorima. Nakon toga,
+                    trošak raste sve većom stopom unutar područja opadajućih graničnih prinosa.
+                </p>
+                <p>
+                    Na sljedećem graf prikazana je krivulja ukupnog troška za gospodina Gortarija, kao i krivulja
+                    ukupnog
+                    prihoda za tržišnu cijenu od 0,40€ po kilogramu. Pretpostavimo da su njegovi ukupni fiksni troškovi
+                    400€ mjesečno. Za bilo koju razinu proizvodnje, Gortarijeva ekonomska dobit odgovara okomitoj
+                    udaljenosti između krivulje ukupnog prihoda i krivulje ukupnog troška na toj razini proizvodnje.
+                </p>
+                <img src="images/određivanje4.jpg" width="580px" height="400px">
+                <p>
+                    Ekonomska dobit je vertikalna udaljenost između krivulja ukupnog prihoda i ukupnog troška (prihod
+                    minus trošak). U ovom slučaju, najveću moguću dobit Tony Gortari ostvaruje proizvodnjom
+                    <strong>6.700 kilograma rotkvica mjesečno</strong>, pri čemu mu ekonomska dobit iznosi <strong>938€
+                        mjesečno</strong>.
+                </p>
+                <p>
+                    Detaljnijom analizom krivulja ukupnog prihoda i ukupnog troška,, vidimo sljedeće:
+                    pri proizvodnji od nula jedinica, ukupni trošak iznosi <strong>400€</strong> (što su fiksni
+                    troškovi), dok je prihod jednak nuli. Do količine od <strong>1.500 kilograma</strong>, ukupni trošak
+                    premašuje prihod, a u točki njihovog presijecanja dobit je jednaka nuli.
+                </p>
+                <p>
+                    Iznad 1.500 kilograma, prihod raste brže od troška jer krivulja prihoda postaje strmija od krivulje
+                    troška, što vodi povećanju dobiti. Dokle god je krivulja prihoda strmija od troška, profit raste s
+                    povećanjem proizvodnje.
+                </p>
+                <p>
+                    Kako proizvodnja raste, nagib krivulje prihoda (marginalni prihod) ostaje konstantan, dok nagib
+                    krivulje troška (marginalni trošak) raste zbog učinaka opadajućih graničnih prinosa. Najveća dobit
+                    nastaje kada se nagibi dviju krivulja izjednače — pri <strong>6.700 kilograma mjesečno</strong>.
+                </p>
+                <p>
+                    Iznad te razine proizvodnje, troškovi rastu brže od prihoda i dobit počinje opadati. Kod <strong>oko
+                        8.000 kilograma</strong> proizvodnje, krivulje se ponovno sijeku i dobit pada na nulu.
+                </p>
+
+                <h2>Primjena marginalnog pravila odlučivanja</h2>
+                <p>
+                    Nagib krivulje ukupnog prihoda predstavlja <strong>marginalni prihod (<em>MR</em>)</strong>, a nagib
+                    krivulje
+                    ukupnog troška predstavlja <strong>marginalni trošak (<em>MC</em>)</strong>. Ekonomska dobit je
+                    maksimalna
+                    kada su ova dva nagiba jednaka, tj. kada <strong><em>MR</em> = <em>MC</em></strong>.
+                </p>
+                <p>
+                    To je upravo ono što nalaže <strong>marginalno pravilo odlučivanja</strong>: poduzeće koje
+                    maksimizira dobit treba povećavati proizvodnju dokle god je marginalna korist (prihod) veća ili
+                    jednaka marginalnom trošku. Kada je <em>MR</em> = <em>MC</em>, dobit je maksimalna.
+                </p>
+
+                <p>
+                    Na slici je to prikazano u dvije ploče: (a) tržište rotkvica s krivuljama potražnje i ponude,
+                    pri čemu je tržišna cijena <strong>0,40€ po kilogramu</strong>; (b) pojedinačno poduzeće s
+                    horizontalnom krivuljom <em>MR</em> i rastućom <em>MC</em> krivuljom. Točka njihovog presjeka
+                    označava optimalnu
+                    količinu proizvodnje — <strong>6.700 kilograma mjesečno</strong>.
+                </p>
+                <img src="images/određivanje5.jpg" width="700px" height="400px">
+                ž
+                <h2>Određivanje ekonomske dobiti pomoću marginalnog pravila</h2>
+
+                <p>
+                    Tržišna cijena određena je presjekom krivulja ponude i potražnje. Kao i uvijek, poduzeće maksimizira
+                    dobit primjenom <strong>marginalnog pravila odlučivanja</strong>. Budući da se radi o savršeno
+                    konkurentnom tržištu, poduzeće prihvaća tržišnu cijenu kao zadanu – u ovom slučaju <strong>0,40€
+                        po funti</strong> – i bira razinu proizvodnje pri kojoj su <strong>MR = MC</strong> (marginalni
+                    prihod jednak marginalnom trošku).
+                </p>
+
+                <p>
+                    <strong>Ekonomska dobit po jedinici</strong> proizvoda izračunava se kao razlika između cijene i
+                    prosječnog ukupnog troška (<abbr title="Average Total Cost">ATC</abbr>). U ovom slučaju:
+                </p>
+
+                <ol>
+                    <li>Tržišna cijena: <strong>0,40€ po kilogramu</strong></li>
+                    <li>Prosječni ukupni trošak (ATC): <strong>0,26€ po kilogramu</strong></li>
+                    <li>Ekonomska dobit po jedinici: <strong>0,14€</strong></li>
+                </ol>
+
+                <p>
+                    Za izračun ukupne ekonomske dobiti množimo dobit po jedinici s količinom proizvedenih jedinica:
+                </p>
+
+                <p>
+                    <strong>Ekonomska dobit = 0,14€ × 6.700 = 938€</strong>
+                </p>
+
+                <p>
+                    Na dijagramu (b) ova se dobit prikazuje kao površina pravokutnika između
+                    linije marginalnog prihoda (MR) i krivulje prosječnog ukupnog troška (ATC) pri količini od
+                    <strong>6.700 kilograma</strong>. Ova površina prikazuje ukupnu ekonomsku dobit jer je jednaka
+                    razlici
+                    po jedinici puta broj jedinica.
+                </p>
+
+                <div style="height: 10px;"></div>
+                <hr>
+                <p>
+                    ❗Pogledaj pažljivo pravokutnik koji prikazuje ekonomsku dobit na <em>dijagramu (b)</em>. Dobiva se
+                    tako da se uzme količina koja maksimizira dobit – <strong>6.700 kilograma</strong> – te se pročita
+                    vrijednost do krivulje <abbr title="Average Total Cost">ATC</abbr> i do linije potražnje poduzeća
+                    (koja je ujedno linija tržišne cijene).
+                    <strong>Ekonomska dobit po jedinici</strong> izračunava se kao razlika između cijene i prosječnog
+                    ukupnog troška: (<strong>P − ATC</strong>).
+                </p>
+
+                <p>
+                    <strong>Ukupna ekonomska dobit</strong> jednaka je ekonomskoj dobiti po jedinici pomnoženoj s
+                    ukupnom proizvedenom količinom. Ona se može vizualno prikazati produživanjem vodoravnih linija od
+                    točaka na krivulji ATC i krivulji MR (koja je jednaka cijeni) prema osi cijena. Površina
+                    pravokutnika koji se tako formira prikazuje ukupnu ekonomsku dobit.
+                </p>
+
+                <p>
+                    Važno je istaknuti da <strong>količina koja maksimizira ekonomsku dobit ne mora odgovarati najnižoj
+                        točki krivulje ATC</strong> – i u ovom primjeru to nije slučaj.
+                    Studenti često griješe kada izračunavaju ekonomsku dobit kao razliku između tržišne cijene i
+                    <em>najniže točke</em> na krivulji ATC. Time se dobiva maksimalna ekonomska dobit po jedinici, ali
+                    poduzeća maksimiziraju <strong>ukupnu ekonomsku dobit</strong>, a ne dobit po jedinici. Prava razina
+                    proizvodnje određuje se presjekom <em>ATC</em> i <em>MR</em>.
+                </p>
+                <hr>
+                <div style="height: 10px;"></div>
+
+                <h2>Ekonomski gubici u kratkom roku</h2>
+                <p>
+                    U kratkom roku poduzeće ima jedan ili više inputa čije su količine fiksne. To znači da u kratkom
+                    roku poduzeće ne može napustiti industriju. Čak i ako ne može pokriti sve svoje troškove,
+                    uključujući varijabilne i fiksne troškove, potpuni izlazak iz poslovanja nije opcija u kratkom roku.
+                    Poduzeće može prestati s proizvodnjom, ali i dalje mora plaćati svoje fiksne troškove. Prisiljeno je
+                    prihvatiti ekonomski gubitak, odnosno razliku kojom ukupni troškovi premašuju ukupne prihode.
+                </p>
+                <p>
+                    Zamislimo, na primjer, da proizvođač ima potpisan jednogodišnji najam za neku opremu. Tijekom
+                    trajanja tog ugovora mora plaćati najamninu, bez obzira proizvodi li nešto ili ne. Tijekom tog
+                    razdoblja ti troškovi predstavljaju fiksni trošak za poduzeće.
+                </p>
+                <p>
+                    Poduzeće koje u kratkom roku ostvaruje ekonomske gubitke – odnosno čija je ekonomska dobit negativna
+                    – može odlučiti hoće li nastaviti s proizvodnjom ili privremeno obustaviti rad, smanjujući
+                    proizvodnju na nulu. Odabrat će opciju koja minimizira gubitke. Ključni test za odluku o nastavku
+                    rada ili zatvaranju leži u odnosu između cijene i prosječnog varijabilnog troška.
+                </p>
+
+                <h2>Proizvodnja radi minimiziranja ekonomskih gubitaka</h2>
+                <p>
+                    Pretpostavimo da potražnja za rotkvicama padda te da tržišna cijena rotkvica pada na 0,18€ po
+                    kilogramu, što je ispod prosječnog ukupnog troška
+                    (<em>ATC</em>). Kao posljedica toga, gospodin Gortari ostvaruje negativnu ekonomsku dobit – gubitak.
+                    Iako
+                    nova tržišna cijena ne pokriva prosječni ukupni trošak, ona je i dalje viša od prosječnog
+                    varijabilnog troška (<em>AVC</em>). Zbog toga gospodin Gortari treba
+                    nastaviti s
+                    proizvodnjom, ali pri onoj razini proizvodnje kod koje
+                    su granični prihod (<em>MR</em>) i granični trošak (<em>MC</em>) jednaki.
+                </p>
+                <p>Kada proizvodi 4.444 kilograma rotkvica mjesečno, gospodin Gortari ima prosječni ukupni trošak
+                    (<em>ATC</em>) od 0,23€
+                    po kilogramu. Uz tržišnu cijenu od 0,18€ po kilogramu, gubi 5 centi na svakoj proizvedenoj funti.
+                    Ukupni
+                    ekonomski gubitak pri toj razini proizvodnje iznosi 222,20€ mjesečno (4.444 × 0,05€).</p>
+                <p>Pretpostavimo da gospodin Gortari odluči zatvoriti proizvodnju i ne proizvesti nijednu rotkvicu.
+                    Prekidom proizvodnje varijabilni troškovi padaju na nulu, ali i dalje bi morao plaćati fiksne
+                    troškove u
+                    iznosu od 400€ mjesečno.
+                    Zatvaranjem bi izgubio 400€ mjesečno. Nastavkom proizvodnje, gubitak iznosi samo 222,20€.</p>
+                <p>Stoga je gospodin Gortari u boljoj poziciji ako nastavi proizvoditi pri razini gdje se granični
+                    prihod
+                    izjednačava s graničnim troškom, jer je tada cijena veća od prosječnog varijabilnog troška
+                    (<em>AVC</em>).
+                    Prosječni varijabilni trošak iznosi 0,14€ po kilogramu, pa mu preostaje 0,04€ po kilogramu koje može
+                    iskoristiti za pokrivanje fiksnih troškova. Sve dok je cijena veća od prosječnog varijabilnog
+                    troška,
+                    poduzeće maksimizira ekonomski profit (ili minimizira gubitak) proizvodnjom na razini gdje se sijeku
+                    krivulje graničnog prihoda i graničnog troška.</p>
+
+                <h2>Zatvaranje proizvodnje radi minimiziranja ekonomskog gubitka</h2>
+                <p>Pretpostavimo da cijena padne ispod prosječnog varijabilnog troška poduzeća. U tom je slučaju
+                    najbolja
+                    strategija za poduzeće potpuno obustaviti proizvodnju, tj. smanjiti izlaz na nulu. Najniža razina
+                    prosječnog varijabilnog troška, koja se javlja na presjeku krivulje graničnog troška i krivulje
+                    prosječnog varijabilnog troška, naziva se točkom zatvaranja (eng. <em>shutdown point</em>). Svaka
+                    cijena niža od
+                    minimalne vrijednosti prosječnog varijabilnog troška dovest će do toga da se poduzeće zatvori. Ako
+                    bi
+                    poduzeće nastavilo proizvoditi, ne bi samo izgubilo fiksne troškove, već bi pretrpjelo dodatne
+                    gubitke
+                    jer ne bi pokrivalo ni varijabilne troškove.</p>
+                <p>Na slici u nastavku prikazan je slučaj kada cijena rotkvica padne na 0,10€ po kilogramu. Budući da je
+                    cijena
+                    niža od prosječnog varijabilnog troška, gospodin Gortari bi, uz gubitak fiksnih troškova, imao i
+                    dodatne
+                    gubitke nastavljanjem proizvodnje. Pretpostavimo, na primjer, da odluči proizvoditi na razini gdje
+                    se
+                    granični prihod izjednačava s graničnim troškom, odnosno proizvesti 1.700 kilograma rotkvica
+                    mjesečno.
+                    Prosječni varijabilni trošak iznosi 0,14€ po kilogramu, pa bi gubio 0,04€ po proizvedenom kilogramu
+                    (ukupno 68€), uz fiksni trošak od 400€ mjesečno. Ukupan gubitak iznosio bi 468€ mjesečno. Ako bi,
+                    umjesto toga, zatvorio proizvodnju, izgubio bi samo fiksni trošak. Budući da je tržišna cijena
+                    od 0,10€ niža od njegova prosječnog varijabilnog troška, najbolja odluka gospodina Gortarija bila
+                    bi
+                    obustaviti proizvodnju.</p>
+                <img src="images/određivanje6.jpg" width="520px" height="400px">
+                <p>Tržišna cijena rotkvica pada na 0,10€ po kilogramu, pa je MR<sub>3</sub> ispod prosječnog
+                    varijabilnog troška (<em>AVC</em>)
+                    gospodina Gortarija. U takvoj situaciji, nastavljanjem proizvodnje pretrpio bi veći gubitak nego da
+                    jednostavno obustavi rad. Kad god cijena padne ispod prosječnog varijabilnog troška, poduzeće će se
+                    zatvoriti, smanjujući proizvodnju na nulu.</p>
+                <p>Zatvaranje proizvodnje nije isto što i trajni izlazak iz poslovanja. Poduzeće se zatvara zatvaranjem
+                    svojih vrata, ali ih može ponovno otvoriti čim očekuje da će moći pokriti svoje varijabilne
+                    troškove.
+                    Čak možemo razmatrati i odluku poduzeća da se zatvori na kraju radnog dana kao neku vrstu točke
+                    zatvaranja – poduzeće donosi tu odluku jer ne očekuje da će preko noći moći pokriti svoje
+                    varijabilne
+                    troškove. Međutim, očekuje da će ih moći pokriti sljedećeg jutra kada ponovno otvori svoja vrata.
+                </p>
+
+                <h2>Granični trošak i ponuda</h2>
+                <p>U modelu savršenog tržišnog natjecanja, pretpostavljamo da poduzeće određuje svoju razinu proizvodnje
+                    tako da pronađe točku u kojoj se krive graničnog prihoda (<em>MR</em>) i graničnog troška
+                    (<em>MC</em>) sijeku. Ako cijena
+                    prelazi prosječni varijabilni trošak (<em>AVC</em>), poduzeće će proizvoditi količinu određenu tim
+                    presjekom.</p>
+                <p>Krivulja ponude nam pokazuje kolika će količina biti proizvedena pri svakoj cijeni – upravo to
+                    prikazuje
+                    krivulja graničnog troška poduzeća. U kratkom roku, krivulja ponude poduzeća je njegova krivulja
+                    graničnog troška za cijene iznad prosječnog varijabilnog troška. Pri cijenama nižim od prosječnog
+                    varijabilnog troška, proizvodnja pada na nulu.</p>
+                <p>Na dijagramu (a) slike prikazane su krivulje prosječnog varijabilnog troška (<em>AVC</em>) i
+                    graničnog troška
+                    (<em>MC</em>) za hipotetsku astrologinju, Madame LaFarge, koja pruža astrološke konzultacije putem
+                    telefona.
+                    Pretpostavljamo da je riječ o savršeno konkurentnom tržištu. Ako je cijena ispod 10 eura po pozivu,
+                    Madame LaFarge će obustaviti rad. Međutim, ako je cijena 10 eura ili više, proizvodit će onu
+                    količinu
+                    pri kojoj cijena = granični trošak.
+                    Dakle, njezina krivulja graničnog troška predstavlja njezinu krivulju ponude za sve cijene iznad 10
+                    eura.</p>
+                <img src="images/određivanje7.jpg" width="700px" height="400px">
+                <p>Krivulja ponude poduzeća je onaj dio krivulje graničnog troška (<em>MC</em>>) koji se nalazi iznad
+                    krivulje
+                    prosječnog varijabilnog troška (<em>AVC</em>>), kao što je prikazano na dijagramu (a). To znači da
+                    poduzeće neće
+                    proizvoditi pri cijenama nižim od AVC-a, jer bi tada imalo veći gubitak nego da ne proizvodi ništa.
+                </p>
+                <p>Da bismo dobili krivulju ponude industrije u kratkom roku, zbrajamo količine koje svako poduzeće
+                    proizvodi pri svakoj razini cijene. Tako dobivamo kratkoročnu krivulju tržišne ponude, što je
+                    prikazano
+                    na dijagramu (b).</p>
+                <p>Zamislimo sada da se industrija astroloških prognoza sastoji od Madame LaFarge i tisuća sličnih
+                    poduzeća. Tržišna ponuda dobiva se zbrajanjem količina koje svako poduzeće proizvodi pri određenoj
+                    cijeni. Na primjer, pri cijeni od 10 eura po pozivu, Madame LaFarge nudi 14 poziva dnevno. Ako
+                    zbrojimo ponudu svih drugih poduzeća, dobijemo ukupnu tržišnu ponudu od 280,000 poziva. Primijetimo
+                    da je tržišna krivulja ponude na crtežu linearna.</p>
+                <p>Gledajući sliku, možemo zaključiti da izbori koje donose poduzeća koja maksimiziraju dobit u
+                    savršenoj konkurenciji dovode do toga da tržišna
+                    ponuda odražava granični trošak (<em>MC</em>). Ako nema vanjskih koristi (pozitivnih eksternalija)
+                    ili troškova (negativnih eksternalija), tada
+                    savršenom konkurencijom upravljano tržište zadovoljava uvjet učinkovitosti — tj. resursi se
+                    raspoređuju
+                    tako da se maksimizira ukupna društvena dobrobit.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Cijena u savršeno konkurentnoj industriji određuje se interakcijom ponude i potražnje.</li>
+                        <li>U savršeno konkurentnoj industriji, krivulja ukupnog prihoda poduzeća je ravna, uzlazna
+                            linija
+                            čiji je nagib tržišna cijena. Ekonomski profit maksimizira se na razini proizvodnje pri
+                            kojoj su
+                            nagibi krivulja ukupnog prihoda i ukupnog troška jednaki, pod uvjetom da poduzeće pokriva
+                            svoje
+                            varijabilne troškove.</li>
+                        <li>Za korištenje pravila marginalne odluke u maksimiziranju profita, poduzeće proizvodi
+                            količinu
+                            pri kojoj su granični trošak jednak graničnom prihodu. Ekonomski profit po jedinici jednak
+                            je
+                            razlici između cijene i prosječnog ukupnog troška; ukupni ekonomski profit jednak je
+                            ekonomskom
+                            profitu po jedinici puta količina.</li>
+                        <li>>Ako cijena padne ispod prosječnog ukupnog troška, ali ostane iznad prosječnog varijabilnog
+                            troška, poduzeće će nastaviti poslovati u kratkom roku, proizvodeći količinu pri kojoj se
+                            <em>MR =
+                                MC</em>, jer tako minimizira gubitke.
+                        </li>
+                        <li>Ako cijena padne ispod prosječnog varijabilnog troška, poduzeće će se zatvoriti u kratkom
+                            roku,
+                            smanjujući proizvodnju na nulu. Najniža točka na krivulji prosječnog varijabilnog troška
+                            naziva
+                            se točka zatvaranja.</li>
+                        <li>Kratkoročna krivulja ponude poduzeća je njegova krivulja graničnog troška za cijene iznad
+                            minimalnog prosječnog varijabilnog troška.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz62.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

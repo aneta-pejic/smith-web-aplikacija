@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postavi materijale</title>
+    <link rel="stylesheet" href="styles/materijali.css" />
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="zaglavlje">
+        <div class="lijevo">
+            <a href="first_page.html" class="strelica">⇐ Povratak</a>
+        </div>
+        <div class="desno">
+            <a href="materijali.html">Pogledaj materijale ⇒</a>
+        </div>
+    </header>
+
+    <h1 class="naslov">Postavi materijale</h1>
+    <hr />
+
+    <input type="text" id="fileLink" placeholder="Unesi link do materijala" />
+    <input type="text" id="fileName" placeholder="Ime datoteke" />
+    <button onclick="submitLink()">Postavi</button>
+    <p id="uploadMessage"></p>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    
+    <script src="scripts/postavi_materijale.js"></script>
+</body>
+
+</html>

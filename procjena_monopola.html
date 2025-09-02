@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopol - Procjena monopola</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="procjena_monopola">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container stay">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <div class="chosen"><a href="#">Procjena monopola</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Procjena monopola</strong></h1>
+                <p>Vidjeli smo da u slučaju monopola koji nastoji maksimizirati dobit ishod odstupa od onoga u uvjetima
+                    savršene konkurencije. No, je li to važno za društvo? U ovom ćemo se dijelu usredotočiti na razlike
+                    koje proizlaze iz tržišne strukture i analizirati njihove posljedice.</p>
+                <h2>Učinkovitost, pravednost i koncentracija moći</h2>
+                <p>Monopol poduzeće određuje količinu proizvodnje tako da izjednači granični trošak s graničnim
+                    prihodom.
+                    Nakon toga određuje cijenu po kojoj može prodati tu količinu, a ta je cijena određena krivuljom
+                    potražnje. Budući da cijena premašuje granični prihod, ona premašuje i granični trošak. To je u
+                    suprotnosti sa savršenom konkurencijom, gdje su cijena i granični trošak jednaki. Viša cijena koju
+                    monopol može naplatiti omogućuje mu ostvarivanje dobiti — u velikoj mjeri na račun potrošača, čije
+                    su
+                    mogućnosti ograničene i koji često nemaju izbora. Takvo rješenje u slučaju monopola stoga otvara
+                    pitanja
+                    učinkovitosti, pravednosti i koncentracije ekonomske moći.</p>
+
+                <h2>Monopol i učinkovitost</h2>
+                <p>Činjenica da cijena kod monopola premašuje granični trošak ukazuje na to da monopolno rješenje krši
+                    temeljni uvjet ekonomske učinkovitosti da cjenovni sustav mora donositeljima odluka jasno pokazivati
+                    sve troškove i sve koristi njihovih izbora. Učinkovitost zahtijeva da se potrošači suočavaju s
+                    cijenama
+                    koje su jednake graničnim troškovima. Budući da monopol naplaćuje cijenu veću od graničnog troška,
+                    potrošači će konzumirati manju količinu monopolskog dobra ili usluge nego što bi bilo ekonomski
+                    učinkovito.</p>
+                <p>Kako bismo usporedili učinkovitost savršene konkurencije s neučinkovitošću monopola, zamislimo
+                    industriju u savršenoj konkurenciji čije je rješenje prikazano na slici. Kratkoročna krivulja
+                    ponude industrije predstavlja zbroj pojedinačnih krivulja graničnih troškova i može se promatrati
+                    kao
+                    krivulja graničnih troškova za cijelu industriju. Savršeno konkurentna industrija postiže ravnotežu
+                    u
+                    točki C, pri cijeni <em>P<sub>c</sub></em> i količini <em>Q<sub>c</sub></em>.</p>
+                <img src="images/procjena_monopola1.jpg" width="500px" height="400px">
+                <p>S obzirom na tržišnu potražnju i granični prihod, možemo usporediti ponašanje monopola s ponašanjem
+                    industrije u savršenoj konkurenciji. Krivulja graničnog troška može se promatrati kao krivulja
+                    ponude
+                    industrije u savršenoj konkurenciji. Savršeno konkurentna industrija proizvodi količinu
+                    <em>Q<sub>c</sub></em> i prodaje
+                    proizvod po cijeni <em>P<sub>c</sub></em>. Monopolist ograničava proizvodnju na količinu
+                    <em>Q<sub>m</sub></em> i povećava cijenu na <em>P<sub>m</sub></em>.
+                </p>
+                <p>Restrukturiranje savršeno konkurentne industrije u monopol rezultira gubitkom ekonomske dobiti za
+                    društvo, prikazanim kao zasjenjeno područje GRC. Također dolazi do prijenosa dijela potrošačkog
+                    viška,
+                    koji postoji u konkurentskom slučaju, na monopolsku firmu.</p>
+
+                <p>Zamislimo sada da se sve firme u industriji spoje, a državna regulativa zabrani ulazak novih firmi.
+                    Naša
+                    savršeno konkurentna industrija sada postaje monopol. Pretpostavimo da monopol zadržava iste
+                    krivulje
+                    graničnog troška i potražnje kakve je imala konkurentna industrija. Monopol se i dalje suočava s
+                    istom
+                    tržišnom krivuljom potražnje, iz koje izvodi svoju krivulju graničnog prihoda. Dobit maksimizira pri
+                    količini <em>Q<sub>m</sub></em> i naplaćuje cijenu <em>P<sub>m</sub></em>. Količina proizvodnje je
+                    manja, a cijena viša nego u konkurentskom
+                    rješenju.</p>
+                <p>Društvo bi imalo korist kada bi se prešlo s monopolskog rješenja pri <em>Q<sub>m</sub></em> na
+                    konkurentsko rješenje pri <em>Q<sub>c</sub></em>.
+                    Dobit za potrošače prikazana je površinom ispod krivulje potražnje između <em>Q<sub>m</sub></em> i
+                    <em>Q<sub>c</sub></em>; to je područje
+                    <em>Q<sub>m</sub></em>RC<em>Q<sub>c</sub></em>. Povećanje proizvodnje, naravno, ima i svoj trošak.
+                    Budući da krivulja graničnog troška prikazuje
+                    trošak svake dodatne jedinice, površina ispod te krivulje preko određenog raspona količina prikazuje
+                    ukupan trošak te proizvodnje. Tako je ukupan trošak povećanja proizvodnje s <em>Q<sub>m</sub></em>
+                    na <em>Q<sub>c</sub></em> prikazan površinom
+                    ispod krivulje graničnog troška u tom rasponu — područjem
+                    <em>Q<sub>m</sub></em>GC<em>Q<sub>c</sub></em>. Oduzimanjem tog troška od ukupne
+                    koristi dobivamo neto dobit prelaska s monopolskog na konkurentsko
+                    rješenje; to je zasjenjeno područje GRC. To je potencijalna dobit prelaska na učinkovito tržišno
+                    rješenje. Područje GRC predstavlja gubitak ekonomske dobiti (engl. <em>deadweight loss</em>).
+                </p>
+
+                <h2>Monopol i pravednost</h2>
+                <p>Monopolsko rješenje otvara pitanja ne samo učinkovitosti, već i pravednosti. Kao što pokazuje slika,
+                    monopolist naplaćuje cijenu <em>P<sub>m</sub></em>, umjesto konkurentske cijene
+                    <em>P<sub>c</sub></em>; viša cijena koju naplaćuje
+                    monopol smanjuje potrošački višak. Potrošački višak predstavlja razliku između onoga što su
+                    potrošači
+                    spremni platiti za dobro i onoga što zaista plate. Mjeri se kao površina ispod krivulje potražnje, a
+                    iznad cijene dobra, za količinu koja se proizvodi.
+                </p>
+                <p>Da je industrija konkurentska, potrošački višak bio bi površina ispod krivulje potražnje i iznad
+                    <em>P<sub>c</sub></em>C. U
+                    slučaju monopola, potrošački višak smanjuje se na površinu ispod krivulje potražnje i iznad
+                    <em>P<sub>m</sub></em>R. Dio tog
+                    smanjenja odnosi se na područje ispod krivulje potražnje između količina <em>Q<sub>c</sub></em> i
+                    <em>Q<sub>m</sub></em>; to je dio gubitka
+                    ekonomske dobiti, prikazan područjem GRC. No potrošači gube i pravokutno područje omeđeno
+                    konkurentskom
+                    i monopolskom cijenom te količinom monopolističke proizvodnje — taj dio izgubljenog potrošačkog
+                    viška ne
+                    nestaje, već se prenosi na monopolista kao dodatna dobit.
+                </p>
+                <p>Činjenica da društvo trpi gubitak ekonomske dobiti zbog monopola predstavlja problem učinkovitosti.
+                    No,
+                    prijenos dijela potrošačkog viška na monopol postavlja pitanje pravednosti. Je li takav prijenos
+                    opravdan? Uostalom, monopolist uživa povlašteni položaj, zaštićen od konkurencije preprekama ulasku
+                    na
+                    tržište. Treba li mu dopustiti da ostvaruje takvu dobit na račun potrošača? Javna politika na to u
+                    pravilu odgovara ne. Regulatorne mjere u slučajevima monopola često nastoje
+                    smanjiti mogućnost monopolskih firmi da izvlače potrošački višak smanjenjem cijena koje smiju
+                    naplaćivati.</p>
+
+                <h2>Monopol i koncentracija moći</h2>
+                <p>Prigovori monopolu sežu daleko dublje od zabrinutosti oko ekonomske učinkovitosti i visokih cijena.
+                    Budući da je monopol zaštićen preprekama koje sprječavaju ulazak potencijalnih konkurenata, on
+                    posjeduje
+                    značajnu tržišnu moć. Za mnoge je ljude takva koncentracija moći neprihvatljiva. Decentralizirano,
+                    konkurentno tržište neprestano testira sposobnost poduzeća da zadovolje potrošače, tjera ih na
+                    inovacije
+                    te na traženje učinkovitijih metoda proizvodnje, a ujedno smanjuje njihove ekonomske profite. Tvrtke
+                    koje posluju u zaštićenoj poziciji monopola mogu biti u velikoj mjeri imune na te pritiske.
+                    Posljedica
+                    toga može biti manje izbora za potrošače, viši troškovi i niža kvaliteta proizvoda ili usluga.</p>
+                <p>Još važnije, prema mišljenju mnogih ekonomista, jest to što postojanje ekonomskih profita ne samo da
+                    pruža poticaj, već i sredstva, da monopolist agresivno štiti i po mogućnosti širi svoj položaj. Ti
+                    ekonomisti upozoravaju da bi monopolisti mogli biti spremni trošiti svoje profite na pokušaje
+                    utjecaja
+                    na političke lidere i javna tijela (uključujući regulatorne agencije) kako bi zadržali ili proširili
+                    svoj monopol. Kritičari tvrde da to može dovesti do korupcije i zloupotreba. Primjerice, Microsoft
+                    je
+                    bio optužen od strane konkurenata da je prisiljavao proizvođače računala da isključivo instaliraju
+                    njegov internetski preglednik, Internet Explorer.</p>
+                <p>Stavovi javnosti prema Microsoftu odražavaju te zabrinutosti. Čak i među onima koji smatraju da su
+                    njegovi proizvodi kvalitetni i razumno cijenjeni, postoji nelagoda zbog ovisnosti o toj jednoj
+                    tvrtki. A
+                    jednom kad osigura svoju dominantnu poziciju, hoće li početi naplaćivati više? Hoće li i dalje
+                    inovirati? — pitanja su koja mnogi postavljaju.</p>
+
+                <h2>Javna politika prema monopolu</h2>
+                <p>Najvažnije je primijetiti da je poduzeće u savršenoj konkurenciji prihvatitelj cijene, dok je
+                    monopol
+                    određivač cijene. Zbog te razlike, monopol možemo kritizirati s aspekta ekonomske učinkovitosti;
+                    monopoli proizvode premalo i naplaćuju previše. Također, visoke cijene i trajni profiti mnogima se
+                    čine
+                    nepravednima. Drugi pak jednostavno smatraju da je monopol neprihvatljiva koncentracija moći.</p>
+
+                <h2>Obilježja savršene konkurencije i monopola</h2>
+                <h3><mark>1. Tržište</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Velik broj prodavatelja i kupaca koji proizvode homogenu robu
+                    ili uslugu, lak ulazak na tržište.</p>
+                <p><strong>Monopol:</strong> Velik broj kupaca, jedan prodavatelj. Ulazak na tržište je blokiran.</p>
+                <h3><mark>2. Krivulje potražnje i graničnog prihoda</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Krivulje potražnje i graničnog prihoda poduzeća su
+                    horizontalna linija na tržišnoj cijeni.</p>
+                <p><strong>Monopol:</strong> Poduzeće se suočava s tržišnom krivuljom potražnje; granični prihod je
+                    ispod razine tržišne potražnje.</p>
+                <h3><mark>3. Cijena</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Određena potražnjom i ponudom; svako je poduzeće prihvatitelj
+                    cijene. Cijena je jednaka graničnom trošku.</p>
+                <p><strong>Monopol:</strong> Monopol određuje cijenu; on je određivač cijene. Cijena je veća od
+                    graničnog troška.</p>
+                <h3><mark>4. Maksimizacija profita</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Poduzeća proizvode tamo gdje su granični trošak i granični
+                    prihod jednaki.</p>
+                <p><strong>Monopol:</strong> Poduzeća proizvode tamo gdje su granični trošak i granični prihod jednaki i
+                    naplaćuju odgovarajuću cijenu prema krivulji potražnje.</p>
+                <h3><mark>5. Profit</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Ulazak novih poduzeća dovodi ekonomski profit na nulu u dugom
+                    roku.</p>
+                <p><strong>Monopol:</strong> Zbog blokiranog ulaska, monopol može ostvarivati ekonomski profit i u dugom
+                    roku.</p>
+                <h3><mark>6. Učinkovitost</mark></h3>
+                <p><strong>Savršena konkurencija:</strong> Ravnotežno rješenje je učinkovito jer je cijena jednaka
+                    graničnom trošku.</p>
+                <p><strong>Monopol:</strong> Ravnotežno rješenje je neučinkovito jer je cijena veća od graničnog troška.
+                </p>
+
+                <p>Javna politika prema monopolu općenito prepoznaje dvije važne dimenzije problema monopola. S jedne
+                    strane, spajanje konkurentskih poduzeća u monopol stvara neučinkovito i, za mnoge, nepravedno
+                    rješenje.
+                    S druge strane, neke industrije karakterizira prirodni monopol; proizvodnja od strane jednog
+                    poduzeća
+                    omogućuje ekonomiju razmjera, što dovodi do nižih troškova.</p>
+                <p>Spajanje konkurentskih poduzeća u monopol ili nepravedno istiskivanje konkurenata s tržišta općenito
+                    je
+                    zabranjeno u Sjedinjenim Američkim Državama. Regulacijski napori za sprječavanje monopola spadaju
+                    pod
+                    nadležnost zakona o tržišnom natjecanju (antitrust zakoni), koji su detaljnije obrađeni u kasnijem
+                    poglavlju.</p>
+                <p>Istovremeno, moramo biti oprezni da ne pogriješimo misleći kako je konkurencija uvijek alternativa
+                    monopolu, odnosno da se svaki monopol može i treba zamijeniti konkurentskim tržištem. Jedan od
+                    ključnih
+                    izvora monopolske moći su upravo ekonomije razmjera. U slučaju prirodnog monopola, alternativa
+                    jednom
+                    poduzeću su brojni mali proizvođači s višim troškovima. Možda nam se ne sviđa ideja da imamo samo
+                    jednog
+                    lokalnog pružatelja vode, ali nam se možda još manje sviđa mogućnost postojanja desetaka pružatelja
+                    s
+                    višim troškovima i cijenama. Tamo gdje monopoli postoje zato što ekonomije razmjera prevladavaju na
+                    cijelom rasponu tržišne potražnje, oni mogu imati korisnu ekonomsku ulogu. Možda ćemo htjeti
+                    regulirati
+                    njihove proizvodne i cjenovne odluke, ali ne nužno i odreći se njihovih troškovnih prednosti.</p>
+                <p>Tamo gdje postoji prirodni monopol, cijena koju poduzeće naplaćuje i drugi aspekti njegova ponašanja
+                    mogu biti podložni regulaciji. Voda ili prirodni plin, primjerice, često se distribuiraju putem
+                    javnog
+                    poduzeća — monopolista — po cijenama koje regulira državna ili lokalna agencija. Tipično, takve
+                    agencije
+                    nastoje natjerati poduzeće da naplaćuje niže cijene i ostvaruje manji profit nego što bi inače
+                    tražilo.</p>
+                <p>Iako su ekonomisti oprezni kada je riječ o općim osudama monopola, općenito su oštro kritični prema
+                    monopolskoj moći kada za nju ne postoji opravdanje. Kada poduzeća imaju značajnu monopolsku moć
+                    isključivo kao rezultat državnih politika koje blokiraju ulazak konkurenata, tada postoji malo
+                    argumenata u korist njihove monopolske pozicije.</p>
+                <p>Javna politika prema monopolu općenito nastoji postići ravnotežu koju sugerira ekonomska analiza.
+                    Tamo
+                    gdje postoji opravdanje, kao u slučaju prirodnog monopola, monopoli se dopuštaju—ali se njihove
+                    cijene
+                    reguliraju. U drugim slučajevima, monopol se izričito zabranjuje. Društva će vjerojatno barem
+                    razmotriti
+                    poduzimanje nekih mjera protiv monopola, osim ako oni ne nude jasne troškovne ili tehnološke
+                    prednosti.</p>
+
+                <h2>Krhkost monopolske moći</h2>
+                <p>Važan čimbenik u razmišljanju o javnoj politici prema monopolu jest prepoznati da monopolska moć može
+                    biti prolazna stvar. Tvrtke stalno nastoje steći tržišnu moć koju monopol pruža. Kada su uvjeti
+                    povoljni
+                    za postizanje te moći, tvrtke koje uspiju zauzeti monopolske pozicije uživaju znatne profite. No,
+                    potencijal za visoke profite potiče stalne pokušaje da se sruše prepreke za ulazak koje štite
+                    monopole
+                    od konkurencije.</p>
+                <p>Tehnološke promjene i težnja za profitom neprestano narušavaju ukorijenjenu moć monopola. Zapanjujuće
+                    tehnološke promjene dogodile su se u telekomunikacijskoj industriji. Katalog tvrtke izazivaju
+                    monopolske
+                    pozicije nekih trgovaca; internetski prodavači knjiga i online tvrtke za udžbenike poput
+                    gone.2012books.lardbucket.org izazivaju monopolske pozicije knjižara vašeg sveučilišta; a Federal
+                    Express, UPS i druge tvrtke suprotstavljaju se američkoj pošti. Napadi na monopolske moći su stalni.
+                    Stoga i monopolska tvrtka mora biti na oprezu zbog potencijalnih konkurenata.</p>
+                <p>Potencijalni rivali uvijek kucaju na vrata i time čine tržište monopola krhkim i otvorenim za ulazak
+                    —
+                    barem u smislu da rivalne tvrtke proizvode „dovoljno slične“, ako ne i savršene, zamjene — dovoljno
+                    slične da bi mogle ukloniti monopolsku moć te tvrtke.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Monopolska tvrtka proizvodi količinu manju od učinkovite razine proizvodnje. Posljedica toga
+                            je
+                            mrtvi gubitak za društvo, koji se prikazuje kao područje između krivulja potražnje i
+                            graničnih
+                            troškova u rasponu proizvodnje između količine koju odabere monopolska tvrtka i učinkovite
+                            količine.</li>
+                        <li>Viša cijena koju naplaćuje monopolska tvrtka u usporedbi s tvrtkom na savršeno konkurentnom
+                            tržištu smanjuje potrošački višak, dio kojeg se prenosi na monopolista. Taj prijenos stvara
+                            problem pravičnosti.</li>
+                        <li>Tržišna moć monopolista smanjuje izbor potrošača i može rezultirati višim cijenama, no
+                            postoje i
+                            prednosti monopola, poput ekonomije razmjera i tehnoloških inovacija koje potiče sustav
+                            patenata.</li>
+                        <li>Javna politika prema monopolima sastoji se od zakona o zaštiti tržišnog natjecanja
+                            (antitrust
+                            zakona) i regulacije prirodnih monopola.</li>
+                        <li>Snage koje ograničavaju moć monopolskih tvrtki su stalni napori drugih tvrtki da osvoje dio
+                            profita monopolista te tehnološke promjene koje narušavaju monopolsku moć.</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz73.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastičnost - Cjenovna elastičnost ponude</title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="cjenovna_elasticnost_ponude">
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container stay">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <div class="chosen"><a href="#">Cjenovna elastičnost ponude</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <a href="analiza_ind_krivulje.html">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                potrošača</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.html">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Cjenovna elastičnost ponude</strong></h1>
+                <p>Mjere elastičnosti do sada obrađene u ovom poglavlju odnose se uglavnom na stranu potražnje na
+                    tržištu. Također je korisno znati koliko je količina ponuđena osjetljiva na promjenu cijene.</p>
+                <p>Pretpostavimo da potražnja za stanovima raste. Doći će do nestašice stanova pri staroj razini najma,
+                    što će pritiskati cijene najma da porastu. Uz nepromijenjene ostale uvjete, što je količina ponuđena
+                    stanova osjetljivija na promjene mjesečnog najma, to će porast najma koji je potreban da se ukloni
+                    nestašica i tržište vrati u ravnotežu biti manji. Suprotno tome, ako je količina ponuđena manje
+                    osjetljiva na promjene cijene, cijena će morati porasti više da bi se uklonila nestašica uzrokovana
+                    povećanjem potražnje.</p>
+                <p>Ovo je ilustrirano na slici u nastavku. Pretpostavimo da je najam za tipični stan bio R0, a količina
+                    Q0
+                    kada je krivulja potražnje bila D1, a krivulja ponude bila ili S1 (krivulja ponude kod koje je
+                    količina ponuđena manje osjetljiva na promjene cijene) ili S2 (krivulja ponude kod koje je količina
+                    ponuđena osjetljivija na promjene cijene). Primijetite da je kod obje krivulje ponude početna
+                    ravnotežna cijena i količina ista. Sada pretpostavimo da potražnja raste na D2, možda zbog rasta
+                    stanovništva. Kod krivulje ponude S1, cijena (najam) porast će na R1, a količina stanova na Q1.
+                    Međutim, ako je krivulja ponude bila S2, najam bi morao porasti samo na R2 da bi tržište ponovno
+                    došlo u ravnotežu. Osim toga, nova ravnotežna količina stanova bila bi veća, Q2. Krivulja ponude S2
+                    pokazuje veću osjetljivost količine ponuđene na promjenu cijene nego krivulja ponude S1.</p>
+                <img src="images/primjer stanova.jpg" width="700px" height="500px">
+                <p>Povećanje najma stanova ovisi o tome koliko je ponuda osjetljiva na promjene cijene. Što je ponuda
+                    stanova osjetljivija na promjene cijene (najma u ovom slučaju), to će se najamnine manje povećavati
+                    kada potražnja za stanovima poraste.</p>
+                <p>Mjerenje elastičnosti ponude po cijeni (e<sub>S</sub>) vrši se kao omjer postotne promjene količine
+                    ponuđene
+                    neke robe ili usluge i postotne promjene njene cijene, pod pretpostavkom da su ostali čimbenici
+                    nepromijenjeni:</p>
+                <div class="equation"><img src="images/el ponude jednadžba.jpg" width="450px" height="100px"></div>
+                <p>Zbog toga što se cijena i ponuđena količina obično kreću u istom smjeru, cjenovna elastičnost ponude
+                    obično je pozitivna. Što je veća cjenovna elastičnost ponude, to su tvrtke koje nude dobro ili
+                    uslugu osjetljivije na promjenu cijene.</p>
+                <h2>Vrijeme: važan čimbenik cjenovne elastičnosti ponude</h2>
+
+                <p>Vrijeme igra vrlo važnu ulogu u određivanju cjenovne elastičnosti ponude. Pogledajmo ponovno učinak
+                    povećanja stanarina na ponudu stanova. Pretpostavimo da stanarine u nekom gradu rastu. Ako
+                    promatramo krivulju ponude stanova kroz razdoblje od nekoliko mjeseci, povećanje stanarine
+                    vjerojatno će potaknuti vlasnike stanova da iznajme relativno mali broj dodatnih jedinica. Uz više
+                    stanarine, vlasnici stanova mogu se više truditi smanjiti stopu praznih stanova, a budući da će više
+                    ljudi tražiti stanove, to bi trebalo biti relativno lako postići. Tavani i podrumi lako se mogu
+                    preurediti i iznajmiti kao dodatne stambene jedinice. No, u kratkom vremenskom razdoblju, odgovor
+                    ponude bit će ograničen, što znači da je cjenovna elastičnost ponude relativno niska. Krivulja
+                    ponude koja odgovara kratkom roku izgledala bi poput krivulje S1 na prethodnoj slici. U takvim se
+                    razdobljima često javljaju zahtjevi za uvođenjem kontrole stanarina.</p>
+
+                <p>Ako je vremensko razdoblje koje promatramo dulje, primjerice nekoliko godina umjesto nekoliko
+                    mjeseci, tada je krivulja ponude vjerojatno znatno elastičnija. S vremenom se zgrade mogu
+                    prenamijeniti za stanovanje, a mogu se izgraditi i novi stambeni kompleksi. Krivulja ponude koja
+                    odgovara duljem vremenskom razdoblju izgledala bi poput krivulje S2 na prethodnoj slici.</p>
+
+                <h2>Elastičnost ponude rada: posebna primjena</h2>
+                <p>Pojam cjenovne elastičnosti ponude može se primijeniti i na tržište rada kako bi se prikazalo kako
+                    količina ponuđenog rada reagira na promjene u nadnicama ili plaćama. Ono što ovu primjenu čini
+                    zanimljivom jest to što se ponekad utvrdilo da je izmjerena elastičnost negativna, tj. da je
+                    povećanje nadnice povezano sa smanjenjem količine ponuđenog rada.</p>
+                <p>U većini slučajeva krivulje ponude rada imaju svoj uobičajeni uzlazni nagib: više nadnice potiču
+                    ljude da više rade. Za njih je dodatni prihod koji ostvaruju radom vredniji od dodatnog slobodnog
+                    vremena. Međutim, povećanje nadnica može dovesti do toga da neki ljudi s vrlo visokim plaćama smanje
+                    broj radnih sati jer već imaju visoka primanja i više cijene slobodno vrijeme. U tom slučaju,
+                    krivulja ponude rada imala bi silazni nagib.</p>
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Cjenovna elastičnost ponude mjeri osjetljivost ponuđene količine na promjene cijene. Ona se
+                            izračunava kao postotna promjena ponuđene količine podijeljena s postotnom promjenom cijene.
+                            Obično je pozitivna.
+                        </li>Ponuda je cjenovno neelastična ako je cjenovna elastičnost ponude manja od 1; jedinično
+                        elastična ako je elastičnost jednaka 1; a cjenovno elastična ako je elastičnost veća od 1.
+                        Okomita krivulja ponude označava savršeno neelastičnu ponudu, dok vodoravna krivulja ponude
+                        označava savršeno elastičnu ponudu.
+                        <li>Cjenovna elastičnost ponude veća je kada je vremensko razdoblje koje se promatra dulje, jer
+                            proizvođači s vremenom imaju više mogućnosti za prilagodbu promjenama cijene.
+                        </li>
+                        <li>Kada se primjenjuje na ponudu rada, cjenovna elastičnost ponude obično je pozitivna, ali
+                            može biti i negativna. Ako više nadnice potiču ljude da više rade, krivulja ponude rada ima
+                            pozitivan nagib, a cjenovna elastičnost ponude je pozitivna. U nekim vrlo dobro plaćenim
+                            zanimanjima krivulja ponude rada može imati negativan nagib, što dovodi do negativne
+                            cjenovne elastičnosti ponude.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz33.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>

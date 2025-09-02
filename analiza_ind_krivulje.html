@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analiza izbora potrošača - Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora potrošača
+    </title>
+    <link rel="icon" type="image/x-icon" href="images/Smith logo.png">
+    <link rel="stylesheet" href="styles/economy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-modul-id="analiza_ind_krivulje">
+
+    <nav class="sidebar">
+        <button class="dropdown-btn"><strong>Ekonomija</strong></button>
+        <div class="dropdown-container">
+            <a href="definicija_ekonomije.html">Definicija ekonomije</a>
+            <a href="područje_ekonomije.html">Područje ekonomije</a>
+            <a href="metodeialati_ekonomista.html">Metode i alati ekonomista</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Ponuda i potražnja</strong></button>
+        <div class="dropdown-container">
+            <a href="ponuda.html">Ponuda</a>
+            <a href="potražnja.html">Potražnja</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Elastičnost: Mjera odgovora</strong></button>
+        <div class="dropdown-container">
+            <a href="cjenovna_el_potražnje.html">Cjenovna elastičnost potražnje</a>
+            <a href="osjetljivost_potražnje.html">Osjetljivost potražnje na druge čimbenike</a>
+            <a href="cjenovna_el_ponude.html">Cjenovna elastičnost ponude</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Analiza izbora potrošača</strong></button>
+        <div class="dropdown-container stay">
+            <a href="pojam_korisnosti.html">Pojam korisnosti</a>
+            <a href="maksimizacija.html">Maksimizacija korisnosti i potražnje</a>
+            <div class="chosen"><a href="#">Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora
+                    potrošača</a></div>
+        </div>
+
+        <button class="dropdown-btn"><strong>Proizvodnja i troškovi</strong></button>
+        <div class="dropdown-container">
+            <a href="kratkoročno_razdoblje.html">Kratkoročno razdoblje</a>
+            <a href="dugoročno_razdoblje.html">Dugoročno razdoblje</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Tržišta savršene konkurencije</strong></button>
+        <div class="dropdown-container">
+            <a href="model.html">Model savršene konkurencije</a>
+            <a href="određivanje_outputa.html">Određivanje outputa u kratkoročnom razdoblju</a>
+            <a href="savršena_konkurencija.html">Savršena konkurencija u dugoročnom razdoblju</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Monopol</strong></button>
+        <div class="dropdown-container">
+            <a href="priroda_monopola.html">Priroda monopola</a>
+            <a href="model_monopola.htm">Model monopola</a>
+            <a href="procjena_monopola.html">Procjena monopola</a>
+        </div>
+
+        <button class="dropdown-btn"><strong>Plaće i zaposlenost u savršenoj konkurenciji</strong></button>
+        <div class="dropdown-container">
+            <a href="potražnja_za_radom.html">Potražnja za radom</a>
+            <a href="ponuda_radne_snage.html">Ponuda radne snage</a>
+            <a href="funkcioniranje.html">Funkcioniranje tržišta rada</a>
+        </div>
+
+        <div class="topbar">
+            <div class="left">
+                <a href="first_page.html"><strong>Smith</strong></a>
+            </div>
+            <div class="right">
+                <div class="user-dropdown">
+                    <span id="userDropdown" class="korisnik">Korisnik</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="rezultati_kvizova.html">Rezultati</a>
+                        <a href="certifikati.html">Certifikati</a>
+                        <a href="materijali.html">Materijali</a>
+                        <a href="postavi_materijale.html" id="profOpcija" style="display: none;">Postavi materijale</a>
+                        <a href="#" id="logoutBtn">Odjavi se</a>
+                    </div>
+                </div>
+                <div class="auth-links" id="authLinks">
+                    <a href="login.html" class="link"><strong>Prijava</strong></a> <strong>/</strong>
+                    <a href="registration.html" class="link"><strong>Registracija</strong></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="subbar">
+            <a href="first_page.html">P O Č E T N A</a>
+            <a href="kvizovi.html">K V I Z O V I</a>
+            <a href="testovi.html">T E S T O V I</a>
+        </div>
+
+    </nav>
+
+    <div class="top-right-menu" id="userSection">
+
+    </div>
+
+    <div class="content">
+        <main>
+            <article>
+                <div id="status-pogledano" style="display:none;"></div>
+                <div
+                    style="background-color: #9bc771; border-radius: 8px; height: 18px; width: 100%; overflow: hidden; margin-bottom: 16px;">
+                    <div id="progress-bar"
+                        style="height: 100%; width: 0%; background-color: #4b7c1b; transition: width 0.6s ease; border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="progressText" style="font-weight: bold; font-size: 14px; color: #4b7c1b; margin-bottom: 16px;">
+                    0%</div>
+
+                <h1><strong>Analiza indiferentne krivulje: Alternativni pristup razumijevanju izbora potrošača</strong>
+                </h1>
+                <p>Ekonomisti obično koriste drugačiji skup alata od onih predstavljenih u ovom poglavlju do sada za
+                    analizu potrošačkih izbora. Iako su nešto složeniji, alati prikazani u ovom dijelu pružaju snažan
+                    okvir za procjenu potrošačkih odluka.</p>
+                <h2>Analiza proračunskog ograničenja</h2>
+                <p>Počet ćemo analizu algebarskim i grafičkim prikazom proračunskog ograničenja. Nakon toga, istražit
+                    ćemo novi koncept koji nam omogućuje da nacrtamo kartu potrošačkih preferencija. Na temelju toga
+                    moći ćemo izvući zaključke o odlukama koje bi potrošač, usmjeren na maksimizaciju korisnosti, mogao
+                    donijeti.</p>
+
+                <h2>Proračunska linija</h2>
+                <p>Kao što smo već vidjeli, izbori potrošača ograničeni su raspoloživim proračunom. Ukupna potrošnja na
+                    dobra i usluge može biti manja ili jednaka proračunskom ograničenju, ali je ne smije prelaziti.</p>
+                <p>Algebarski, proračunsko ograničenje za dva dobra X i Y možemo zapisati kao:</p>
+                <p><mark><em>P<sub>X</sub>Q<sub>X</sub> + P<sub>Y</sub>Q<sub>Y</sub> ≤ B</em></mark></p>
+                <p>gdje su P<sub>X</sub> i P<sub>Y</sub> cijene dobara X i Y, a Q<sub>X</sub> i Q<sub>Y</sub> količine
+                    odabranih dobara X i Y. Ukupni prihod
+                    dostupan za potrošnju na ta dva dobra je B, odnosno proračun potrošača. Jednadžba znači da ukupni
+                    izdaci za dobra X i Y (lijeva strana jednadžbe) ne mogu premašiti B.</p>
+                <div class="example">
+                    <p>Pretpostavimo da studentica Janet Bain uživa u skijanju i jahanju. Dan proveden u jednoj od tih
+                        aktivnosti košta 50 eura. Pretpostavimo da ima 250 eura dostupnih za ove dvije aktivnosti
+                        tijekom semestra. Proračunsko ograničenje gospođice Bain prikazano je na slici u nastavku.</p>
+                    <p>Za potrošača koji kupuje samo dva dobra, proračunsko ograničenje može se prikazati proračunskom
+                        linijom. Proračunska linija grafički prikazuje kombinacije dvaju dobara koje potrošač može
+                        kupiti s
+                        danim proračunom.</p>
+                    <p>Proračunska linija pokazuje sve kombinacije skijanja i jahanja koje gospođa Bain može priuštiti
+                        sa
+                        svojim proračunom od 250 eura. Također, može potrošiti manje od 250 eura, birajući kombinacije
+                        koje su ispod i lijevo od proračunske linije na slici. Kombinacije iznad i desno od linije su
+                        izvan dosega njezina proračuna.</p>
+                </div>
+                <img src="images/analiza1.jpg" width="500px" height="500px">
+                <p>Proračunska linija prikazuje kombinacije dana skijanja i jahanja koje Janet Bain može konzumirati ako
+                    je cijena svake aktivnosti 50 dolara, a ona ima 250 eura na raspolaganju po semestru. Nagib te
+                    proračunske linije je −1, što je negativni omjer cijene jahanja i cijene skijanja.</p>
+                <p>Vertikalni presjek proračunske linije (točka D) prikazuje broj dana skijanja mjesečno koje bi gospođa
+                    Bain mogla ostvariti kada bi cijeli svoj proračun potrošila isključivo na skijanje, bez jahanja. Ima
+                    250 eura, a jedan dan skijanja košta 50 eura. Ako bi cijeli iznos potrošila na skijanje, mogla
+                    bi skijati 5 dana po semestru. Time bi zadovoljila svoje proračunsko ograničenje, jer vrijedi:</p>
+                <p>50€ × 0 + 50€ × 5 = 250€</p>
+                <p>Horizontalni presjek proračunske linije (točka E) prikazuje broj dana koje bi mogla provesti u
+                    jahanju kada bi svih 250 eura potrošila isključivo na tu aktivnost. Mogla bi priuštiti 5 dana
+                    jahanja po semestru. To je također unutar njezina proračunskog ograničenja, jer vrijedi:</p>
+                <p>50€ × 5 + 50€ × 0 = 250€</p>
+                <p>Budući da je proračunska linija linearna, možemo izračunati njezin nagib između bilo koje dvije
+                    točke. Između točaka D i E, vertikalna promjena iznosi −5 dana skijanja, a horizontalna promjena 5
+                    dana jahanja. Stoga je nagib −5/5 = −1. Općenito, nagib proračunske linije određujemo tako da
+                    pronađemo vertikalni i horizontalni presjek, a zatim izračunamo nagib između te dvije točke.
+                    Vertikalni presjek dobiva se tako da se proračun gospođe Bain (B) podijeli s cijenom skijanja
+                    (P<sub>S</sub>),
+                    koje je na vertikalnoj osi. Horizontalni presjek dobiva se dijeljenjem B s cijenom jahanja
+                    (P<sub>H</sub>),
+                    koje je na horizontalnoj osi.</p>
+
+                <h2>Krivulje indiferencije</h2>
+                <p>Pretpostavimo da gospođa Bain provede 2 dana skijajući i 3 dana jašući po semestru. Iz te kombinacije
+                    dviju aktivnosti dobit će određenu razinu ukupne korisnosti. Postoje i druge kombinacije tih dviju
+                    aktivnosti koje bi joj donijele istu razinu korisnosti. Kombinacije dvaju dobara koje daju jednake
+                    razine korisnosti prikazuju se na krivulji indiferencije. Budući da sve točke na krivulji
+                    indiferencije donose istu razinu korisnosti, ekonomisti kažu da je potrošaču svejedno između njih.
+                </p>
+                <p>Slika 7.10 prikazuje krivulju indiferencije za kombinacije skijanja i jahanja koje pružaju jednaku
+                    ukupnu korisnost. Točka X označava početnu kombinaciju gospođe Bain – 2 dana skijanja i 3 dana
+                    jahanja po semestru. Krivulja indiferencije pokazuje da bi mogla ostvariti istu razinu korisnosti
+                    prelaskom u točku W, gdje bi skijala 7 dana i jahala 1 dan. Također bi mogla postići istu korisnost
+                    u točki Y, gdje bi skijala samo 1 dan, a provela 5 dana u jahanju. Gospođi Bain je svejedno između
+                    kombinacija W, X i Y. Pretpostavljamo da su oba dobra djeljiva, pa joj je svejedno između <em>bilo
+                        koje</em>
+                    dvije točke duž iste krivulje indiferencije.</p>
+                <img src="images/analiza2.jpg" width="500px" height="500px">
+                <p>Krivulja indiferencije A prikazana ovdje prikazuje kombinacije dana skijanja i jahanja koje pružaju
+                    istu razinu korisnosti. Janet Bain je stoga svejedno koju točku na toj krivulji odabere. Svaka točka
+                    ispod i lijevo od krivulje indiferencije pruža nižu razinu korisnosti, dok svaka točka iznad i desno
+                    od krivulje pruža višu razinu korisnosti.</p>
+                <p>Pogledajmo sada točku T. Ona sadrži isti broj dana skijanja kao i točka X, ali manje
+                    dana jahanja. Gospođa Bain stoga preferira točku X u odnosu na točku T. Slično, više voli točku X
+                    nego točku U. A što je s izborom između kombinacija u točki W i točki T? Budući da su kombinacije X
+                    i W jednako zadovoljavajuće, a Janet preferira X u odnosu na T, tada mora preferirati i W u odnosu
+                    na T.</p>
+                <p>Općenito, svaka kombinacija dvaju dobara koja se nalazi ispod i lijevo od krivulje indiferencije
+                    donosi manju korisnost od bilo koje kombinacije na samoj krivulji. Takve kombinacije su
+                    <strong><em>inferiorne</em></strong> u odnosu na one koje se nalaze na krivulji indiferencije.
+                </p>
+                <p>Točka Z, s 3 dana skijanja i 4 dana jahanja, pruža više obiju aktivnosti u usporedbi s točkom X;
+                    stoga Z donosi veću razinu korisnosti. Također je superiorna u odnosu na točku W. Općenito, svaka
+                    kombinacija koja se nalazi iznad i desno od krivulje indiferencije je
+                    <strong><em>poželjnija</em></strong> od bilo koje
+                    točke na toj krivulji.
+                </p>
+                <p>Možemo nacrtati krivulju indiferencije kroz bilo koju kombinaciju dvaju dobara. Slika 7.11 prikazuje
+                    krivulje indiferencije nacrtane kroz svaku od prethodno spomenutih točaka. Krivulja indiferencije A
+                    sa slike je inferiorna u odnosu na krivulju B. Gospođa Bain preferira sve kombinacije na
+                    krivulji B u odnosu na one na krivulji A, a sve kombinacije na krivulji C smatra inferiornima u
+                    odnosu na one na krivuljama A i B.</p>
+                <p>Iako su na slici prikazane samo tri krivulje indiferencije, u načelu se može nacrtati beskonačno
+                    mnogo takvih krivulja. Skup krivulja indiferencije za jednog potrošača čini svojevrsnu kartu koja
+                    prikazuje njegove preferencije. Različiti potrošači imat će različite karte, no s dobrim razlogom
+                    pretpostavljamo da sve krivulje indiferencije imaju istu osnovnu formu: naginju prema dolje i
+                    postaju sve manje strme kako se krećemo prema dolje i udesno duž krivulje.</p>
+                <img src="images/analiza3.jpg" width="500px" height="500px">
+                <p>Svaka krivulja indiferencije prikazuje kombinacije među kojima je potrošaču svejedno, one donose
+                    jednaku razinu korisnosti. Krivulje koje se nalaze više i desno na grafu poželjnije su od onih koje
+                    su
+                    niže i lijevo. U ovom slučaju, krivulja indiferencije B poželjnija je od krivulje A, koja je
+                    poželjnija
+                    od krivulje C.</p>
+                <p>Nagib krivulje indiferencije pokazuje stopu po kojoj se dva dobra mogu međusobno zamijeniti, a da se
+                    pritom ne promijeni razina korisnosti potrošača. Na slici je prikazana krivulja indiferencije C.
+                    Pretpostavimo da se gospođa Bain nalazi u točki S, gdje troši 4 dana na skijanje i 1 dan na
+                    jahanje po semestru. Ako odluči provesti još jedan dan jašući, njezina se korisnost neće promijeniti
+                    ako
+                    za to žrtvuje 2 dana skijanja i prijeđe u točku T. Dakle, spremna je odreći se 2 dana skijanja za
+                    drugi
+                    dan jahanja. Međutim, krivulja pokazuje da bi bila spremna odreći se najviše jednog dana skijanja
+                    kako
+                    bi dobila treći dan jahanja (što je prikazano točkom U).</p>
+                <img src="images/analiza4.jpg" width="500px" height="500px">
+                <p><strong>Granična stopa supstitucije jednaka je apsolutnoj vrijednosti nagiba krivulje
+                        indiferencije.</strong> Ona
+                    pokazuje maksimalnu količinu jednog dobra koje je potrošač spreman žrtvovati kako bi dobio dodatnu
+                    jedinicu drugog dobra. U ovom slučaju, to je broj dana skijanja kojih bi se Janet Bain bila voljna
+                    odreći za dodatni dan jahanja. Važno je primijetiti da granična stopa supstitucije (MRS) opada kako
+                    provodi sve više dana jašući.</p>
+                <p>Maksimalna količina jednog dobra koju je potrošač spreman žrtvovati kako bi dobio dodatnu jedinicu
+                    drugog dobra naziva se granična stopa supstitucije (MRS), a ona je jednaka apsolutnoj vrijednosti
+                    nagiba
+                    krivulje indiferencije između dviju točaka. Slika pokazuje da, kako gospođa Bain sve više vremena
+                    posvećuje jahanju, stopa po kojoj je spremna žrtvovati dane skijanja za dodatne dane jahanja –
+                    njezina
+                    granična stopa supstitucije – opada.</p>
+
+                <h2>Rješenje za maksimizaciju korisnosti</h2>
+                <p>Pretpostavljamo da svaki potrošač teži postizanju najviše moguće krivulje indiferencije. Proračunska
+                    linija prikazuje kombinacije dvaju dobara koje potrošač može kupiti s određenim budžetom.
+                    Maksimizacija korisnosti stoga podrazumijeva odabir kombinacije dvaju dobara koja zadovoljava dva
+                    uvjeta:</p>
+                <ol>
+                    <li>Točka u kojoj se korisnost maksimizira mora biti unutar dostupne regije definirane proračunskom
+                        linijom.</li>
+                    <li>Točka u kojoj se korisnost maksimizira mora se nalaziti na najvišoj krivulji indiferencije koja
+                        je u skladu s prvim uvjetom.</li>
+                </ol>
+                <p>Slika kombinira proračunsku liniju Janet Bain s njezinim krivuljama indiferencije. Naša dva uvjeta za
+                    maksimizaciju korisnosti ispunjena su u točki X, gdje ona skija 2
+                    dana po semestru i 3 dana provodi jašući.</p>
+                <img src="images/analiza5.jpg" width="500px" height="500px">
+                <p>Kombinirajući proračunsku liniju Janet Bain sa slike i krivulje indiferencije sa slike 7.11,
+                    pronalazimo točku koja (1) zadovoljava proračunsko ograničenje i (2) nalazi se na najvišoj mogućoj
+                    krivulji indiferencije. Za gospođu Bain ta se točka nalazi u točki X.</p>
+                <p>Najviša moguća krivulja indiferencije za zadanu proračunsku liniju je ona koja je tangenta na tu
+                    liniju; krivulja indiferencije i proračunska linija u toj točki imaju jednak nagib. Apsolutna
+                    vrijednost nagiba krivulje indiferencije pokazuje graničnu stopu supstitucije (MRS) između dvaju
+                    dobara. Apsolutna vrijednost nagiba proračunske linije prikazuje omjer cijena između tih dobara – to
+                    je stopa po kojoj se jedno dobro može zamijeniti za drugo na tržištu. U točki maksimizacije
+                    korisnosti stopa po kojoj je potrošač spreman zamijeniti jedno dobro za drugo jednaka je tržišnoj
+                    stopi zamjene između tih dobara.</p>
+                <p>Za bilo koja dva dobra X i Y, gdje je dobro X na horizontalnoj osi, a dobro Y na vertikalnoj osi,
+                    vrijedi:</p>
+                <div class="equation"><img src="images/analiza6.jpg" width="250px" height="80px"></div>
+
+                <h2>Maksimizacija korisnosti i pravilo granične odluke</h2>
+                <p>Kako se postizanje rješenja za maksimizaciju korisnosti povezuje s pravilom granične
+                    odluke? To pravilo kaže da se dodatne jedinice neke aktivnosti trebaju provoditi ako je granična
+                    korist od te aktivnosti veća od graničnog troška. Poštivanje tog pravila dovodi potrošača do najviše
+                    moguće krivulje indiferencije za zadani budžet.</p>
+                <p>Pretpostavimo da je gospođa Bain odabrala kombinaciju skijanja i jahanja prikazanu u točki S.
+                    Trenutno se nalazi na krivulji indiferencije C. Također se nalazi na svojoj proračunskoj
+                    liniji, koristi čitav svoj budžet od 250 eura za kupnju ta dva dobra.</p>
+                <img src="images/analiza7.jpg" width="500px" height="500px">
+                <p>Pretpostavimo da se gospođa Bain nalazi u početnoj točki S. Iako troši cijeli svoj budžet, još uvijek
+                    ne maksimizira korisnost. Budući da je njezina granična stopa supstitucije veća od stope po kojoj
+                    joj tržište nudi zamjenu skijanja za jahanje, može povećati svoju korisnost prelaskom u točku D.
+                    Sada se nalazi na višoj krivulji indiferencije, E. Nastavit će zamjenjivati dane skijanja za dane
+                    jahanja sve dok ne dosegne točku X, u kojoj se nalazi na krivulji A, najvišoj mogućoj krivulji
+                    indiferencije.</p>
+                <p>Zamjena dva dana skijanja za jedan dan jahanja dovodi je u točku T, gdje joj je jednako dobro kao i u
+                    točki S. Njezina granična stopa supstitucije između točaka S i T iznosi 2; njezina krivulja
+                    indiferencije je strmija od proračunske linije u točki S. Ta razlika nam govori da stopa po kojoj je
+                    spremna zamijeniti dobra nije jednaka tržišnoj stopi. Gospođa Bain je voljna odreći se čak 2 dana
+                    skijanja kako bi dobila dodatni dan jahanja, dok tržište od nje traži da se odrekne samo jednog dana
+                    skijanja. Prema pravilu granične odluke, ako dodatna jedinica aktivnosti donosi veću korist od
+                    njezina troška, ta se aktivnost treba provesti. Ako joj jedan dodatni dan jahanja vrijedi koliko i 2
+                    dana skijanja, a može ga dobiti žrtvujući samo jedan dan skijanja, tada je korist tog dodatnog dana
+                    jahanja očito veća od njegova troška.</p>
+                <p>Budući da tržište od nje traži manju žrtvu nego što je spremna dati za dodatni dan jahanja, izvršit
+                    će zamjenu. Polazeći od točke S, zamijenit će dan skijanja za dan jahanja. Time se pomiče duž svoje
+                    proračunske linije u točku D. Prisjetimo se da kroz bilo koju točku možemo nacrtati krivulju
+                    indiferencije; sada se nalazi na krivulji E. Ta je krivulja iznad i desno od krivulje C, pa je
+                    gospođa Bain očito u boljoj situaciji. To nije iznenađenje — u točki S bila je voljna odreći se 2
+                    dana skijanja za jedan dan jahanja, a tržište je tražilo samo jedan dan skijanja. Dodatni dan
+                    jahanja dobila je po "sniženoj cijeni"!</p>
+                <p>Njezin pomak s točke S na D duž proračunske linije otkriva važno načelo: ako krivulja indiferencije
+                    presijeca proračunsku liniju, tada će potrošač uvijek moći napraviti zamjene koje ga pomiču na višu
+                    krivulju indiferencije. Nova krivulja indiferencije gospođe Bain u točki D također presijeca njezinu
+                    proračunsku liniju; još je uvijek voljna odreći se više skijanja nego što tržište traži za dodatno
+                    jahanje. Izvršit će još jednu zamjenu i pomaknuti se duž proračunske linije do točke X, gdje dostiže
+                    najvišu krivulju indiferencije moguću s danim budžetom. Točka X se nalazi na krivulji A, koja je
+                    tangenta na proračunsku liniju.</p>
+                <p>U točki X, gospođa Bain očito ne bi više žrtvovala dane skijanja za dodatne dane jahanja. Nakon te
+                    točke, njezina krivulja indiferencije postaje ravnija od proračunske linije – njezina granična stopa
+                    supstitucije manja je od apsolutne vrijednosti nagiba proračunske linije. To znači da je stopa po
+                    kojoj bi bila voljna zamijeniti skijanje za jahanje manja od tržišne stope. Ne može dodatno
+                    poboljšati svoju korisnost daljnjom preraspodjelom potrošnje. Točka X, u kojoj je stopa po kojoj je
+                    spremna zamijeniti dobra jednaka tržišnoj stopi, donosi joj maksimalnu moguću korisnost.</p>
+
+                <h2>Maksimizacija korisnosti i potražnja</h2>
+                <p>Prethodna slika prikazala je rješenje za maksimizaciju korisnosti Janet Bain u kontekstu skijanja i
+                    jahanja. Postigla ga je odabirom točke u kojoj je njezina krivulja indiferencije tangenta na
+                    proračunsku liniju. Međutim, promjena cijene jednog od dobara pomiče proračunsku liniju.
+                    Promatrajući što se događa s količinom traženog dobra, možemo izvesti krivulju potražnje gospođe
+                    Bain.</p>
+                <p>Dijagram (a) slike prikazuje izvorno rješenje u točki X, gdje Janet Bain ima 250 eura za
+                    potrošiti, a cijena dana skijanja i dana jahanja iznosi 50 dolara. Pretpostavimo sada da cijena
+                    jahanja padne za polovicu, na 25 eura. To mijenja horizontalni presjek proračunske linije – ako
+                    sav novac potroši na jahanje, sada može jahati 10 dana po semestru. Drugi način razmišljanja o novoj
+                    proračunskoj liniji jest sjetiti se da je njezin nagib jednak negativnom omjeru cijene dobra na
+                    horizontalnoj osi i cijene dobra na vertikalnoj osi. Kada cijena jahanja (dobra na horizontalnoj
+                    osi) padne, proračunska linija postaje ravnija. Gospođa Bain odabire novo rješenje za maksimizaciju
+                    korisnosti u točki Z.</p>
+                <img src="images/analiza8.jpg" width="600px" height="900px">
+                <p>Promatranjem reakcije potrošača na promjenu cijene možemo izvesti njegovu krivulju potražnje za nekim
+                    dobrom. <strong>Dijagram (a)</strong> pokazuje da pri cijeni jahanja od 50 eura po danu Janet Bain
+                    odlučuje provesti 3 dana po semestru jašući. <strong>Dijagram (b)</strong> prikazuje da pad cijene
+                    na 25 eura povećava njezinu traženu količinu na 4 dana po semestru. Točke X i Z, u kojima gospođa
+                    Bain maksimizira korisnost pri cijenama jahanja od 50, odnosno 25 eura, postaju točke X' i Z' na
+                    njezinoj <strong>krivulji potražnje</strong> za jahanjem u dijagramu (b).</p>
+                <p>Rješenje u točki Z uključuje povećanje broja dana koje gospođa Bain provodi jašući. Važno je
+                    primijetiti da se promijenila samo cijena jahanja; svi ostali elementi rješenja koje maksimizira
+                    korisnost ostali su nepromijenjeni. Gospođin budžet i cijena skijanja ostaju isti, što se vidi po
+                    tome što je <strong>vertikalni presjek proračunske linije ostao nepromijenjen</strong>. Njezine
+                    preferencije također se nisu promijenile; one su prikazane njezinim krivuljama indiferencije.</p>
+                <p>Budući da su svi ostali čimbenici nepromijenjeni, možemo iz dijagrama krivulja indiferencije odrediti
+                    dvije točke na krivulji potražnje za jahanjem. Pri cijeni od 50 eura, korisnost je maksimizirana u
+                    točki X, gdje Janet provodi 3 dana po semestru jašući. Kada cijena padne na 25 eura, korisnost je
+                    maksimizirana u točki Z, gdje jaše 4 dana po semestru. Te se točke zatim prikazuju kao X' i Z' na
+                    njezinoj krivulji potražnje za jahanjem u <strong>dijagramu (b)</strong> slike 7.15.</p>
+
+                <div class="summary">
+                    <h2>Sažetak</h2>
+                    <ul>
+                        <li>Proračunska linija prikazuje kombinacije dvaju dobara koje potrošač može konzumirati s
+                            obzirom na proračunsko ograničenje.</li>
+                        <li>Krivulja indiferencije prikazuje kombinacije dvaju dobara koje potrošaču pružaju jednaku
+                            razinu zadovoljstva (korisnosti).</li>
+                        <li>Kako bi maksimizirao korisnost, potrošač bira kombinaciju dvaju dobara u kojoj je krivulja
+                            indiferencije <strong>tangentna</strong> na proračunsku liniju.</li>
+                        <li>U rješenju koje maksimizira korisnost, <strong>marginalna stopa supstitucije</strong>
+                            (apsolutna vrijednost nagiba krivulje indiferencije) jednaka je <strong>omjeru
+                                cijena</strong> dvaju dobara.</li>
+                        <li>Krivulju potražnje možemo izvesti iz karte indiferencije promatrajući količinu određenog
+                            dobra koja se konzumira pri različitim cijenama.</li>
+                    </ul>
+
+                </div>
+
+            </article>
+        </main>
+
+        <div class="quiz-highlight">
+            <h3 class="quiz-title">Provjeri svoje znanje i riješi kviz!</h3>
+            <a href="quiz43.html" class="quiz-action-button">Kreni na kviz</a>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="scripts/economy.js"></script>
+
+</body>
+
+</html>
