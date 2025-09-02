@@ -77,18 +77,18 @@ function prikaziRezultate(uid) {
 function prikaziPieChartTestova(podaci) {
     const kategorije = {
         "90% - 100%": 0,
-        "75% - 90%": 0,
-        "60% - 75%": 0,
-        "50% - 60%": 0,
+        "75% - 89%": 0,
+        "60% - 74%": 0,
+        "50% - 59%": 0,
         "< 50%": 0
     };
 
     podaci.forEach(el => {
         const p = parseFloat(el.postotak);
         if (p >= 90) kategorije["90% - 100%"]++;
-        else if (p >= 75) kategorije["75% - 90%"]++;
-        else if (p >= 60) kategorije["60% - 75%"]++;
-        else if (p >= 50) kategorije["50% - 60%"]++;
+        else if (p >= 75) kategorije["75% - 89%"]++;
+        else if (p >= 60) kategorije["60% - 74%"]++;
+        else if (p >= 50) kategorije["50% - 59%"]++;
         else kategorije["< 50%"]++;
     });
 
