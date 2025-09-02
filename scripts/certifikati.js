@@ -31,7 +31,11 @@ firebase.auth().onAuthStateChanged(user => {
     }
 
     const postojaniCertifikati = Object.entries(sviRezultati).filter(([quiz, podaci]) => {
-      return podaci.bodovi === podaci.ukupno;
+      let najbolji = null;
+      Object.values(podaci).forEach(r => {
+        if (!najbolji || r.bodovi > najbolji.bodovi) najbolji = r;
+      });
+      return najbolji && najbolji.bodovi === najbolji.ukupno;
     });
 
     if (postojaniCertifikati.length === 0) {

@@ -131,14 +131,6 @@ const quizData = [
         multi: true
     },
     {
-        question: "12. Ukupni varijabilni trošak (TVC) je trošak koji se mijenja s razinom proizvodnje.",
-        options: [
-            "Točno",
-            "Netočno"
-        ],
-        answer: "Točno"
-    },
-    {
         question: "13. Ukupni fiksni trošak (TFC) je trošak koji se mijenja s razinom proizvodnjom.",
         options: [
             "Točno",
